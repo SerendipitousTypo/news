@@ -1,7 +1,7 @@
 {
-  "name": "newsapi",
+  "name": "api",
   "version": "0.0.0",
-  "description": "newsapi",
+  "description": "api",
   "author": "typos",
   "main": "server.js",
   "engines": {
