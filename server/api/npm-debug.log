@@ -7,8 +7,8 @@
 6 silly lifecycle api@0.0.0~prestart: no script for prestart, continuing
 7 info lifecycle api@0.0.0~start: api@0.0.0
 8 verbose lifecycle api@0.0.0~start: unsafe-perm in lifecycle true
-9 verbose lifecycle api@0.0.0~start: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/Tj/codeStuff/hr42/projects/greenfield/news/api/node_modules/.bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin
-10 verbose lifecycle api@0.0.0~start: CWD: /Users/Tj/codeStuff/hr42/projects/greenfield/news/api
+9 verbose lifecycle api@0.0.0~start: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/Tj/codeStuff/hr42/projects/greenfield/news/server/api/node_modules/.bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin
+10 verbose lifecycle api@0.0.0~start: CWD: /Users/Tj/codeStuff/hr42/projects/greenfield/news/server/api
 11 silly lifecycle api@0.0.0~start: Args: [ '-c', 'node cluster.js' ]
 12 silly lifecycle api@0.0.0~start: Returned: code: 1  signal: null
 13 info lifecycle api@0.0.0~start: Failed to exec start script
@@ -23,7 +23,7 @@
 14 verbose stack     at maybeClose (internal/child_process.js:850:16)
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:215:5)
 15 verbose pkgid api@0.0.0
-16 verbose cwd /Users/Tj/codeStuff/hr42/projects/greenfield/news/api
+16 verbose cwd /Users/Tj/codeStuff/hr42/projects/greenfield/news/server/api
 17 error Darwin 15.4.0
 18 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "start"
 19 error node v6.0.0

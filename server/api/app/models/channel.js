@@ -3,7 +3,7 @@ module.exports = (function() {
   'use strict';
 
   const Nodal = require('nodal');
-  const Publisher = require('news/server/api/app/models/publisher.js');
+  const Publisher = require('./publisher.js');
 
   class Channel extends Nodal.Model {}
 
