@@ -1,6 +1,6 @@
 {
 
-  "migration_id": 2016052619265277,
+  "migration_id": 2016052622482351,
 
   "models": {
 
@@ -29,6 +29,22 @@
         {"name": "url", "type": "string", "properties": {}},
         {"name": "content", "type": "string", "properties": {}},
         {"name": "publisher_id", "type": "int", "properties": {}},
+        {"name": "created_at", "type": "datetime", "properties": {}},
+        {"name": "updated_at", "type": "datetime", "properties": {}}
+      ]
+
+    },
+
+    "Channel": {
+
+      "table": "channels",
+
+      "columns": [
+        {"name": "id", "type": "serial", "properties": {"nullable":false,"primary_key":true,"auto_increment":true}},
+        {"name": "name", "type": "string", "properties": {}},
+        {"name": "publisher_id", "type": "int", "properties": {}},
+        {"name": "last_updated", "type": "datetime", "properties": {}},
+        {"name": "url", "type": "string", "properties": {}},
         {"name": "created_at", "type": "datetime", "properties": {}},
         {"name": "updated_at", "type": "datetime", "properties": {}}
       ]
