@@ -1,8 +1,8 @@
-var request = require('request-promise');
+var rp = require('request-promise');
 
 module.exports = (req, res) => {
   'use strict'
-  request('http://127.0.0.1:3000/v1/channels')
+  rp('http://127.0.0.1:3000/v1/channels')
   .then( data => {
     data = JSON.parse(data);
     return data.data;
@@ -17,11 +17,23 @@ module.exports = (req, res) => {
           'If-Modified-Since': lastUpdate
         }
       }
-      request(data.url, options)
-      .then( response => {
+      rp(data.url, options)
+      .then(response => {
         let modDate  = Date.parse(response.headers['last-modified']);
         if(modDate > lastUpdate && response.body !== undefined) {
           //update the lastMod
+         let options = {
+            method: 'PUT',
+            uri: 'http://127.0.0.1:3000/v1/channels/' + data.id,
+            body: {
+              'last_updated': modDate
+            },
+            json: true
+          }
+
+          rp(options)
+          .then( some => console.log('posted'))
+          .catch( err => console.log('shit', err))
           //send to parse bot
         }
       
