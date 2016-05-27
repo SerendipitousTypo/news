@@ -27,7 +27,7 @@ module.exports = (req, res) => {
             uri: 'http://127.0.0.1:3000/v1/channels/' + data.id,
             body: {
               'last_updated': modDate
-            },
+            }, 
             json: true
           }
           rp(options)
