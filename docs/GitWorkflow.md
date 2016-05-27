@@ -8,7 +8,7 @@
     * docs- for updating documents
     * bugs- for fixing bugs
     * feat- for feature
-
+ 
 ####NOTE: Only work on branches locally do not work on your local master branch.
 
 ###Daily work flow
