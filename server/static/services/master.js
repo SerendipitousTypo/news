@@ -42,7 +42,7 @@ module.exports = (req, res) => {
           .then(some => console.log('posted'))
           .catch(err => console.log('shit', err));
           console.log('made it in the if');
-          pb(data.url);
+          pb(data.url, data.publisher_id);
         }      
       }
       ).catch (err => console.log('ERRRRRROOOOOR', err));
