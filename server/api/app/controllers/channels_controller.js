@@ -42,7 +42,7 @@ module.exports = (function() {
     update() {
 
       Channel.update(this.params.route.id, this.params.body, (err, model) => {
-
+        console.log('params', this.params.route.id);
         this.respond(err || model);
 
       });
