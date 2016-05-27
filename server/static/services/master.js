@@ -30,13 +30,11 @@ module.exports = (req, res) => {
             },
             json: true
           }
-
           rp(options)
-          .then( some => console.log('posted'))
-          .catch( err => console.log('shit', err))
+          .then(some => console.log('posted'))
+          .catch(err => console.log('shit', err))
           //send to parse bot
-        }
-      
+        }      
       }
       ).catch (err => console.log('ERRRRRROOOOOR', err));
     })
