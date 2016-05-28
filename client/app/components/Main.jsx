@@ -1,23 +1,19 @@
 var Main = ({articles}) => (
   <div className="main-block">
-    {arrangeByFilter(articles)}
+    {populateRows(articles)}
   </div>
 );
 
-//filter articles by region
-var arrangeByFilter = articles => {
+
+var populateRows = articles => {
   var topics = {};
 
- /*
-    {
-      North America: 
-
-    }
- */
-
-  //sort articles by region, ie. {'North America': [Articles. . . ]}
+  //sort articles by category, according to filter, ie. {'North America': [Articles. . . ]}
   articles.forEach(article => {
-    if (topics.hasOwnProperty(article.region)) {
+
+    //IF topics does not have a category
+    //create key for category 
+    if ( topics.hasOwnProperty(article.region) ) {
       topics[article.region].push(article);
     } else {
       topics[article.region] = [article];
@@ -25,14 +21,9 @@ var arrangeByFilter = articles => {
   });
   console.log('topics: ', topics);
 
-  return populateRows(topics);
-};
-//populate rows
-
-var populateRows = topics => {
-  return _.map(topics, (topic, filter) => {
-    // console.log(topic);
-    return <ArticlesRow filter={filter} articles={topic} />;
+  //create a row of articles per category, according to filter
+  return _.map(topics, (topic, category) => {
+    return <ArticlesRow title={category} articles={topic} />;
   });  
 };
 
