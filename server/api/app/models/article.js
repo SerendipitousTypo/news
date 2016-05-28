@@ -4,6 +4,7 @@ module.exports = (function() {
 
   const Nodal = require('nodal');
   const Publisher = require('./publisher.js');
+  const Channel = require('./channel.js');
 
   class Article extends Nodal.Model {}
 
@@ -11,6 +12,7 @@ module.exports = (function() {
   Article.setSchema(Nodal.my.Schema.models.Article);
 
   Article.joinsTo(Publisher, {multiple: true});
+  Article.joinsTo(Channel, {multiple: true});
 
   return Article;
 

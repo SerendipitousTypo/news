@@ -10,10 +10,12 @@ module.exports = (function() {
     index() {
 
       Article.query()
+        .join('publisher')
+        .join('channel')
         .where(this.params.query)
         .end((err, models) => {
 
-          this.respond(err || models);
+          this.respond(err || models, ['title','date','url','content', {publisher: ['name', 'region']},{channel:'name'}]);
 
         });
 

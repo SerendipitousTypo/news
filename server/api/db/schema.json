@@ -24,11 +24,12 @@
 
       "columns": [
         {"name": "id", "type": "serial", "properties": {"nullable":false,"primary_key":true,"auto_increment":true}},
-        {"name": "title", "type": "string", "properties": {}},
+        {"name": "title", "type": "string", "properties": {"unique":true}},
         {"name": "date", "type": "datetime", "properties": {}},
         {"name": "url", "type": "string", "properties": {}},
         {"name": "content", "type": "string", "properties": {}},
         {"name": "publisher_id", "type": "int", "properties": {}},
+        {"name": "channel_id", "type": "int", "properties": {}},
         {"name": "created_at", "type": "datetime", "properties": {}},
         {"name": "updated_at", "type": "datetime", "properties": {}}
       ]
@@ -41,7 +42,7 @@
 
       "columns": [
         {"name": "id", "type": "serial", "properties": {"nullable":false,"primary_key":true,"auto_increment":true}},
-        {"name": "name", "type": "string", "properties": {}},
+        {"name": "name", "type": "string", "properties": {"unique":true}},
         {"name": "publisher_id", "type": "int", "properties": {}},
         {"name": "last_updated", "type": "datetime", "properties": {}},
         {"name": "url", "type": "string", "properties": {}},
@@ -57,7 +58,7 @@
 
       "columns": [
         {"name": "id", "type": "serial", "properties": {"nullable":false,"primary_key":true,"auto_increment":true}},
-        {"name": "keyword", "type": "string", "properties": {}},
+        {"name": "keyword", "type": "string", "properties": {"unique":true}},
         {"name": "created_at", "type": "datetime", "properties": {}},
         {"name": "updated_at", "type": "datetime", "properties": {}}
       ]
@@ -70,7 +71,7 @@
 
       "columns": [
         {"name": "id", "type": "serial", "properties": {"nullable":false,"primary_key":true,"auto_increment":true}},
-        {"name": "name", "type": "string", "properties": {}},
+        {"name": "name", "type": "string", "properties": {"unique":true}},
         {"name": "region", "type": "string", "properties": {}},
         {"name": "created_at", "type": "datetime", "properties": {}},
         {"name": "updated_at", "type": "datetime", "properties": {}}

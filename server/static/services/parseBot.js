@@ -38,8 +38,18 @@ module.exports = (url, pub_id) => {
             };
             rp(options)
             .then(response => {
-              console.log('article ID', id);
-              console.log('keyword ID', response.data[0].id);
+              options = {
+                method: 'POST',
+                uri: 'http://127.0.0.1:3000/v1/art_keys/',
+                body: {
+                  article_id: id, 
+                  keyword_id: response.data[0].id
+                },
+                json:true
+              };
+              rp(options)
+              .then(response => console.log('success updating art_keys'))
+              .catch(err => console.log('error updating art_keys', err));
             })
             .catch(err => {
               console.log('keyword entry error', err)
