@@ -10,10 +10,12 @@ module.exports = (function() {
     index() {
 
       ArtKey.query()
+        .join('article')
+        .join('keyword')
         .where(this.params.query)
         .end((err, models) => {
 
-          this.respond(err || models);
+          this.respond(err || models, [{article: ['id','title', 'content']},{keyword: ['keyword']}]);
 
         });
 

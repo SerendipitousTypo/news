@@ -14,7 +14,7 @@ module.exports = (function() {
     up() {
 
       return [
-        this.createTable("keywords", [{"name":"keyword","type":"string"}])
+        this.createTable("keywords", [{"name":"keyword","type":"string","properties": {"unique":true}}])
       ];
 
     }

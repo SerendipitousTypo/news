@@ -14,7 +14,7 @@ module.exports = (function() {
     up() {
 
       return [
-        this.createTable("channels", [{"name":"name","type":"string"},{"name":"publisher_id","type":"int"},{"name":"last_updated","type":"datetime"},{"name":"url", "type":"string"}])
+        this.createTable("channels", [{"name":"name","type":"string", "properties": {"unique":true}},{"name":"publisher_id","type":"int"},{"name":"last_updated","type":"datetime"},{"name":"url", "type":"string"}])
       ];
 
     }

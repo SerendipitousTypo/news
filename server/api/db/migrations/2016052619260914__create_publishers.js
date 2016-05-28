@@ -14,7 +14,7 @@ module.exports = (function() {
     up() {
 
       return [
-        this.createTable("publishers", [{"name":"name","type":"string"},{"name":"region","type":"string"}])
+        this.createTable("publishers", [{"name":"name","type":"string", "properties": {"unique":true}},{"name":"region","type":"string"}])
       ];
 
     }
