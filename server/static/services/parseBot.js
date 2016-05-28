@@ -60,9 +60,3 @@ module.exports = (url, pub_id) => {
     });
   })
 }
-
-module.exports ('http://rss.nytimes.com/services/xml/rss/nyt/World.xml','1');
-
-//update any keywords that are not in our keyword database
-//store the articles in the article database
-//
