@@ -5,7 +5,7 @@ import { ArticleEntry } from './articleEntry';
 export var ArticlesRow = ({title, articles}) => (
   <div className='articlesRow'>
     <div className="rowTitle">{title}</div>
-    <div className='rowArticles'>
+    <div className='mdl-grid'>
       {populateRow(articles)}
     </div>
   </div>

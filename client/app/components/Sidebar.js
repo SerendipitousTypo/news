@@ -2,7 +2,6 @@ import React from 'react'
 
 export var Sidebar = ({}) => (
   <div>
-  <div className="sidebar">I am sidebar</div>
   <h3 className="topics-heading">Topics</h3>
   <ul>
     <li>Politics</li>
