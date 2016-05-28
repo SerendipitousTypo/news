@@ -2,7 +2,7 @@ var parser = require ('rss-parser');
 var rp = require('request-promise');
 
 module.exports = (url, pub_id) => {
-
+'use strict'
   parser.parseURL(url, (err, parsed) => {
     console.log(parsed.feed.title);
     parsed.feed.entries.forEach(entry => {
