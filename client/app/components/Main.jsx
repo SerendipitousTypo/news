@@ -13,10 +13,10 @@ var populateRows = articles => {
 
     //IF topics does not have a category
     //create key for category 
-    if ( topics.hasOwnProperty(article.region) ) {
-      topics[article.region].push(article);
+    if ( topics.hasOwnProperty(article.publisher.region) ) {
+      topics[article.publisher.region].push(article);
     } else {
-      topics[article.region] = [article];
+      topics[article.publisher.region] = [article];
     }   
   });
   console.log('topics: ', topics);

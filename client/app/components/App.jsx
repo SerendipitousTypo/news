@@ -73,10 +73,9 @@ class App extends React.Component {
     return articles;
   }
 
-  // componentDidMount() {
-  //   var publishers = this.getPublishers();
-  //   var articles = this.getArticles();
-  // }
+  componentDidMount() {
+    var articles = this.getArticles();
+  }
 
   //DELETE
   // findRegion(article) {
@@ -91,9 +90,9 @@ class App extends React.Component {
   // }
 
 
-  // componentWillUnmount() {
-  //   this.serverRequest.abort();
-  // }
+  componentWillUnmount() {
+    this.serverRequest.abort();
+  }
 
   render() {
     return (
