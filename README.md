@@ -40,7 +40,7 @@ Target the following endpoint from Chrome - `http://localhost:8085/test`
 __This will populate the articles database with the following:__
 - NY Times: US News channel
 - Times of India: World channel
-- Al Jezeera: Al Jezeera America channel
+- Al Jazeera: Al Jazeera America channel
 - BBC: US 2016 Election channel
 
 
