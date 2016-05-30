@@ -1,6 +1,6 @@
-/*Service that accepts a rss feed URL and displays 
+/** Service that accepts a rss feed URL and sends the content in the response
 *@params url
-*the result in a window*/
+*/
 
 var rp = require('request-promise');
 

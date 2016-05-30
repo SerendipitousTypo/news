@@ -44,6 +44,7 @@ module.exports = (function() {
 
   /* generator: begin routes */
 
+/**API endpoints for PostGreSQL tables*/
   router.route('/v1/articles/{id}').use(V1ArticlesController);
   router.route('/v1/publishers/{id}').use(V1PublishersController);
   router.route('/v1/keywords/{id}').use(V1KeywordsController);

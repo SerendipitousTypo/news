@@ -1,3 +1,7 @@
+/**
+* This is the api controller for the art_keys join table.
+* It manages the join and query when looking for an article by keyword.
+*/
 module.exports = (function() {
 
   'use strict';
@@ -7,7 +11,12 @@ module.exports = (function() {
 
   class V1ArtKeysController extends Nodal.Controller {
 
+/**
+* Queries the articles and keyword tables 
+* returns an article and it's associated keyword as JSON
+*/
     index() {
+
 
       ArtKey.query()
         .join('article')
@@ -22,7 +31,6 @@ module.exports = (function() {
     }
 
     show() {
-
       ArtKey.find(this.params.route.id, (err, model) => {
 
         this.respond(err || model);
