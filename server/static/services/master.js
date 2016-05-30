@@ -1,8 +1,21 @@
+/** Worker Service
+* v 0.0.1 runs when the /test endpoint is hit. 
+* will eventually run on a schedule
+*/
+
 var rp = require('request-promise');
 var pb = require('./parseBot.js');
 
+/** Accpts and HTTP request and response
+* reads the channels database
+* gets the last updated date
+* checks the publishers URL to see if they have fresh conent
+* if there is new conent it updates the last_updated date in the channel table
+* and calls the parseBot service passing in the appropriate params 
+*/
 module.exports = (req, res) => {
   'use strict'
+
   rp('http://127.0.0.1:3000/v1/channels')
   .then( data => {
     data = JSON.parse(data);

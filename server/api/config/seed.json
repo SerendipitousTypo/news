@@ -1,3 +1,4 @@
+/**Seed file to use when initally loading data to the tables*/
 {
 
   "development": {
