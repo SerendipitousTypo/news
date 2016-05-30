@@ -11,6 +11,7 @@ module.exports = (function() {
   ArtKey.setDatabase(Nodal.require('db/main.js'));
   ArtKey.setSchema(Nodal.my.Schema.models.ArtKey);
 
+//Join statements for art_key join table
   ArtKey.joinsTo(Keyword, {multiple: true});
   ArtKey.joinsTo(Article, {multiple: true});
 
