@@ -1,3 +1,9 @@
+/**
+* This is the api controller for the channels table.
+* It manages the creation and maintenance of all channels  
+* all methods are default in v0.0.1
+*/
+
 module.exports = (function() {
 
   'use strict';

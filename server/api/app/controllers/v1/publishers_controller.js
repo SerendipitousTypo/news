@@ -1,3 +1,8 @@
+/**
+* This is the api controller for the publishers table.
+* It manages the creation and maintenance of all publishers  
+* all methods are default in v0.0.1
+*/
 module.exports = (function() {
 
   'use strict';
