@@ -1,4 +1,4 @@
-
+/** Middleware module*/
 
 module.exports  = (app, express) => {
   console.log(__dirname);

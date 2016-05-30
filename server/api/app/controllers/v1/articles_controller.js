@@ -1,3 +1,8 @@
+/**
+* This is the api controller for the aricles table.
+* It manages the creation and retrival of all articles 
+*/
+
 module.exports = (function() {
 
   'use strict';
@@ -7,6 +12,11 @@ module.exports = (function() {
 
   class V1ArticlesController extends Nodal.Controller {
 
+
+/**
+* Queries the articles table
+* returns an article, with it's publisher region and channel name as JSON
+*/
     index() {
 
       Article.query()
