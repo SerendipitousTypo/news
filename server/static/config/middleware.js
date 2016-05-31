@@ -1,7 +1,14 @@
 /** Middleware module*/
+var webpack = require('webpack');
+var webpackDevMiddleware = require('webpack-dev-middleware');
+var webpackHotMiddleware = require('webpack-hot-middleware');
+var config = require('./webpack.config.js');
 
 module.exports  = (app, express) => {
-  console.log(__dirname);
-  app.use(express.static(__dirname + '/../../../client'));
+//set up webpack compiler and middleware
+  var complier = webpack(config);
+  app.use(webpackDevMiddleware(complier,{publicPath: config.output.publicPath}));
+  app.use(webpackHotMiddleware(compiler));
 
+  app.use(express.static(__dirname + '/../../../client'));
 }
