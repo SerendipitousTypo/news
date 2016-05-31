@@ -1,6 +1,7 @@
 const article = (state, action) => {
   switch (action.type) {
-    case: 'OPEN_ARTICLE'
+    case 'OPEN_ARTICLE':
+      return state;
       //change view to ARTICLE_VIEW
       //get content of ARTICLE
     default:
@@ -37,4 +38,4 @@ const articles = (state, action) => {
   }
 }
 
-export default articles
+// export default articles
