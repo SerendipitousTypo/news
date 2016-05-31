@@ -1,30 +1,26 @@
 class App extends React.Component {
-  // constructor (props) {
-  //   super(props);
-
-  // }
-
-  // getArticles(cb) {
-  //   var articles;
-  //   this.serverRequest = $.get('http://localhost:3000/v1/articles', function (result) {
-  //     console.log('result: ', result.data);
-  //     articles = result.data;
-  //     this.setState({articles: articles});
-  //   }.bind(this));
-
-  //   return articles;
-  // }
 
   componentDidMount() {
     // let articles = this.getArticles();
-    console.log('store: ', store.getState());
+    this.unsubscribe = store.subscribe(() =>
+      this.forceUpdate()
+    );
+
+    $.get('http://localhost:3000/v1/articles', function (result) {
+      store.dispatch({type: 'LOAD_ARTICLES', articles: result.data});
+    }.bind(this));
   }
 
-  // componentWillUnmount() {
-  //   this.serverRequest.abort();
-  // }
+  componentWillUnmount() {
+    this.unsubscribe();
+  }
 
   render() {
+    const props = this.props;
+    const state = store.getState();
+
+    // console.log('state: ', state);
+
     return (
 
       <div className="row">
@@ -39,13 +35,11 @@ class App extends React.Component {
           </div>
           <div className="row">
             <div className="col-md-12">
-              <Main articles={store.getState()} />
+              <Main articles={state.articles} />
             </div>
           </div>
         </div>
       </div>
     );
   }
-
-
 }

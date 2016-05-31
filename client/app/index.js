@@ -8,50 +8,7 @@
 
 let createStore = Redux.createStore;
 
-let store = createStore(articles, [
-        {
-          region: 'North America',
-          publisher: 'NY Times',
-          title: 'title1',
-          snippet: 'some snippet about the article',
-          url: 'https://www.google.com'
-        },
-        {
-          region: 'North America',
-          publisher: 'NY Times',
-          title: 'title2',
-          snippet: 'some snippet about the article',
-          url: 'https://www.google.com'
-        },
-        {
-          region: 'North America',
-          publisher: 'NY Times',
-          title: 'title3',
-          snippet: 'some snippet about the article',
-          url: 'https://www.google.com'
-        },
-        {
-          region: 'Russia',
-          publisher: 'NY Times',
-          title: 'title1',
-          snippet: 'some snippet about the article',
-          url: 'https://www.google.com'
-        },
-        {
-          region: 'Russia',
-          publisher: 'NY Times',
-          title: 'title2',
-          snippet: 'some snippet about the article',
-          url: 'https://www.google.com'
-        },
-        {
-          region: 'Russia',
-          publisher: 'NY Times',
-          title: 'title3',
-          snippet: 'some snippet about the article',
-          url: 'https://www.google.com'
-        }
-      ]);
+let store = createStore(newsApp)
 
 //TODO: how does Provider work?
 ReactDOM.render(

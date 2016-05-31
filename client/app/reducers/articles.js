@@ -9,24 +9,14 @@ const article = (state, action) => {
   }
 }
 
-//TODO: convert to es6
-const getArticles = () => {
-    let articles;
-    this.serverRequest = $.get('http://localhost:3000/v1/articles', function (result) {
-      console.log('result: ', result.data);
-      articles = result.data;
-    }.bind(this));
-
-    return articles;
-  }
-
-const articles = (state, action) => {
+const articles = (state = [], action) => {
+  console.log('action: ', action);
   switch (action.type) {
-    case "LOAD_ARTICLES":
+    case 'LOAD_ARTICLES':
       //clear current articles collection and retrieve new articles
-      return getArticles()
+      return action.articles;
 
-    case "ADD_ARTICLES":
+    case 'ADD_ARTICLES':
       //add to current articles collection
       return [
         ...state,
