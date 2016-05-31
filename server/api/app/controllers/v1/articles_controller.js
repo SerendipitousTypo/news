@@ -9,6 +9,12 @@ module.exports = (function() {
 
   const Nodal = require('nodal');
   const Article = Nodal.require('app/models/article.js');
+  const elasticSearch = require('elasticsearch');
+
+  const client = new elasticSearch.Client({
+    host: 'localhost:9200',
+    log: 'trace'
+  });
 
   class V1ArticlesController extends Nodal.Controller {
 
@@ -43,9 +49,35 @@ module.exports = (function() {
 
     create() {
 
+      let article_title = this.params.body.title || '';
+      let article_url = this.params.body.url || '';
+      let article_content = this.params.body.content || '';
+      let article_id;
+
       Article.create(this.params.body, (err, model) => {
 
+        article_id = model.get('id');
+        console.log('this is the article id', article_id);
+
+        const esPost = {
+          index: 'articles',
+          type: 'article',
+          body: {
+            id: article_id,
+            title: article_title,
+            url: article_url,
+            content: article_content
+          }
+        };
+
+        client.create(esPost)
+        .then(response => {
+          console.log('response ===========>', response);
+        }, error => console.log('error ===========>', error))
+        .catch(err => console.log('error ============>', err));
+
         this.respond(err || model);
+
 
       });
 
