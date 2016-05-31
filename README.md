@@ -5,11 +5,12 @@ A news reader app offerring perspectives from around the world.
 ##How to start the app
 
 ###Install dependencies: 
-*!Important: npm install should be run twice from two different folders:
-parent folder and server/api*
+- [ ] Install client dependencies by running `npm install` at /client
+- [ ] Install api dependencies by running `npm install` at /server/api
+- [ ] Intall static server dependencies by running `npm install` at root
 
 ####Static Server
-- [ ] Navigate to news/server 
+- [ ] Navigate to root 
 - [ ] Run npm install to install dependencies.
 
 ####Client
@@ -42,6 +43,13 @@ __This will populate the articles database with the following:__
 - Times of India: World channel
 - Al Jazeera: Al Jazeera America channel
 - BBC: US 2016 Election channel
+
+###Complie client side code:
+- [ ] Navigate to /client
+- [ ] run `npm start`
+
+You can now open localhost:8085/ and load the index.html page
+
 
 
 ##Query Strings for Ajax calls
