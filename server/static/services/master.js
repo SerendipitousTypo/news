@@ -44,6 +44,8 @@ module.exports = (/*req,  res*/) => {
 
         if(modDate > lastUpdate && response.body !== undefined) {
           //update the lastMod
+  
+         
          let options = {
             method: 'PUT',
             uri: 'http://127.0.0.1:3000/v1/channels/' + data.id,
@@ -52,10 +54,10 @@ module.exports = (/*req,  res*/) => {
             }, 
             json: true
           }
+
           rp(options)
-          .then(some => console.log('posted'))
-          .catch(err => console.log('shit', err));
-          console.log('made it in the if');
+          .then(some => some)
+          .catch(err =>  err);
           pb(data.url, data.publisher_id);
         }      
       }
@@ -63,5 +65,5 @@ module.exports = (/*req,  res*/) => {
     })
     // res.send('done');
   })
-  .catch( err => console.log(err));
+  .catch( err => err);
 }
