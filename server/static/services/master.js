@@ -6,16 +6,17 @@
 var rp = require('request-promise');
 var pb = require('./parseBot.js');
 
-/** Accpts and HTTP request and response
+/** Accepts and HTTP request and response
 * reads the channels database
 * gets the last updated date
 * checks the publishers URL to see if they have fresh conent
 * if there is new conent it updates the last_updated date in the channel table
 * and calls the parseBot service passing in the appropriate params 
 */
-module.exports = (req, res) => {
+module.exports = (/*req,  res*/) => {
   'use strict'
 
+  console.log('doing the masterbot stuff $$$$$$$$$$$$$$$$$$$$$');
   rp('http://127.0.0.1:3000/v1/channels')
   .then( data => {
     data = JSON.parse(data);
@@ -60,7 +61,7 @@ module.exports = (req, res) => {
       }
       ).catch (err => console.log('ERRRRRROOOOOR', err));
     })
-    res.send('done');
+    // res.send('done');
   })
   .catch( err => console.log(err));
 }

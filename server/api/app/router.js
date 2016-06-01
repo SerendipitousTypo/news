@@ -37,6 +37,7 @@ module.exports = (function() {
   const V1ArtKeysController = Nodal.require('app/controllers/v1/art_keys_controller.js');
   // const ChannelsController = Nodal.require('app/controllers/channels_controller.js');
   const V1ChannelsController = Nodal.require('app/controllers/v1/channels_controller.js');
+  const V1SearchController = Nodal.require('app/controllers/v1/search_controller.js');
 
   /* generator: end imports */
 
@@ -51,6 +52,7 @@ module.exports = (function() {
   router.route('/v1/art_keys/{id}').use(V1ArtKeysController);
   // router.route('/channels/{id}').use(ChannelsController);
   router.route('/v1/channels/{id}').use(V1ChannelsController);
+  router.route('/v1/search').use(V1SearchController);
 
   /* generator: end routes */
 
