@@ -1,0 +1,1870 @@
+{
+    "date": 1464822944553,
+    "location": "Article post error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"articles_title_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/articles",
+            "body": {
+                "title": "Kurdish-led Syrian forces advance on key ISIS stronghold",
+                "date": "Wed, 01 Jun 2016 14:43:49 GMT",
+                "url": "http://timesofindia.indiatimes.com/world/middle-east/Kurdish-led-Syrian-forces-advance-on-key-Islamic-State-stronghold/articleshow/52540070.cms",
+                "content": "Kurdish-led Syrian fighters have launched a new advance on the northern town of Manbij, a key Islamic State stronghold, with the aid of US-led air strikes, a spokesman for the fighters and a monitoring group said on Wednesday.",
+                "publisher_id": 2
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"articles_title_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 23:15:44 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/articles",
+                    "path": "/v1/articles",
+                    "href": "http://127.0.0.1:3000/v1/articles"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 515
+                }
+            }
+        }
+    }
+}{
+    "date": 1464822944555,
+    "location": "Article post error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"articles_title_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/articles",
+            "body": {
+                "title": "Israel PM under fire over his wife’s slew of scandals",
+                "date": "Wed, 01 Jun 2016 17:35:44 GMT",
+                "url": "http://timesofindia.indiatimes.com/world/middle-east/Israels-Benjamin-Netanyahu-under-fire-over-his-wifes-slew-of-scandals/articleshow/52542927.cms",
+                "content": "Already under fire in Israel and abroad, Prime Minister Benjamin Netanyahu is now dealing with headaches on the home front following a series of scandals involving his wife. A trio of cases, including a police investigation into possible improper spending by Sara Netanyahu, have embarrassed the prime minister.",
+                "publisher_id": 2
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"articles_title_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 23:15:44 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/articles",
+                    "path": "/v1/articles",
+                    "href": "http://127.0.0.1:3000/v1/articles"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 603
+                }
+            }
+        }
+    }
+}{
+    "date": 1464822944556,
+    "location": "Article post error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"articles_title_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/articles",
+            "body": {
+                "title": "Donald Trump to visit UK day after Brexit vote",
+                "date": "Wed, 01 Jun 2016 17:30:46 GMT",
+                "url": "http://timesofindia.indiatimes.com/us-elections-2016/Donald-Trump-to-visit-UK-day-after-Brexit-vote/articleshow/52542875.cms",
+                "content": "Donald Trump said in a statement he would come to Britain on June 24 — the same day the result of the crucial vote is expected. The billionaire tycoon has previously said he believed Britain should leave the EU.",
+                "publisher_id": 2
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"articles_title_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 23:15:44 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/articles",
+                    "path": "/v1/articles",
+                    "href": "http://127.0.0.1:3000/v1/articles"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 473
+                }
+            }
+        }
+    }
+}{
+    "date": 1464822944556,
+    "location": "Article post error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"articles_title_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/articles",
+            "body": {
+                "title": "Six killed as Taliban bombers raid Afghan courthouse",
+                "date": "Wed, 01 Jun 2016 14:31:25 GMT",
+                "url": "http://timesofindia.indiatimes.com/world/south-asia/Six-killed-as-Taliban-bombers-raid-Afghan-courthouse/articleshow/52539897.cms",
+                "content": "Taliban suicide bombers wearing police uniforms raided a courthouse in the eastern Afghan city of Ghazni on Wednesday, killing six people in what they said was revenge for last month's execution of six Taliban-linked prisoners. On Tuesday, the Taliban killed 10 bus passengers in Kunduz.",
+                "publisher_id": 2
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"articles_title_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 23:15:44 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/articles",
+                    "path": "/v1/articles",
+                    "href": "http://127.0.0.1:3000/v1/articles"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 558
+                }
+            }
+        }
+    }
+}{
+    "date": 1464822944558,
+    "location": "Article post error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"articles_title_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/articles",
+            "body": {
+                "title": "UN projects in Mali attacked, peacekeeper among 3 killed",
+                "date": "Wed, 01 Jun 2016 14:59:01 GMT",
+                "url": "http://timesofindia.indiatimes.com/world/rest-of-world/UN-projects-in-Mali-attacked-peacekeeper-among-3-killed/articleshow/52540278.cms",
+                "content": "The United Nations peacekeeping mission spokesman said a rocket or mortar attack on Tuesday night killed one UN peacekeeper and gravely wounded three others at the mission's camp in the city of Gao in Mali. It said more than 10 peacekeepers were lightly wounded.",
+                "publisher_id": 2
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"articles_title_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 23:15:44 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/articles",
+                    "path": "/v1/articles",
+                    "href": "http://127.0.0.1:3000/v1/articles"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 543
+                }
+            }
+        }
+    }
+}{
+    "date": 1464822944558,
+    "location": "Article post error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"articles_title_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/articles",
+            "body": {
+                "title": "Ex-Dominican leader who toppled dictator dies at 95",
+                "date": "Wed, 01 Jun 2016 14:53:45 GMT",
+                "url": "http://timesofindia.indiatimes.com/world/rest-of-world/Antonio-Imbert-Barrera-ex-Dominican-leader-who-toppled-dictator-dies-at-95/articleshow/52540160.cms",
+                "content": "Former Dominican president and general Antonio Imbert Barrera, who was the last survivor of a group that toppled a brutal dictator Juan Bosch in 1963, died on Tuesday. He was 95. Dominican President Danilo Medina has declared three days of mourning.",
+                "publisher_id": 2
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"articles_title_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 23:15:44 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/articles",
+                    "path": "/v1/articles",
+                    "href": "http://127.0.0.1:3000/v1/articles"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 544
+                }
+            }
+        }
+    }
+}{
+    "date": 1464822944559,
+    "location": "Article post error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"articles_title_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/articles",
+            "body": {
+                "title": "Saudi Arabia sentences 14 to death for terrorism",
+                "date": "Wed, 01 Jun 2016 09:40:43 GMT",
+                "url": "http://timesofindia.indiatimes.com/world/middle-east/Saudi-Arabia-sentences-14-to-death-for-terrorism/articleshow/52535789.cms",
+                "content": "Some Saudi Shi'ites complain they suffer systematic discrimination in Saudi Arabia, whose majority follow a strict form of Sunni Islam that regards the minority sect as heretical. The government denies that.",
+                "publisher_id": 2
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"articles_title_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 23:15:44 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/articles",
+                    "path": "/v1/articles",
+                    "href": "http://127.0.0.1:3000/v1/articles"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 471
+                }
+            }
+        }
+    }
+}{
+    "date": 1464822944568,
+    "location": "Article post error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"articles_title_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/articles",
+            "body": {
+                "title": "US warns Euro 2016 soccer possible terror target",
+                "date": "Wed, 01 Jun 2016 00:29:07 GMT",
+                "url": "http://timesofindia.indiatimes.com/world/us/US-warns-Euro-2016-soccer-possible-terror-target/articleshow/52529655.cms",
+                "content": "The United States warned its citizens Tuesday that this summer's Euro 2016 soccer tournament and related events across France and Europe will present \"potential targets for terrorists.\"",
+                "publisher_id": 2
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"articles_title_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 23:15:44 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/articles",
+                    "path": "/v1/articles",
+                    "href": "http://127.0.0.1:3000/v1/articles"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 442
+                }
+            }
+        }
+    }
+}{
+    "date": 1464822944569,
+    "location": "Article post error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"articles_title_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/articles",
+            "body": {
+                "title": "Philippine president-elect offers bounties for drug lords",
+                "date": "Tue, 31 May 2016 17:06:03 GMT",
+                "url": "http://timesofindia.indiatimes.com/world/rest-of-world/Philippine-president-elect-offers-bounties-for-drug-lords/articleshow/52526491.cms",
+                "content": "The Philippine president-elect said he will pay bounties to police or military officials who capture suspected drug lords \"dead or alive\", adding that there is enough reward money to leave \"100 persons dead\". Rodrigo Duterte said he will pay up to 3 million pesos ($64,000) for every drug lord that officials turn in.",
+                "publisher_id": 2
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"articles_title_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 23:15:44 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/articles",
+                    "path": "/v1/articles",
+                    "href": "http://127.0.0.1:3000/v1/articles"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 605
+                }
+            }
+        }
+    }
+}{
+    "date": 1464822944570,
+    "location": "Article post error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"articles_title_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/articles",
+            "body": {
+                "title": "Boeing wins $3.2 billion US defense contract",
+                "date": "Wed, 01 Jun 2016 00:25:34 GMT",
+                "url": "http://timesofindia.indiatimes.com/world/us/Boeing-wins-3-2-billion-US-defense-contract/articleshow/52529640.cms",
+                "content": "Boeing Co was awarded a USD 3.2 billion contract modification to a previously awarded contract for Joint Direct Attack Munition (JDAM) tailkits, the Pentagon said on Tuesday.",
+                "publisher_id": 2
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"articles_title_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 23:15:44 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/articles",
+                    "path": "/v1/articles",
+                    "href": "http://127.0.0.1:3000/v1/articles"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 420
+                }
+            }
+        }
+    }
+}{
+    "date": 1464822944570,
+    "location": "Article post error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"articles_title_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/articles",
+            "body": {
+                "title": "Kenya protests ‘dogs and slaves’ remark by Egypt envoy",
+                "date": "Wed, 01 Jun 2016 14:18:50 GMT",
+                "url": "http://timesofindia.indiatimes.com/world/rest-of-world/Kenya-protests-dogs-and-slaves-remark-by-Egyptian-diplomat/articleshow/52539805.cms",
+                "content": "A Kenyan diplomat has written to the dean of the Africa Diplomatic Corps to protest what she calls \"uncivilized, undiplomatic, irresponsible, degrading and insulting behavior\" by an Egyptian diplomat who is alleged to have called sub-Saharan Africans \"slaves and dogs\".",
+                "publisher_id": 2
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"articles_title_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 23:15:44 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/articles",
+                    "path": "/v1/articles",
+                    "href": "http://127.0.0.1:3000/v1/articles"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 559
+                }
+            }
+        }
+    }
+}{
+    "date": 1464822944572,
+    "location": "Article post error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"articles_title_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/articles",
+            "body": {
+                "title": "Brazil approves increased penalties for gang rape",
+                "date": "Wed, 01 Jun 2016 03:36:05 GMT",
+                "url": "http://timesofindia.indiatimes.com/world/rest-of-world/Brazilian-Senate-approves-increased-penalties-for-gang-rape/articleshow/52531022.cms",
+                "content": "With the new law approved by the Senate on Tuesday, the penalty for gang rape would be increased up to over 13 years, although the sentence could be higher if the victim is under 14 or dies after the assault.",
+                "publisher_id": 2
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"articles_title_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 23:15:44 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/articles",
+                    "path": "/v1/articles",
+                    "href": "http://127.0.0.1:3000/v1/articles"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 486
+                }
+            }
+        }
+    }
+}{
+    "date": 1464822944572,
+    "location": "Article post error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"articles_title_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/articles",
+            "body": {
+                "title": "Nato to designate cyber as operational domain of war",
+                "date": "Wed, 01 Jun 2016 11:04:25 GMT",
+                "url": "http://timesofindia.indiatimes.com/world/europe/Nato-to-designate-cyber-as-operational-domain-of-war-German-official/articleshow/52536861.cms",
+                "content": "Nato members will likely agree​ to designate cyber as an official operational domain of warfare along with air, sea, land and space, according to a German official. The agreement will be made during a summit meeting in Warsaw in July.",
+                "publisher_id": 2
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"articles_title_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 23:15:44 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/articles",
+                    "path": "/v1/articles",
+                    "href": "http://127.0.0.1:3000/v1/articles"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 519
+                }
+            }
+        }
+    }
+}{
+    "date": 1464822944572,
+    "location": "Article post error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"articles_title_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/articles",
+            "body": {
+                "title": "Thousands flee Fallujah as battle continues: UN",
+                "date": "Wed, 01 Jun 2016 02:28:25 GMT",
+                "url": "http://timesofindia.indiatimes.com/world/middle-east/Thousands-fleeing-Fallujah-as-Iraqi-forces-and-ISIS-battle-on-UN/articleshow/52530251.cms",
+                "content": "Nearly 3,700 people have fled Fallujah over the past week amid a new offensive by Iraqi forces to retake the besieged city from the Islamic State, the UN said on Tuesday. But around 50,000 civilians trapped inside the Iraqi city risk being turned into \"human shields\" by the terrorists.",
+                "publisher_id": 2
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"articles_title_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 23:15:44 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/articles",
+                    "path": "/v1/articles",
+                    "href": "http://127.0.0.1:3000/v1/articles"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 567
+                }
+            }
+        }
+    }
+}{
+    "date": 1464822944573,
+    "location": "Article post error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"articles_title_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/articles",
+            "body": {
+                "title": "China's textbook criticized for including Bible story",
+                "date": "Wed, 01 Jun 2016 05:28:28 GMT",
+                "url": "http://timesofindia.indiatimes.com/world/china/Chinas-textbook-criticized-for-including-Bible-story/articleshow/52532090.cms",
+                "content": "The inclusion of a Bible story for the first time in a textbook in secondary schools in Beijing has sparked a controversy. Some outraged people criticized the book saying that it spreads Western values and violates the law which separated education from religion.",
+                "publisher_id": 2
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"articles_title_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 23:15:44 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/articles",
+                    "path": "/v1/articles",
+                    "href": "http://127.0.0.1:3000/v1/articles"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 530
+                }
+            }
+        }
+    }
+}{
+    "date": 1464822944573,
+    "location": "Article post error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"articles_title_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/articles",
+            "body": {
+                "title": "Mass sexual assault reported at German music festival",
+                "date": "Wed, 01 Jun 2016 02:41:00 GMT",
+                "url": "http://timesofindia.indiatimes.com/world/europe/26-women-report-sexual-assault-at-German-music-festival/articleshow/52530407.cms",
+                "content": "The women, who between them filed 14 criminal complaints, said they were encircled and groped by groups of men in ways that recalled mob attacks at chaotic New Year's festivities in Cologne. Police said three Pakistani men aged 28 to 31, at least two of them asylum seekers, were arrested.",
+                "publisher_id": 2
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"articles_title_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 23:15:44 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/articles",
+                    "path": "/v1/articles",
+                    "href": "http://127.0.0.1:3000/v1/articles"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 560
+                }
+            }
+        }
+    }
+}{
+    "date": 1464822944573,
+    "location": "Article post error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"articles_title_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/articles",
+            "body": {
+                "title": "Gorilla ‘murder’ in US zoo sparks widespread outrage",
+                "date": "Tue, 31 May 2016 16:44:50 GMT",
+                "url": "http://timesofindia.indiatimes.com/world/us/Warfare-over-gorilla-tactics-in-US-zoo-incident-resulting-in-murder-of-primate/articleshow/52525960.cms",
+                "content": "Public fury is mounting against human stupidity amid continuing uproar over the \"murder\" of a rare gorilla that had to be put down by authorities at the Cincinnati Zoo after a toddler who slipped into the primate’s enclosure was assessed to be in a life-threatening situation.",
+                "publisher_id": 2
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"articles_title_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 23:15:44 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/articles",
+                    "path": "/v1/articles",
+                    "href": "http://127.0.0.1:3000/v1/articles"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 574
+                }
+            }
+        }
+    }
+}{
+    "date": 1464822944574,
+    "location": "Article post error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"articles_title_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/articles",
+            "body": {
+                "title": "Taliban attack buses in Afghanistan, kill 9, kidnap 35",
+                "date": "Tue, 31 May 2016 12:47:49 GMT",
+                "url": "http://timesofindia.indiatimes.com/world/south-asia/Taliban-attack-buses-in-north-Afghanistan-kill-9-kidnap-35/articleshow/52522512.cms",
+                "content": "The Taliban attacked several buses on a road in northern Afghanistan on Tuesday morning, forcing passengers to disembark and killing nine people and kidnapping at least 35, officials said. The attack in northern Kunduz province took place in Aliabad district as the buses were travelling from Kabul.",
+                "publisher_id": 2
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"articles_title_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 23:15:44 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/articles",
+                    "path": "/v1/articles",
+                    "href": "http://127.0.0.1:3000/v1/articles"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 578
+                }
+            }
+        }
+    }
+}{
+    "date": 1464822944576,
+    "location": "Article post error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"articles_title_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/articles",
+            "body": {
+                "title": "Ukraine's released pilot assumes parliament seat",
+                "date": "Tue, 31 May 2016 14:27:12 GMT",
+                "url": "http://timesofindia.indiatimes.com/world/europe/Ukrainian-Pilot-and-MP-Nadiya-Savchenko-attends-her-first-session-in-Parliament-after-release/articleshow/52523709.cms",
+                "content": "Ukrainian pilot and MP Nadiya Savchenko has turned into a national symbol of resistance to Russia since joining a volunteer battalion fighting pro-Kremlin eastern separatist insurgents and then being taken prisoner in June 2014.",
+                "publisher_id": 2
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"articles_title_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 23:15:44 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/articles",
+                    "path": "/v1/articles",
+                    "href": "http://127.0.0.1:3000/v1/articles"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 532
+                }
+            }
+        }
+    }
+}{
+    "date": 1464822944577,
+    "location": "Article post error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"articles_title_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/articles",
+            "body": {
+                "title": "Student burned alive by ex-boyfriend in Rome: Police",
+                "date": "Tue, 31 May 2016 12:25:53 GMT",
+                "url": "http://timesofindia.indiatimes.com/world/europe/Student-burned-alive-by-ex-boyfriend-in-Rome-police-say/articleshow/52521985.cms",
+                "content": "A Rome university student, Sara Di Pietrantonio (22), was burned alive by her ex-boyfriend, Vincenzo Paduano (27) on Sunday.  Paduano set her car afire and chased her after she ran out of the car, setting her ablaze when he caught up with her.",
+                "publisher_id": 2
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"articles_title_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 23:15:44 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/articles",
+                    "path": "/v1/articles",
+                    "href": "http://127.0.0.1:3000/v1/articles"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 513
+                }
+            }
+        }
+    }
+}{
+    "date": 1464823356603,
+    "location": "Article post error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"articles_title_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"articles_title_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/articles",
+            "body": {
+                "title": "What's news",
+                "date": "2016-05-26 08:25:51",
+                "url": "http://usa.chinadaily.com.cn/epaper/2016-05/26/content_25478839.htm",
+                "content": "Govts & policies",
+                "publisher_id": 5
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"articles_title_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"articles_title_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 23:22:36 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/articles",
+                    "path": "/v1/articles",
+                    "href": "http://127.0.0.1:3000/v1/articles"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 174
+                }
+            }
+        }
+    }
+}

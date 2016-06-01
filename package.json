@@ -15,7 +15,7 @@
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
     "request-promise": "^3.0.0",
-    "rss-parser": "^2.2.4",
+    "rss-parser": "git://github.com/Elbertlum/rss-parser.git",
     "webpack": "^1.13.1",
     "webpack-dev-middleware": "^1.6.1",
     "webpack-hot-middleware": "^2.10.0"
