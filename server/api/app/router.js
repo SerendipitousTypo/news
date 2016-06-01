@@ -33,9 +33,6 @@ module.exports = (function() {
 
   const V1ArticlesController = Nodal.require('app/controllers/v1/articles_controller.js');
   const V1PublishersController = Nodal.require('app/controllers/v1/publishers_controller.js');
-  const V1KeywordsController = Nodal.require('app/controllers/v1/keywords_controller.js');
-  const V1ArtKeysController = Nodal.require('app/controllers/v1/art_keys_controller.js');
-  // const ChannelsController = Nodal.require('app/controllers/channels_controller.js');
   const V1ChannelsController = Nodal.require('app/controllers/v1/channels_controller.js');
   const V1SearchController = Nodal.require('app/controllers/v1/search_controller.js');
 
@@ -48,9 +45,6 @@ module.exports = (function() {
 /**API endpoints for PostGreSQL tables*/
   router.route('/v1/articles/{id}').use(V1ArticlesController);
   router.route('/v1/publishers/{id}').use(V1PublishersController);
-  router.route('/v1/keywords/{id}').use(V1KeywordsController);
-  router.route('/v1/art_keys/{id}').use(V1ArtKeysController);
-  // router.route('/channels/{id}').use(ChannelsController);
   router.route('/v1/channels/{id}').use(V1ChannelsController);
   router.route('/v1/search').use(V1SearchController);
 
