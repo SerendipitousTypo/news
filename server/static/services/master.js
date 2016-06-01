@@ -16,7 +16,7 @@ var pb = require('./parseBot.js');
 module.exports = (/*req,  res*/) => {
   'use strict'
 
-  console.log('doing the masterbot stuff $$$$$$$$$$$$$$$$$$$$$');
+  // console.log('doing the masterbot stuff $$$$$$$$$$$$$$$$$$$$$');
   rp('http://127.0.0.1:3000/v1/channels')
   .then( data => {
     data = JSON.parse(data);
