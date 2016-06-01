@@ -13,4 +13,4 @@ const fetchStatus = (state = false, action) => {
   }
 }
 
-// export default fetchingStatus;
+export default fetchingStatus;

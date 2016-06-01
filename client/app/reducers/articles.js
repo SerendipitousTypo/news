@@ -13,7 +13,7 @@ const articles = (state = [], action) => {
   console.log('action: ', action);
   switch (action.type) {
     case 'LOAD_ARTICLES':
-      //clear current articles collection and retrieve new articles
+        //clear current articles collection and retrieve new articles
       return action.articles;
 
     case 'ADD_ARTICLES':
@@ -28,4 +28,4 @@ const articles = (state = [], action) => {
   }
 }
 
-// export default articles
+export default articles

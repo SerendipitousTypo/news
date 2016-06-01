@@ -1,4 +1,4 @@
-var Search = ({}) => (
+export var Search = ({}) => (
   <div className="col-md-12">
     <div className="search">
       <input type="text" className="form-control" placeholder="Search..."/>
@@ -6,5 +6,5 @@ var Search = ({}) => (
   </div>
 );
 
-window.Search = Search;
+// window.Search = Search;
 
