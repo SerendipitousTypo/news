@@ -12,7 +12,7 @@ const app = express();
 require('./config/middleware.js')(app, express);
 
 mb();
-chron.add(120, mb);
+chron.add(30, mb);
 
 app.listen('8085');
 console.log('static server listening on 8085');
