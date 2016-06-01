@@ -1,0 +1,4506 @@
+{
+    "date": 1464819109035,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Presidential Election of 2016"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 43
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109037,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Presidential Election of 2016"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 43
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109037,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Trump, Donald J"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 29
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109037,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Presidential Election of 2016"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 43
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109037,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Presidential Election of 2016"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 43
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109037,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Clinton, Hillary Rodham"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 37
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109040,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Trump, Donald J"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 29
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109040,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Presidential Election of 2016"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 43
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109041,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "New Jersey"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 24
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109041,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Trump, Donald J"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 29
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109041,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Clinton, Hillary Rodham"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 37
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109041,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Booker, Cory A"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 28
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109041,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Obama, Barack"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 27
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109042,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Presidential Election of 2016"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 43
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109042,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Clinton, Hillary Rodham"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 37
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109042,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Trump, Donald J"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 29
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109042,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Obama, Barack"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 27
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109042,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Trump, Donald J"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 29
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109043,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Presidential Election of 2016"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 43
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109043,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Presidential Election of 2016"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 43
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109043,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Trump, Donald J"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 29
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109043,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Clinton, Hillary Rodham"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 37
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109043,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Presidential Election of 2016"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 43
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109044,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Presidential Election of 2016"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 43
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109044,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Clinton, Hillary Rodham"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 37
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109044,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Trump, Donald J"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 29
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109044,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "International Trade and World Market"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 50
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109044,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Trans-Pacific Partnership"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 39
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109070,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Presidential Election of 2016"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 43
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109070,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Trump, Donald J"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 29
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109070,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Veterans"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 22
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109070,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Republican Party"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 30
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109070,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Trump, Donald J"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 29
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109071,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Presidential Election of 2016"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 43
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109071,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Suits and Litigation (Civil)"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 42
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109071,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Trump University"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 30
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109071,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Trump, Donald J"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 29
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109071,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Presidential Election of 2016"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 43
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109071,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Presidential Election of 2016"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:48 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 43
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109072,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Presidential Election of 2016"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:49 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 43
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109072,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Presidential Election of 2016"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:49 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 43
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109072,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Trump, Donald J"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:49 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 29
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109072,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Presidential Election of 2016"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:49 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 43
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109072,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Clinton, Hillary Rodham"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:49 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 37
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109072,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Sanders, Bernard"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:49 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 30
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109073,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "California"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:49 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 24
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109073,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Trump, Donald J"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:49 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 29
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109073,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Presidential Election of 2016"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:49 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 43
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109073,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Presidential Election of 2016"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:49 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 43
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109073,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Sanders, Bernard"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:49 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 30
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109074,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Clinton, Hillary Rodham"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:49 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 37
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109074,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "Primaries and Caucuses"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:49 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 36
+                }
+            }
+        }
+    }
+}{
+    "date": 1464819109074,
+    "location": "keyword entry error in parsebot",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - {\"meta\":{\"total\":0,\"count\":0,\"offset\":0,\"error\":{\"message\":\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\",\"details\":{\"_query\":[\"duplicate key value violates unique constraint \\\"keywords_keyword_unique\\\"\"]}}},\"data\":[]}",
+        "error": {
+            "meta": {
+                "total": 0,
+                "count": 0,
+                "offset": 0,
+                "error": {
+                    "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                    "details": {
+                        "_query": [
+                            "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                        ]
+                    }
+                }
+            },
+            "data": []
+        },
+        "options": {
+            "method": "POST",
+            "uri": "http://127.0.0.1:3000/v1/keywords",
+            "body": {
+                "keyword": "United States Politics and Government"
+            },
+            "json": true,
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": {
+                "meta": {
+                    "total": 0,
+                    "count": 0,
+                    "offset": 0,
+                    "error": {
+                        "message": "duplicate key value violates unique constraint \"keywords_keyword_unique\"",
+                        "details": {
+                            "_query": [
+                                "duplicate key value violates unique constraint \"keywords_keyword_unique\""
+                            ]
+                        }
+                    }
+                },
+                "data": []
+            },
+            "headers": {
+                "access-control-allow-origin": "*",
+                "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+                "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "content-type": "application/json; charset=utf-8",
+                "x-powered-by": "fxn",
+                "date": "Wed, 01 Jun 2016 22:11:49 GMT",
+                "connection": "close",
+                "transfer-encoding": "chunked"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "http:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "127.0.0.1:3000",
+                    "port": "3000",
+                    "hostname": "127.0.0.1",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/v1/keywords",
+                    "path": "/v1/keywords",
+                    "href": "http://127.0.0.1:3000/v1/keywords"
+                },
+                "method": "POST",
+                "headers": {
+                    "accept": "application/json",
+                    "content-type": "application/json",
+                    "content-length": 51
+                }
+            }
+        }
+    }
+}
