@@ -1,9 +1,9 @@
-// import { combineReducers } from 'redux'
-// import articles from './articles'
+import { combineReducers } from 'redux'
+import articles  from './articles'
 
-let { combineReducers } = Redux;
+// let { combineReducers } = Redux;
 
-const newsApp = combineReducers({
+export default combineReducers({
   articles
 });
 

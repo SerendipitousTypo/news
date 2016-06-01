@@ -1,20 +1,22 @@
-<<<<<<< 8737d8fe75e37cc421b8995cd8e51319ec756236
 
 import React from 'react'
 import { render } from 'react-dom'
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
-import { articles } from './articles'
+import { articles } from './reducers/articles';
+import reducer  from './reducers/index';
 import { App } from './components/App';
 // //TODO: convert all jsx files to js files
 
-let createStore = Redux.createStore;
+// let createStore = Redux.createStore;
 
-let store = createStore(newsApp)
+
+// let store = createStore(reducer)
+// console.log('store ====>', store);
 
 //TODO: how does Provider work?
 ReactDOM.render(
-    <App />,
+    <App store={createStore(reducer)} />,
   document.getElementById('app')
 );
 

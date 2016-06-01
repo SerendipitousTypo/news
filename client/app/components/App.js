@@ -78,7 +78,8 @@ export class App extends React.Component {
   }
 
   componentDidMount() {
-    // let articles = this.getArticles();
+    const { store } = this.props;
+    let articles = this.getArticles();
     this.unsubscribe = store.subscribe(() =>
       this.forceUpdate()
     );
@@ -93,10 +94,11 @@ export class App extends React.Component {
   }
 
   render() {
+    const { store } = this.props;
     const props = this.props;
     const state = store.getState();
 
-    // console.log('state: ', state);
+    console.log('state: ', state);
 
     return (
 
