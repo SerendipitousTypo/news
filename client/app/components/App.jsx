@@ -89,6 +89,7 @@ class App extends React.Component {
   //   }
   // }
 
+<<<<<<< 6557371501316878f31c82c9ab0edf278fe43b9a
 
   componentWillUnmount() {
     this.serverRequest.abort();
