@@ -23,11 +23,6 @@ A news reader app offerring perspectives from around the world.
 - [ ] navigate to news/server/api
 - [ ] run `nodal db:bootstrap`
 
-###Start Static Server 
-- [ ] open terminal window
-- [ ] navigate to news/server/static
-- [ ] run `nodemon server.js`
-
 ###Start API Server 
 - [ ] open new terminal window
 - [ ] navigate to news/server/api
@@ -37,6 +32,10 @@ A news reader app offerring perspectives from around the world.
 - [ ] open a new terminal window
 - [ ] type `elasticsearch` and press enter
 
+###Start Static Server 
+- [ ] open terminal window
+- [ ] navigate to news/server/static
+- [ ] run `nodemon server.js`
 
 You can now open localhost:8085/ and load the index.html page
 
