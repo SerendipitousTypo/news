@@ -14,6 +14,6 @@ module.exports = (log, location, error) => {
     if (err) {
       console.log('file system error');
     }
-      console.log('Error log updated see: ', targetFile);
+    
   })
 }
