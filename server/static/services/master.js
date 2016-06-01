@@ -5,6 +5,8 @@
 
 var rp = require('request-promise');
 var pb = require('./parseBot.js');
+var e = require('./errors.js');
+
 
 /** Accepts and HTTP request and response
 * reads the channels database
@@ -16,7 +18,15 @@ var pb = require('./parseBot.js');
 module.exports = (/*req,  res*/) => {
   'use strict'
 
-  // console.log('doing the masterbot stuff $$$$$$$$$$$$$$$$$$$$$');
+/**Logs errors to a flat file
+*@params [filename]
+*@params [location] - This is the location where the error was called.  The function name or description
+*@params [error] - This is the error as returned as an argument to each catch block
+ */
+
+
+  //output to show the master bot is runnin
+  // console.log('<=====================>Master Bot Running<=======================>');
   rp('http://127.0.0.1:3000/v1/channels')
   .then( data => {
     data = JSON.parse(data);
@@ -37,13 +47,8 @@ module.exports = (/*req,  res*/) => {
       rp(data.url, options)
       .then(response => {  
         let modDate = Date.parse(response.headers['last-modified']);
-        // console.log('pre parse modDate: ', modDate);
-        
-        // console.log('modDate', typeof modDate, ":", modDate);
-        // console.log('lastUpdate', typeof lastUpdate, ":", lastUpdate)
 
         if(modDate > lastUpdate && response.body !== undefined) {
-          //update the lastMod
          let options = {
             method: 'PUT',
             uri: 'http://127.0.0.1:3000/v1/channels/' + data.id,
@@ -52,16 +57,20 @@ module.exports = (/*req,  res*/) => {
             }, 
             json: true
           }
+
           rp(options)
-          .then(some => console.log('posted'))
-          .catch(err => console.log('shit', err));
-          console.log('made it in the if');
+          .catch(err =>  {
+            e('dbErrorLog', 'last modified update', err);
+          });
           pb(data.url, data.publisher_id);
         }      
       }
-      ).catch (err => console.log('ERRRRRROOOOOR', err));
+      ).catch (err => {
+        e('dbErrorLog', 'channel update', err);
+      });
     })
-    // res.send('done');
   })
-  .catch( err => console.log(err));
+  .catch( err => 
+   e('dbErrorLog', 'channel table update', err)  
+  );
 }

@@ -5,14 +5,16 @@
     "Publisher": [
       {"name": "NY Times", "region": "North America"},
       {"name": "Times of India", "region": "Asia"},
-      {"name": "Al Jazeera", "region": "Middle East"},
-      {"name": "BBC", "region": "Europe"}
+      {"name": "The Pravda Report", "region": "Russia"},
+      {"name": "BBC", "region": "Europe"},
+      {"name": "China Daily", "region": "Asia"}
     ],
     "Channel": [
       {"name": "US Politics", "publisher_id": "1", "url": "http://rss.nytimes.com/services/xml/rss/nyt/Politics.xml"},
       {"name": "World", "publisher_id": "2", "url": "http://timesofindia.indiatimes.com/rssfeeds/296589292.cms"},
-      {"name": "Al Jazeera America", "publisher_id": "3", "url": "http://america.aljazeera.com/content/ajam/articles.rss"},
-      {"name": "US 2016 Election", "publisher_id": "4", "url": "http://feeds.bbci.co.uk/news/election/us2016/rss.xml"}
+      {"name": "World_R", "publisher_id": "3", "url": "http://www.pravdareport.com/world/export.xml"},
+      {"name": "US 2016 Election", "publisher_id": "4", "url": "http://feeds.bbci.co.uk/news/election/us2016/rss.xml"},
+      {"name": "USA", "publisher_id": "5", "url": "http://usa.chinadaily.com.cn/usa_kindle.xml"}
     ]
   },
 
