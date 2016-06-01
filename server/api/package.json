@@ -8,6 +8,7 @@
     "node": "6.0.0"
   },
   "dependencies": {
+    "elasticsearch": "^11.0.1",
     "nodal": "0.10.0"
   },
   "devDependencies": {
