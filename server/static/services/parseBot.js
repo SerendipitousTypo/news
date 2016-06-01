@@ -5,6 +5,7 @@
 
 var parser = require ('rss-parser');
 var rp = require('request-promise');
+var e = require('./errors.js');
 
 /** parseBot
 *@params url
@@ -34,7 +35,6 @@ module.exports = (url, pub_id) => {
       }
       rp(options)
       .then(response => {
-        console.log('Article posted successfully');
         return artId = response.data[0].id;
       })
       .then( id => {
@@ -60,15 +60,18 @@ module.exports = (url, pub_id) => {
                 json:true
               };
               rp(options)
-              .then(response => console.log('success updating art_keys'))
-              .catch(err => console.log('error updating art_keys', err));
+              .catch(err => {
+                e('parseBotErrorLog', 'Art_Key post error in parsebot', err);
+              });
             })
             .catch(err => {
-              console.log('keyword entry error', err)
+              e('parseBotErrorLog', 'keyword entry error in parsebot', err);
             })
         });
        }
-      }).catch(err => console.log('article post error', err));
+      }).catch(err => {
+        e('parseBotErrorLog', 'Article post error in parsebot', err);
+      });
     });
   })
 }
