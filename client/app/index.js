@@ -1,10 +1,10 @@
-// import React from 'react'
-// import { render } from 'react-dom'
-// import { createStore } from 'redux'
-// import { Provider } from 'react-redux'
-// import articles from './articles'
+import React from 'react'
+import { render } from 'react-dom'
+import { createStore } from 'redux'
+import { Provider } from 'react-redux'
+import articles from './articles'
 // //TODO: convert all jsx files to js files
-// import App from './components/App.jsx'
+import App from './components/App.jsx'
 
 let createStore = Redux.createStore;
 
@@ -15,3 +15,4 @@ ReactDOM.render(
     <App />,
   document.getElementById('app')
 );
+

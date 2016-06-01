@@ -5,8 +5,8 @@ var nodeModules = path.resolve(__dirname, '..','..','..', 'node_modules');
 //set buildPath - nothing stored there but still needed.  Webpack requires this. 
 var buildPath = path.resolve(__dirname, '..','..','..', 'client', 'build' );
 //set mainPath to the primary component.
-var mainPath = path.resolve(__dirname, "..","..","..", 'client', 'app', 'index.js');
-var rootPath = path.resolve(__dirname, "..","..","..", 'client')
+var mainPath = path.resolve(__dirname, "..","..","..", 'client', 'compiled', 'app','index.js');
+var rootPath = path.resolve(__dirname, "..","..","..", 'client');
 
 
 var config = {
@@ -25,23 +25,25 @@ var config = {
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin()
     ],
+ 
   module: {
     loaders: [
      //adds babel loader for transpiling
-     {
-      test: /\.js$/,
-      loader: 'babel',
-      exclude: /nodeModules/,
-      inclued: rootPath  //not sure if this is the right path.  this should be all that needs to be compiled. 
-     },
-     //as style loader
+     // {
+     //  test: /\.js$/,
+     //  exclude: [nodeModules],
+     //  inclued: [rootPath],  //not sure if this is the right path.  this should be all that needs to be compiled. 
+     //  loader: 'babel-core',
+     //  query: {
+     //    presets: ['react', 'es2015']
+     //  }
+     // },
+     //adds style loader
      {
       test: /\.css$/,
       loader: 'style!css'
     }
     ]
   },
-  // We have to manually add the Hot Replacement plugin when running
-  // from Node
 }
-module.exports config;
+module.exports = config;

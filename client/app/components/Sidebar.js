@@ -1,4 +1,4 @@
-var Sidebar = ({}) => (
+export var Sidebar = ({}) => (
   <div>
   <div className="sidebar">I am sidebar</div>
   <h3 className="topics-heading">Topics</h3>

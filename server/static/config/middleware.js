@@ -6,8 +6,8 @@ var config = require('./webpack.config.js');
 
 module.exports  = (app, express) => {
 //set up webpack compiler and middleware
-  var complier = webpack(config);
-  app.use(webpackDevMiddleware(complier,{publicPath: config.output.publicPath}));
+  var compiler = webpack(config);
+  app.use(webpackDevMiddleware(compiler,{publicPath: config.output.publicPath}));
   app.use(webpackHotMiddleware(compiler));
 
   app.use(express.static(__dirname + '/../../../client'));
