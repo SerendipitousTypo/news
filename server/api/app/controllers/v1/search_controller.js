@@ -39,25 +39,15 @@ module.exports = (function() {
         return article_ids;
       })
       .then(array => {
-        results = array.map(art_id => {
           Article.query()
             .join('publisher')
             .join('channel')
-            .where({id: art_id})
+            .where({id: array[0]})
             .end((err, models) => {
-              console.log(models);
-              return models;
-              // this.respond(err || models, ['title','date','url','content', {publisher: ['name', 'region']},{channel:'name'}]);
+              this.respond(err || models, ['title','date','url','content', {publisher: ['name', 'region']},{channel:'name'}]);
             })
           });
-        console.log(results);
-      })
-      .then((results) => {
-        console.log(results);
-        this.respond(err || results);
-      })
-      
-    }
+      }
 
     show() {}
 
