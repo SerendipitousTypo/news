@@ -57,7 +57,7 @@ module.exports = (function() {
       Article.create(this.params.body, (err, model) => {
 
         article_id = model.get('id');
-        console.log('this is the article id', article_id);
+        // console.log('this is the article id', article_id);
 
         const esPost = {
           index: 'articles',
@@ -72,7 +72,7 @@ module.exports = (function() {
 
         client.create(esPost)
         .then(response => {
-          console.log('response ===========>', response);
+          // console.log('response ===========>', response);
         }, error => console.log('error ===========>', error))
         .catch(err => console.log('error ============>', err));
 
