@@ -5,8 +5,8 @@ var nodeModules = path.resolve(__dirname, '..','..','..', 'node_modules');
 //set buildPath - nothing stored there but still needed.  Webpack requires this. 
 var buildPath = path.resolve(__dirname, '..','..','..', 'client', 'build' );
 //set mainPath to the primary component.
-var mainPath = path.resolve(__dirname, "..","..","..", 'client', 'compiled', 'app','index.js');
-var rootPath = path.resolve(__dirname, "..","..","..", 'client');
+var mainPath = path.resolve(__dirname, "..","..","..", 'client', 'app','index.js');
+var rootPath = path.resolve(__dirname, "..","..","..", 'client', 'app');
 
 
 var config = {
@@ -29,15 +29,14 @@ var config = {
   module: {
     loaders: [
      //adds babel loader for transpiling
-     // {
-     //  test: /\.js$/,
-     //  exclude: [nodeModules],
-     //  inclued: [rootPath],  //not sure if this is the right path.  this should be all that needs to be compiled. 
-     //  loader: 'babel-core',
-     //  query: {
-     //    presets: ['react', 'es2015']
-     //  }
-     // },
+     {
+      test: /\.js?$/,
+      exclude: /node_modules/,
+      loader: 'babel-loader',
+      query: {
+        presets: ['react', 'es2015']
+      }
+     },
      //adds style loader
      {
       test: /\.css$/,
