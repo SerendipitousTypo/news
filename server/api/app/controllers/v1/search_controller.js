@@ -42,7 +42,7 @@ module.exports = (function() {
           Article.query()
             .join('publisher')
             .join('channel')
-            .where({id: array[0]})
+            .where({id__in: array})
             .end((err, models) => {
               this.respond(err || models, ['title','date','url','content', {publisher: ['name', 'region']},{channel:'name'}]);
             })
