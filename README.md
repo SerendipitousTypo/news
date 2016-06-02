@@ -5,37 +5,23 @@ A news reader app offerring perspectives from around the world.
 ##How to start the app
 
 ###Install dependencies: 
-- [ ] Install client dependencies by running `npm install` at /client
-- [ ] Install api dependencies by running `npm install` at /server/api
-- [ ] Intall static server dependencies by running `npm install` at root
-- [ ] If you do not have elastic search - See instructions 
+- [ ] navigate to the root directory and run `npm deps`
+- [ ] If you do not have elastic search - See instructions for installing Elastic search 
+- [ ] Install postrgres
 
 ####Installing Elastic Search - MAC 
 + `brew update`
 + `brew install elasticsearch`
     * You may be prompted to install java, if so follow the brew instructions to install java then try `brew install elasticsearch` again.
 
-###Bootstrap Database: 
-(loads seed data for publishers and channel)
-
-- [ ] Run PostgreSQL
-- [ ] Open new terminal window
-- [ ] navigate to news/server/api
-- [ ] run `nodal db:bootstrap`
-
-###Start API Server 
-- [ ] open new terminal window
-- [ ] navigate to news/server/api
-- [ ] run `nodal s`
-
-###Start Elastic Search
-- [ ] open a new terminal window
-- [ ] type `elasticsearch` and press enter
-
-###Start Static Server 
-- [ ] open terminal window
-- [ ] navigate to news/server/static
-- [ ] run `nodemon server.js`
+###Starting the app: You will need to leave 3 terminal windows running
+- [ ] Start your postgres database
+- [ ] Open a terminal window and navigate to the root file of the project
+- [ ] run `npm run nodal` - this bootstraps the db and launches node
+- [ ] Open a new terminal window and navigate to the root file of the project
+- [ ] run `elasticsearch`
+- [ ] Open a new terminal window and navigate to the root file of the project
+- [ ] run `npm start` 
 
 You can now open localhost:8085/ and load the index.html page
 
