@@ -22,6 +22,10 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "nodemon server/static/server.js"
+    "start": "nodemon server/static/server.js",
+    "nodal": "cd server/api && nodal db:bootstrap && nodal s",
+    "deps": "npm install && npm run client-deps && npm run api-deps",
+    "client-deps": "cd client/ && npm install",
+    "api-deps":"cd server/api && npm install"
   }
 }
