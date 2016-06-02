@@ -55,7 +55,7 @@ export class App extends Component {
               <Main store={store} articles={
                 getFilteredArticles(
                   state.articles,
-                  state.filter
+                  state.articleFilter
                 )}
               />
             </div>

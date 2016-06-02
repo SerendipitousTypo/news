@@ -20,7 +20,25 @@ export var ArticlesRow = ({store, title, articles}) => (
 );
 
 var populateRow = (articles, store) => {
-  return articles.map((article, key) => {
-    return <ArticleEntry store={store} key={key} article={article} />;
-  });
+  //perhaps temporary
+  //limit articleEntry / row to 4
+  console.log('articles: ', articles);
+
+  let collection = [];
+  for (var i = 0; i < 4; i++) {
+    collection.push(
+      <ArticleEntry
+        store={store}
+        key={i}
+        article={articles[i]}
+      />
+    )
+  }
+
+  return collection;
+
+  // return articles.map((article, key) => {
+  //   return <ArticleEntry store={store} key={key} article={article} />;
+  // });
+
 };

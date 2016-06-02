@@ -1,10 +1,10 @@
 import React from 'react'
 import { combineReducers } from 'redux'
 import articles  from './articles'
-import filter from './appView'
+import articleFilter from './appView'
 
 export default combineReducers({
   articles,
-  filter
+  articleFilter
 });
 
