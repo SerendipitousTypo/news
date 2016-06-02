@@ -19,7 +19,6 @@ module.exports = (url, pub_id) => {
   parser.parseURL(url, (err, parsed) => {
     // console.log(parsed.feed.title);
     parsed.feed.entries.forEach(entry => {
-      let artId = 0;
       //store article
       var options = {
           method: 'POST',
