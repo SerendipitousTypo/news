@@ -1,14 +1,20 @@
+import _ from 'lodash'
+
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
 
-export const fetchArticles = () => {
+
+export const fetchArticles = (query) => {
+  query = (query === undefined) ? 'articles' : 'search?q=' + query;
+
+  console.log('query: ', query);
 
   return dispatch => {
 
     //change isFetching state to TRUE
 
 
-    return fetch('http://localhost:3000/v1/articles')
+    return fetch('http://localhost:3000/v1/' + query)
         .then(response => {
           //TODO: handle error
           return response.json()
@@ -19,3 +25,5 @@ export const fetchArticles = () => {
         })
   }
 }
+
+export const debouncedFetch = _.debounce(fetchArticles, 0, { 'maxWait': 1000 });

@@ -16,19 +16,8 @@ const articles = (state = [], action) => {
     case 'LOAD_ARTICLES':
       return action.articles
 
-      // return fetch('http://localhost:3000/v1/articles')
-      // .then(response => {
-      //   //TODO: handle error
-      //   return response.json()
-      // })
-      // .then(result => {
-      //   console.log('data: ', result.data);
-      //   return result.data;
-      // })
-
-
-    case 'ADD_ARTICLES':
       //add to current articles collection
+    case 'ADD_ARTICLES':
       return [
         ...state
       ]

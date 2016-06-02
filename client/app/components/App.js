@@ -64,10 +64,6 @@ export class App extends React.Component {
     };
   }
 
-  getArticles() {
-
-  }
-
   componentDidMount() {
     const { store } = this.props;
     this.unsubscribe = store.subscribe(() =>
@@ -75,13 +71,6 @@ export class App extends React.Component {
     );
 
     store.dispatch(fetchArticles());
-    // store.dispatch({type: 'LOAD_ARTICLES'})
-    // fetch('http://localhost:3000/v1/articles')
-    // .then(response => {
-    //   //TODO: handle error
-    //   return response.json()
-    // })
-    // .then(res => store.dispatch({type: 'LOAD_ARTICLES', articles: res.data}));
   }
 
   componentWillUnmount() {
