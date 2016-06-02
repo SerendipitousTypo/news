@@ -1,3 +1,5 @@
+import React from 'react'
+
 export var ArticleEntry = ({article}) => (
   <div className="articleEntry">
     <div className='articleTitle'>{article.title}</div>

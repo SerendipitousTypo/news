@@ -1,4 +1,7 @@
+import React from 'react'
+import _ from 'lodash'
 import { ArticlesRow } from './ArticlesRow';
+
 export var Main = ({articles}) => (
   <div className="main-block">
     {populateRows(articles)}

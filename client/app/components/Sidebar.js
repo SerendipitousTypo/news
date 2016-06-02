@@ -1,3 +1,5 @@
+import React from 'react'
+
 export var Sidebar = ({}) => (
   <div>
   <div className="sidebar">I am sidebar</div>

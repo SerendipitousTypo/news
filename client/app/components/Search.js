@@ -1,3 +1,6 @@
+import React from 'react'
+
+
 export var Search = ({}) => (
   <div className="col-md-12">
     <div className="search">

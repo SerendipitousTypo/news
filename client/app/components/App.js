@@ -1,6 +1,16 @@
+import React from 'react'
+// import { Component } from 'react'
+
+import { fetchArticles } from '../actions'
+
 import { Sidebar } from './Sidebar';
 import { Search } from './Search';
 import { Main } from './Main';
+
+//TODO convert to import/from
+require('es6-promise').polyfill();
+require('isomorphic-fetch');
+
 
 export class App extends React.Component {
   constructor (props) {
@@ -54,39 +64,24 @@ export class App extends React.Component {
     };
   }
 
-  //DELETE
-  // getPublishers(cb) {
-  //   var publishers;
-  //   this.serverRequest = $.get('http://localhost:3000/v1/publishers', function (result) {
-  //     console.log('result: ', result.data);
-  //     publishers = result.data;
-  //     this.setState({publishers: publishers});
-  //   }.bind(this));  
+  getArticles() {
 
-  //   return publishers;  
-  // }
-
-  getArticles(cb) {
-    var articles;
-    this.serverRequest = $.get('http://localhost:3000/v1/articles', function (result) {
-      console.log('result: ', result.data);
-      articles = result.data;
-      this.setState({articles: articles});
-    }.bind(this));  
-
-    return articles;
   }
 
   componentDidMount() {
     const { store } = this.props;
-    let articles = this.getArticles();
     this.unsubscribe = store.subscribe(() =>
       this.forceUpdate()
     );
 
-    $.get('http://localhost:3000/v1/articles', function (result) {
-      store.dispatch({type: 'LOAD_ARTICLES', articles: result.data});
-    }.bind(this));
+    store.dispatch(fetchArticles());
+    // store.dispatch({type: 'LOAD_ARTICLES'})
+    // fetch('http://localhost:3000/v1/articles')
+    // .then(response => {
+    //   //TODO: handle error
+    //   return response.json()
+    // })
+    // .then(res => store.dispatch({type: 'LOAD_ARTICLES', articles: res.data}));
   }
 
   componentWillUnmount() {

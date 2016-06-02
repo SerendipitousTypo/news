@@ -12,15 +12,25 @@ const article = (state, action) => {
 const articles = (state = [], action) => {
   console.log('action: ', action);
   switch (action.type) {
+    //clear current articles collection and retrieve new articles
     case 'LOAD_ARTICLES':
-        //clear current articles collection and retrieve new articles
-      return action.articles;
+      return action.articles
+
+      // return fetch('http://localhost:3000/v1/articles')
+      // .then(response => {
+      //   //TODO: handle error
+      //   return response.json()
+      // })
+      // .then(result => {
+      //   console.log('data: ', result.data);
+      //   return result.data;
+      // })
+
 
     case 'ADD_ARTICLES':
       //add to current articles collection
       return [
-        ...state,
-        getArticles()
+        ...state
       ]
 
     default:
