@@ -2,24 +2,24 @@ import React from 'react'
 import { fetchArticles, debouncedFetch } from '../actions'
 
 
-export var Search = ({}) => {
+export var Search = ({store}) => {
   let input;
+  // input.value = '';
   return (
     <div className="col-md-12">
       <div className="search">
         <input type="text" className="form-control" placeholder="Search..."
-          onChange={(() => console.log(input.value))}
           ref={node => {
             input = node;
           }}
+          onChange={ _.debounce((() =>
+        store.dispatch(fetchArticles(input.value))),
+      300) }
         />
-        <button onClick={() => fetchArticles(input.value)}>
+        <button onClick={() => store.dispatch(fetchArticles(input.value))}>
           Search
         </button>
       </div>
     </div>
   );
 }
-
-// window.Search = Search;
-

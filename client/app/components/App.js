@@ -93,7 +93,7 @@ export class App extends React.Component {
         <div className="col-md-9">
           <div className="row">
             <div className="col-md-12">
-              <Search />
+              <Search store={store}/>
             </div>
           </div>
           <div className="row">
