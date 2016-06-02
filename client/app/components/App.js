@@ -1,5 +1,5 @@
 import React from 'react'
-// import { Component } from 'react'
+import { Component } from 'react'
 
 import { fetchArticles } from '../actions'
 
@@ -7,65 +7,20 @@ import { Sidebar } from './Sidebar';
 import { Search } from './Search';
 import { Main } from './Main';
 
-//TODO convert to import/from
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
 
 
-export class App extends React.Component {
+export class App extends Component {
+  //TODO: what is purpose of constructor?
   constructor (props) {
     super(props);
-    this.state = {
-      publishers: {},
-      articles: [
-        {
-          region: 'North America',
-          publisher: 'NY Times',
-          title: 'title1',
-          snippet: 'some snippet about the article',
-          url: 'https://www.google.com'
-        },
-        {
-          region: 'North America',
-          publisher: 'NY Times',
-          title: 'title2',
-          snippet: 'some snippet about the article',
-          url: 'https://www.google.com'
-        },
-        {
-          region: 'North America',
-          publisher: 'NY Times',
-          title: 'title3',
-          snippet: 'some snippet about the article',
-          url: 'https://www.google.com'
-        },
-        {
-          region: 'Russia',
-          publisher: 'NY Times',
-          title: 'title1',
-          snippet: 'some snippet about the article',
-          url: 'https://www.google.com'
-        },
-        {
-          region: 'Russia',
-          publisher: 'NY Times',
-          title: 'title2',
-          snippet: 'some snippet about the article',
-          url: 'https://www.google.com'
-        },
-        {
-          region: 'Russia',
-          publisher: 'NY Times',
-          title: 'title3',
-          snippet: 'some snippet about the article',
-          url: 'https://www.google.com'
-        }
-      ]
-    };
   }
 
   componentDidMount() {
     const { store } = this.props;
+
+    //re-render App on any changes to the state in store
     this.unsubscribe = store.subscribe(() =>
       this.forceUpdate()
     );
@@ -79,10 +34,9 @@ export class App extends React.Component {
 
   render() {
     const { store } = this.props;
-    const props = this.props;
     const state = store.getState();
 
-    console.log('state: ', state);
+    // console.log('state: ', state);
 
     return (
 

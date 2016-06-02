@@ -7,15 +7,12 @@ require('isomorphic-fetch');
 export const fetchArticles = (query) => {
   query = (query === undefined || query === '') ?
     'articles' : 'search?q=' + query;
-  console.log('query: ', query);
 
   let url = 'http://localhost:3000/v1/' + query
-  console.log('url: ', url);
 
   return dispatch => {
 
-    //change isFetching state to TRUE
-    console.log('line 17');
+    //TODO: change isFetching state to TRUE
 
     return fetch(url)
         .then(response => {
@@ -28,5 +25,3 @@ export const fetchArticles = (query) => {
         })
   }
 }
-
-export const debouncedFetch = _.debounce(fetchArticles, 0, { 'maxWait': 1000 });

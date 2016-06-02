@@ -4,7 +4,6 @@ import { fetchArticles, debouncedFetch } from '../actions'
 
 export var Search = ({store}) => {
   let input;
-  // input.value = '';
   return (
     <div className="col-md-12">
       <div className="search">
@@ -12,13 +11,11 @@ export var Search = ({store}) => {
           ref={node => {
             input = node;
           }}
-          onChange={ _.debounce((() =>
-        store.dispatch(fetchArticles(input.value))),
-      300) }
+          onChange={
+            _.debounce((() =>
+              store.dispatch(fetchArticles(input.value))),
+            300)}
         />
-        <button onClick={() => store.dispatch(fetchArticles(input.value))}>
-          Search
-        </button>
       </div>
     </div>
   );

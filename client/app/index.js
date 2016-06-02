@@ -6,18 +6,13 @@ import { Provider } from 'react-redux'
 import { articles } from './reducers/articles'
 import reducer  from './reducers/index'
 import { App } from './components/App'
-// //TODO: convert all jsx files to js files
-
-// let createStore = Redux.createStore;
-
 
 let store = createStore(
   reducer,
   applyMiddleware(thunk)
   );
-// console.log('store ====>', store);
 
-//TODO: how does Provider work?
+//TODO: implement Provider
 render(
     <App store={store} />,
   document.getElementById('app')
