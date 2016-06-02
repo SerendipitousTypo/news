@@ -1,15 +1,17 @@
-export default const appView = (
-  state = 'HOME',
+const filter = (
+  state = {
+    view: 'ALL_REGIONS',
+    specifier: ''
+  },
   action
-  ) => {
+) => {
   switch (action.type) {
-    case 'HOME':
-      //load main feed
-      //set article to none
-    case 'ARTICLE':
-      //set article to given article
-      //display article
+    case 'SET_APP_VIEW':
+      return action.filter
+
     default:
       return state;
   }
 }
+
+export default filter;

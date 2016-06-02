@@ -1,5 +1,5 @@
 import React from 'react'
-import { fetchArticles, debouncedFetch } from '../actions'
+import { fetchArticles } from '../actions'
 
 
 export var Search = ({store}) => {
@@ -13,7 +13,10 @@ export var Search = ({store}) => {
           }}
           onChange={
             _.debounce((() =>
-              store.dispatch(fetchArticles(input.value))),
+              store.dispatch(
+                store.getState().appView,
+                fetchArticles(input.value)
+              )),
             300)}
         />
       </div>

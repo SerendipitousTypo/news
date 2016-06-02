@@ -2,14 +2,14 @@ import React from 'react'
 import _ from 'lodash'
 import { ArticlesRow } from './ArticlesRow';
 
-export var Main = ({articles}) => (
+export var Main = ({store, articles}) => (
   <div className="main-block">
-    {populateRows(articles)}
+    {populateRows(articles, store)}
   </div>
 );
 
 
-var populateRows = articles => {
+var populateRows = (articles, store) => {
   var topics = {};
 
   //sort articles by category, according to filter, ie. {'North America': [Articles. . . ]}
@@ -27,7 +27,7 @@ var populateRows = articles => {
 
   //create a row of articles per category, according to filter
   return _.map(topics, (topic, category) => {
-    return <ArticlesRow title={category} articles={topic} />;
+    return <ArticlesRow store={store} title={category} articles={topic} />;
   });
 };
 

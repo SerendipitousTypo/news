@@ -1,7 +1,7 @@
 import React from 'react'
 import { Component } from 'react'
 
-import { fetchArticles } from '../actions'
+import { fetchArticles, getFilteredArticles } from '../actions'
 
 import { Sidebar } from './Sidebar';
 import { Search } from './Search';
@@ -36,7 +36,7 @@ export class App extends Component {
     const { store } = this.props;
     const state = store.getState();
 
-    // console.log('state: ', state);
+    console.log('state: ', state);
 
     return (
 
@@ -52,7 +52,12 @@ export class App extends Component {
           </div>
           <div className="row">
             <div className="col-md-12">
-              <Main articles={state.articles} />
+              <Main store={store} articles={
+                getFilteredArticles(
+                  state.articles,
+                  state.filter
+                )}
+              />
             </div>
           </div>
         </div>
