@@ -1,22 +1,20 @@
-
 import React from 'react'
 import { render } from 'react-dom'
-import { createStore } from 'redux'
+import { createStore, applyMiddleware} from 'redux'
+import thunk from 'redux-thunk'
 import { Provider } from 'react-redux'
-import { articles } from './reducers/articles';
-import reducer  from './reducers/index';
-import { App } from './components/App';
-// //TODO: convert all jsx files to js files
+import { articles } from './reducers/articles'
+import reducer  from './reducers/index'
+import { App } from './components/App'
 
-// let createStore = Redux.createStore;
+let store = createStore(
+  reducer,
+  applyMiddleware(thunk)
+  );
 
-
-// let store = createStore(reducer)
-// console.log('store ====>', store);
-
-//TODO: how does Provider work?
-ReactDOM.render(
-    <App store={createStore(reducer)} />,
+//TODO: implement Provider
+render(
+    <App store={store} />,
   document.getElementById('app')
 );
 

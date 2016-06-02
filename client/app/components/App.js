@@ -1,92 +1,31 @@
+import React from 'react'
+import { Component } from 'react'
+
+import { fetchArticles } from '../actions'
+
 import { Sidebar } from './Sidebar';
 import { Search } from './Search';
 import { Main } from './Main';
 
-export class App extends React.Component {
+require('es6-promise').polyfill();
+require('isomorphic-fetch');
+
+
+export class App extends Component {
+  //TODO: what is purpose of constructor?
   constructor (props) {
     super(props);
-    this.state = {
-      publishers: {},
-      articles: [
-        {
-          region: 'North America',
-          publisher: 'NY Times',
-          title: 'title1',
-          snippet: 'some snippet about the article',
-          url: 'https://www.google.com'
-        },
-        {
-          region: 'North America',
-          publisher: 'NY Times',
-          title: 'title2',
-          snippet: 'some snippet about the article',
-          url: 'https://www.google.com'
-        },
-        {
-          region: 'North America',
-          publisher: 'NY Times',
-          title: 'title3',
-          snippet: 'some snippet about the article',
-          url: 'https://www.google.com'
-        },
-        {
-          region: 'Russia',
-          publisher: 'NY Times',
-          title: 'title1',
-          snippet: 'some snippet about the article',
-          url: 'https://www.google.com'
-        },
-        {
-          region: 'Russia',
-          publisher: 'NY Times',
-          title: 'title2',
-          snippet: 'some snippet about the article',
-          url: 'https://www.google.com'
-        },
-        {
-          region: 'Russia',
-          publisher: 'NY Times',
-          title: 'title3',
-          snippet: 'some snippet about the article',
-          url: 'https://www.google.com'
-        }
-      ]
-    };
-  }
-
-  //DELETE
-  // getPublishers(cb) {
-  //   var publishers;
-  //   this.serverRequest = $.get('http://localhost:3000/v1/publishers', function (result) {
-  //     console.log('result: ', result.data);
-  //     publishers = result.data;
-  //     this.setState({publishers: publishers});
-  //   }.bind(this));  
-
-  //   return publishers;  
-  // }
-
-  getArticles(cb) {
-    var articles;
-    this.serverRequest = $.get('http://localhost:3000/v1/articles', function (result) {
-      console.log('result: ', result.data);
-      articles = result.data;
-      this.setState({articles: articles});
-    }.bind(this));  
-
-    return articles;
   }
 
   componentDidMount() {
     const { store } = this.props;
-    let articles = this.getArticles();
+
+    //re-render App on any changes to the state in store
     this.unsubscribe = store.subscribe(() =>
       this.forceUpdate()
     );
 
-    $.get('http://localhost:3000/v1/articles', function (result) {
-      store.dispatch({type: 'LOAD_ARTICLES', articles: result.data});
-    }.bind(this));
+    store.dispatch(fetchArticles());
   }
 
   componentWillUnmount() {
@@ -95,10 +34,9 @@ export class App extends React.Component {
 
   render() {
     const { store } = this.props;
-    const props = this.props;
     const state = store.getState();
 
-    console.log('state: ', state);
+    // console.log('state: ', state);
 
     return (
 
@@ -109,7 +47,7 @@ export class App extends React.Component {
         <div className="col-md-9">
           <div className="row">
             <div className="col-md-12">
-              <Search />
+              <Search store={store}/>
             </div>
           </div>
           <div className="row">

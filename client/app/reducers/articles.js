@@ -12,15 +12,14 @@ const article = (state, action) => {
 const articles = (state = [], action) => {
   console.log('action: ', action);
   switch (action.type) {
+    //replace current articles with new articles
     case 'LOAD_ARTICLES':
-        //clear current articles collection and retrieve new articles
-      return action.articles;
+      return action.articles
 
+    //add to current articles collection
     case 'ADD_ARTICLES':
-      //add to current articles collection
       return [
-        ...state,
-        getArticles()
+        ...state
       ]
 
     default:

@@ -1,4 +1,5 @@
 //for every article served, create a articleEntry (4 articles served)
+import React from 'react'
 import { ArticleEntry } from './articleEntry';
 
 export var ArticlesRow = ({title, articles}) => (
