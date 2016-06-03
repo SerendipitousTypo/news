@@ -3,8 +3,8 @@ import React from 'react';
 import { ArticleEntry } from './ArticleEntry';
 
 export var ArticlesRow = ({title, articles}) => (
-  <div className='articlesRow'>
-    <div className="rowTitle">{title}</div>
+  <div className='articles-row'>
+    <div className="left-margin-fix"><a href="#" className="main-link"><h4>{title}</h4></a></div>
     <div className='mdl-grid'>
       {populateRow(articles)}
     </div>
@@ -12,8 +12,11 @@ export var ArticlesRow = ({title, articles}) => (
 );
 
 var populateRow = articles => {
-  var i = 0;
+  let i = 0;
+  const articlesPerRegion = 4; 
   return articles.map(article => {
-    return <ArticleEntry article={article} key ={i++}/>;
+    if (i < articlesPerRegion) {
+      return <ArticleEntry article={article} key ={i++}/>;
+    }
   });
 };

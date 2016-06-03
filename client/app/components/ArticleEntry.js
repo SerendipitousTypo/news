@@ -4,15 +4,14 @@ export var ArticleEntry = ({article}) => (
   <div className="articleEntry mdl-cell mdl-cell--3-col ">
     <div className="row valign-wrapper">
       <div className="col s6 offset-s3 valign">
-        <div className="card blue-grey darken-1">
+        <div className="card mdl-color--white mdl-shadow--2dp">
           <div className="card-content white-text">
-            <span className="card-title">Card Title</span>
-            <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-          </div>
-          <div className="card-action">
-            <a href="#">This is a link</a>
-            <a href="#">This is a link</a>
+            <div className="card-title">{article.title}</div>
+            <div className="card-text">{article.content}</div>
+            <div className="mdl-card__actions mdl-card--border">
+              <a href={article.url} target="_blank" className="mdl-button mdl-js-button mdl-js-ripple-effect">Read Article</a>
+
+            </div>
           </div>
         </div>
       </div>

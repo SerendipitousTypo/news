@@ -9,6 +9,7 @@ export var Main = ({articles}) => (
 );
 
 
+
 var populateRows = articles => {
   var topics = {};
 
