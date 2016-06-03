@@ -35,6 +35,8 @@ module.exports = (function() {
   const V1PublishersController = Nodal.require('app/controllers/v1/publishers_controller.js');
   const V1ChannelsController = Nodal.require('app/controllers/v1/channels_controller.js');
   const V1SearchController = Nodal.require('app/controllers/v1/search_controller.js');
+  const V1TopicsController = Nodal.require('app/controllers/v1/topics_controller.js');
+  const V1ArtTopicsController = Nodal.require('app/controllers/v1/art_topics_controller.js');
 
   /* generator: end imports */
 
@@ -47,6 +49,8 @@ module.exports = (function() {
   router.route('/v1/publishers/{id}').use(V1PublishersController);
   router.route('/v1/channels/{id}').use(V1ChannelsController);
   router.route('/v1/search').use(V1SearchController);
+  router.route('/v1/topics/{id}').use(V1TopicsController);
+  router.route('/v1/art_topics/{id}').use(V1ArtTopicsController);
 
   /* generator: end routes */
 
