@@ -1,17 +1,20 @@
 //for every article served, create a articleEntry (4 articles served)
 import React from 'react'
 import { ArticleEntry } from './articleEntry'
-import { setView } from '../actions'
+import { fetchArticles, setFilter } from '../actions'
 
-export var ArticlesRow = ({store, title, articles, filter}) => (
+export var ArticlesRow = ({store, title, articles, nextFilter}) => (
   <div className='articlesRow'>
     <div onClick={() => {
       //TODO: change view to a Region OR Topic
       //change view to a Region
-      store.dispatch(setView(
-        filter,
+
+      console.log('nextFilter: ', nextFilter);
+      store.dispatch(setFilter(
+        nextFilter,
         title
       ))
+      // store.dispatch(fetchArticles())
     }}
     className="rowTitle">{title}</div>
     <div className='rowArticles'>

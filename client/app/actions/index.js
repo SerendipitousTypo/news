@@ -21,13 +21,11 @@ const viewToQuery = view => {
   }
 }
 
-export const setView = (view, specifier) => (
+export const setFilter = (filter, category) => (
+    //category is the name of  a region or topic
     {
-      type: 'SET_VIEW',
-      filter: {
-        view,
-        specifier
-      }
+      type: 'SET_FILTER',
+      filter: Object.assign({}, filter, {category})
     }
 )
 
@@ -50,6 +48,17 @@ export const getFilteredArticles = (articles, filter) => {
       return articles
   }
 }
+
+/*
+  'ALL_REGIONS'
+    if query.length
+      return 'search?q=' + query
+    return 'articles'
+  'A_REGION'
+    if query.length
+      return 'search?q=' + query + '&&publisher__region='
+
+*/
 
 
 export const fetchArticles = (view, query) => {

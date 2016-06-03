@@ -14,13 +14,15 @@ const populateRows = (store, articles) => {
   let categories = {};
    //will be set to articleFilter on category click
    //in a article row
-  let nextFilter;
+  let nextFilter = Object.assign({}, filter);
 
   //filter articles based on state.articleFilter
-  if (filter === 'ALL_REGIONS') {
-      nextFilter = 'A_REGION'
+  if (filter.view === 'ALL_REGIONS') {
+      nextFilter.view = 'A_REGION';
+      nextFilter.type = 'TOPIC';
       articles.forEach(article => {
 
+        //TODO: limit articles rendered here?
         //IF categories does not have a categories
         //create key for categories
         if ( categories.hasOwnProperty(article.publisher.region) ) {
@@ -29,6 +31,10 @@ const populateRows = (store, articles) => {
           categories[article.publisher.region] = [article];
         }
       });
+  } else if (filter.view === 'A_REGION') {
+    //all articles should be of that region,
+    //display all articles by Topic
+    console.log('view is A_REGION!');
   }
 
   //sort articles by categories, according to filter, ie. {'North America': [Articles. . . ]}
@@ -37,6 +43,6 @@ const populateRows = (store, articles) => {
 
   //create a row of articles per categories, according to filter
   return _.map(categories, (category, catName) => {
-    return <ArticlesRow store={store} key={catName} title={catName} articles={category} filter={nextFilter} />;
+    return <ArticlesRow store={store} key={catName} title={catName} articles={category} nextFilter={nextFilter} />;
   });
 };
