@@ -21,9 +21,15 @@ const viewToQuery = view => {
   }
 }
 
-// const categoryToView = category => {
-
-// }
+export const setView = (view, specifier) => (
+    {
+      type: 'SET_VIEW',
+      filter: {
+        view,
+        specifier
+      }
+    }
+)
 
 export const getFilteredArticles = (articles, filter) => {
   switch (filter.view) {
@@ -70,32 +76,3 @@ export const fetchArticles = (view, query) => {
         })
   }
 }
-
-export const setView = (view, specifier) => (
-    {
-      type: 'SET_APP_VIEW',
-      filter: {
-        view,
-        specifier
-      }
-    }
-)
-
-    // case 'ALL_REGIONS':
-    //   //make query for news of all topics
-    //   //from all regions
-
-    // case 'A_REGION':
-    //   //make query for news of all topics
-    //   //from one region
-
-    // case 'A_TOPIC':
-    //   //make query for news of one topic
-    //   //from all regions
-
-    // case 'REGION_/_TOPIC':
-    //   //make query for news of one topic
-    //   //from one region
-
-    // case 'ARTICLE':
-    //   //make query to unfluff current article

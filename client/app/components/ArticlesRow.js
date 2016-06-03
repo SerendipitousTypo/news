@@ -3,12 +3,13 @@ import React from 'react'
 import { ArticleEntry } from './articleEntry'
 import { setView } from '../actions'
 
-export var ArticlesRow = ({store, title, articles}) => (
+export var ArticlesRow = ({store, title, articles, filter}) => (
   <div className='articlesRow'>
     <div onClick={() => {
+      //TODO: change view to a Region OR Topic
       //change view to a Region
       store.dispatch(setView(
-        'A_REGION',
+        filter,
         title
       ))
     }}

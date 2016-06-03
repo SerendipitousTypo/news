@@ -2,37 +2,41 @@ import React from 'react'
 import _ from 'lodash'
 import { ArticlesRow } from './ArticlesRow';
 
-export var Main = ({store, articles}) => (
+export const Main = ({store, articles}) => (
   <div className="main-block">
     {populateRows(store, articles)}
   </div>
 );
 
 
-var populateRows = (store, articles) => {
-  //TODO: change name from 'topics'
-  var topics = {};
+const populateRows = (store, articles) => {
+  let filter = store.getState().articleFilter;
+  let categories = {};
+   //will be set to articleFilter on category click
+   //in a article row
+  let nextFilter;
 
-  //sort articles by category, according to filter, ie. {'North America': [Articles. . . ]}
-  articles.forEach(article => {
+  //filter articles based on state.articleFilter
+  if (filter === 'ALL_REGIONS') {
+      nextFilter = 'A_REGION'
+      articles.forEach(article => {
 
-    //IF topics does not have a category
-    //create key for category
-    if ( topics.hasOwnProperty(article.publisher.region) ) {
-      topics[article.publisher.region].push(article);
-    } else {
-      topics[article.publisher.region] = [article];
-    }
-  });
+        //IF categories does not have a categories
+        //create key for categories
+        if ( categories.hasOwnProperty(article.publisher.region) ) {
+          categories[article.publisher.region].push(article);
+        } else {
+          categories[article.publisher.region] = [article];
+        }
+      });
+  }
 
-  // console.log('topics: ', topics);
+  //sort articles by categories, according to filter, ie. {'North America': [Articles. . . ]}
 
-  //create a row of articles per category, according to filter
-  return _.map(topics, (topic, category) => {
-    return <ArticlesRow store={store} title={category} articles={topic} />;
+  // console.log('categories: ', categories);
+
+  //create a row of articles per categories, according to filter
+  return _.map(categories, (category, catName) => {
+    return <ArticlesRow store={store} key={catName} title={catName} articles={category} filter={nextFilter} />;
   });
 };
-
-//TODO: Delete
-window.Main = Main;
-

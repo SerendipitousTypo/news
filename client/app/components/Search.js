@@ -19,7 +19,7 @@ export var Search = ({store}) => {
                     store.getState().articleFilter.view,
                     input.value
                   )
-              )),
+                )),
             300)}
         />
       </div>
