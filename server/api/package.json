@@ -10,7 +10,10 @@
   "dependencies": {
     "elasticsearch": "^11.0.1",
     "nodal": "0.10.0",
+<<<<<<< d54314989269fe70ded387b94fd2da258c19292b
     "request-promise": "^3.0.0",
+=======
+>>>>>>> Friday init-commit
     "unfluff": "^1.0.0"
   },
   "devDependencies": {
