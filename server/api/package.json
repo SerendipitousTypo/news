@@ -10,6 +10,7 @@
   "dependencies": {
     "elasticsearch": "^11.0.1",
     "nodal": "0.10.0",
+    "request-promise": "^3.0.0",
     "unfluff": "^1.0.0"
   },
   "devDependencies": {
