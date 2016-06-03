@@ -24,13 +24,9 @@ let getTopics = function(content) {
   rp(options)
   .then(result => {
     let results = JSON.parse(result);
-    // console.log('this is the result from the request', result);
     let docID = results.doc.info.docId;
-    console.log(docID);
     for (var i = 0; i < 5; i++) {
       let topicExt = docID + '/cat/' + i;
-      console.log('this is the cat obj', topicExt);
-      console.log(results[topicExt]);
       if (results[topicExt]) {
         topics.push(results[topicExt].name);
       }
@@ -40,29 +36,9 @@ let getTopics = function(content) {
   })
   .catch(err => console.log(err));
 
-  // let req = https.request(options, res => {
-  //   console.log('in the response from calias');
-  //   let result = '';
-  //   res.on('data', (chunk) => {
-  //     result += chunk;
-  //   });
-  //   res.on('end', () => {
-  //     result = JSON.parse(result);
-  //     console.log('this is the result from the https request', result);
-  //     let docID = result.doc.docID;
-  //     for (var i = 0; i < 5; i ++) {
-  //       let topicExt = docID + '/cat/' + i;
-  //       if (result[topicExt]) {
-  //         topics.push(result[topicExt].name);
-  //       }
-  //     };
-  //     console.log('these are the topics within the request', topics);
-  //   });
-  // });
-  // req.on('error', e => console.log('problem with request', e.message))
-  // return topics;
 };
 
+//set rate limiter to run this function only once per second
 var limiter = new RateLimiter(1, 'second');
 
 var throttledRequest = function(content) {

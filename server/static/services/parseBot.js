@@ -36,7 +36,6 @@ module.exports = (url, pub_id) => {
       rp(options)
       .then(results => {
         let content = results.data[0].content;
-        console.log(content);
         topics(content);
       })
       .catch(err => {
