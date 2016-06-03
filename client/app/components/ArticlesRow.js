@@ -1,6 +1,6 @@
 //for every article served, create a articleEntry (4 articles served)
-import React from 'react'
-import { ArticleEntry } from './articleEntry';
+import React from 'react';
+import { ArticleEntry } from './ArticleEntry';
 
 export var ArticlesRow = ({title, articles}) => (
   <div className='articlesRow'>
@@ -12,7 +12,8 @@ export var ArticlesRow = ({title, articles}) => (
 );
 
 var populateRow = articles => {
+  var i = 0;
   return articles.map(article => {
-    return <ArticleEntry article={article} />;
+    return <ArticleEntry article={article} key ={i++}/>;
   });
 };

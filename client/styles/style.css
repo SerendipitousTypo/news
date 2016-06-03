@@ -7,3 +7,75 @@
   background:
     url('../assets/demos/dog.png') bottom right 15% no-repeat #46B6AC;
 }
+
+.search-box {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.search-icon {
+  position: absolute;
+  left: -32px;
+  top: 17px;
+}
+
+.search-icon i{
+  font-size: 30px;
+}
+
+
+
+/*Material design overrides*/
+/*
+.mdl-textfield__input {
+  border-bottom: 1px solid rgb(249, 249, 249);
+}
+
+.mdl-textfield__label {
+  color: rgba(255, 255, 255, 0.41);
+}
+
+.is-focused {
+  color: #fff;
+}*/
+
+
+/*.mdl-list__item-avatar, .mdl-list__item-avatar.material-icons {
+  background-color: #3F51B5;
+}*/
+
+.mdl-list {
+  width: 225px;
+}
+
+
+.mdl-list__item-avatar, .mdl-list__item-avatar.material-icons {
+  height: 40px;
+  width: 40px;
+  box-sizing: border-box;
+  border-radius: 0; 
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 40px;
+  color: #757575;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

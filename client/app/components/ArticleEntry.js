@@ -1,16 +1,20 @@
-import React from 'react'
+import React from 'react';
 
-var ArticleEntry = ({article}) => (
-  <div className="articleEntry mdl-cell mdl-cell--3-col graybo">
-    <div className="demo-card-square mdl-card mdl-shadow--2dp">
-      <div className="mdl-card__title mdl-card--expand">
-      <h2 className="mdl-card__title-text">{article.title}</h2>
-      </div>
-      <div className="mdl-card__supporting-text">{article.snippet}</div>
-      <div className="mdl-card__actions mdl-card--border">
-        <a className="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-          View Updates
-        </a>
+export var ArticleEntry = ({article}) => (
+  <div className="articleEntry mdl-cell mdl-cell--3-col ">
+    <div className="row valign-wrapper">
+      <div className="col s6 offset-s3 valign">
+        <div className="card blue-grey darken-1">
+          <div className="card-content white-text">
+            <span className="card-title">Card Title</span>
+            <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div className="card-action">
+            <a href="#">This is a link</a>
+            <a href="#">This is a link</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>

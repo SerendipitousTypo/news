@@ -6,6 +6,7 @@ import { fetchArticles } from '../actions'
 import { Sidebar } from './Sidebar';
 import { Search } from './Search';
 import { Main } from './Main';
+import { Footer } from './Footer';
 
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
@@ -39,23 +40,22 @@ export class App extends Component {
     // console.log('state: ', state);
 
     return (
-
-      <div className="row">
-        <div className="col-md-3">
-          <Sidebar />
-        </div>
-        <div className="col-md-9">
-          <div className="row">
-            <div className="col-md-12">
-              <Search store={store}/>
+      <div className="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <Search store={store}/>
+      
+        <main className="mdl-layout__content">    
+          <div className="mdl-grid">
+            <div className="mdl-cell mdl-cell--3-col">
+              <Sidebar />
             </div>
-          </div>
-          <div className="row">
-            <div className="col-md-12">
+            <div className="mdl-cell mdl-cell--9-col graybox">
               <Main articles={state.articles} />
             </div>
           </div>
-        </div>
+        </main>
+
+        <Footer />
+
       </div>
     );
   }
