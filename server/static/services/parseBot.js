@@ -6,6 +6,7 @@
 var parser = require ('rss-parser');
 var rp = require('request-promise');
 var e = require('./errors.js');
+var topics = require('./topics.js');
 
 /** parseBot
 *@params url
@@ -19,7 +20,6 @@ module.exports = (url, pub_id) => {
   parser.parseURL(url, (err, parsed) => {
     // console.log(parsed.feed.title);
     parsed.feed.entries.forEach(entry => {
-      let artId = 0;
       //store article
       var options = {
           method: 'POST',
@@ -34,8 +34,14 @@ module.exports = (url, pub_id) => {
           json:true
       }
       rp(options)
+      .then(results => {
+        let artId = results.data[0].id;
+        let content = results.data[0].content;
+        topics(content, artId);
+      })
       .catch(err => {
-        e('parseBotErrorLog', 'Article post error in parsebot', err);
+        //e('parseBotErrorLog', 'Article post error in parsebot', err);
+        console.log(err);
       });
     });
   })
