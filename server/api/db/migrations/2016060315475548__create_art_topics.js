@@ -14,7 +14,7 @@ module.exports = (function() {
     up() {
 
       return [
-        this.createTable("art_topics", [{"name":"art_id","type":"int"},{"name":"topic_id","type":"int"}])
+        this.createTable("art_topics", [{"name":"article_id","type":"int"},{"name":"topic_id","type":"int"}])
       ];
 
     }

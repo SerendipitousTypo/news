@@ -10,10 +10,12 @@ module.exports = (function() {
     index() {
 
       ArtTopic.query()
+        .join('article')
+        .join('topic')
         .where(this.params.query)
         .end((err, models) => {
 
-          this.respond(err || models);
+          this.respond(err || models, [{article: ['title', 'date', 'url', 'content']}, {topic:['name']}]);
 
         });
 
