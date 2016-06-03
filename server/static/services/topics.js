@@ -4,7 +4,7 @@ const rp = require('request-promise');
 const API_KEY = require('./../config/apikey.js');
 var RateLimiter = require('limiter').RateLimiter;
 
-let getTopics = function(content) {
+let getTopics = function(content, artId) {
   'use strict'
 
   console.log('inside the getTopics function');
@@ -34,6 +34,33 @@ let getTopics = function(content) {
     console.log('these are the topics within the request', topics);
     return topics;
   })
+  .then(topics => {
+    topics.forEach(topic => {
+      options = {
+        method: 'POST',
+        uri: 'http://127.0.0.1:3000/v1/topics',
+        body: {
+          topic: topic,
+        },
+        json:true
+      };
+      rp(options)
+      .then(response => {
+        options = {
+          method: 'POST',
+          uri: 'http://127.0.0.1:3000/v1/art_topics/',
+          body: {
+            article_id: artId, 
+            topic_id: response.data[0].id
+          },
+          json:true
+        };
+        rp(options)
+        .catch(err => console.log(err));
+      })
+      .catch(err => console.log(err));
+    });
+  })
   .catch(err => console.log(err));
 
 };
@@ -41,9 +68,9 @@ let getTopics = function(content) {
 //set rate limiter to run this function only once per second
 var limiter = new RateLimiter(1, 'second');
 
-var throttledRequest = function(content) {
+var throttledRequest = function(content, artId) {
   limiter.removeTokens(1, function() {
-    getTopics(content);
+    getTopics(content, artId);
   });
 }
 

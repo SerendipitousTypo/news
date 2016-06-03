@@ -35,8 +35,9 @@ module.exports = (url, pub_id) => {
       }
       rp(options)
       .then(results => {
+        let artId = results.data[0].id;
         let content = results.data[0].content;
-        topics(content);
+        topics(content, artId);
       })
       .catch(err => {
         //e('parseBotErrorLog', 'Article post error in parsebot', err);
