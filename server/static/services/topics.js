@@ -2,6 +2,7 @@
 
 const rp = require('request-promise');
 const API_KEY = require('./../config/apikey.js');
+var e = require('./errors.js');
 var RateLimiter = require('limiter').RateLimiter;
 
 let getTopics = function(content, artId) {
@@ -53,12 +54,21 @@ let getTopics = function(content, artId) {
           json:true
         };
         rp(options)
-        .catch(err => console.log(err));
+        .catch(err => {
+          e('topicsErrorLog', 'article_topic post error in topics', err);
+          // console.log(err)
+        });
       })
-      .catch(err => console.log(err));
+      .catch(err => {
+        e('topicsErrorLog', 'Topic post error in topics', err);
+        // console.log(err)
+      });
     });
   })
-  .catch(err => console.log(err));
+  .catch(err => {
+    e('CalaisErrorLog', 'topic parsing error in Open Calais', err);
+    // console.log(err)
+  });
 
 };
 

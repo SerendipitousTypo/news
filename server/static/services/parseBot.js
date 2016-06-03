@@ -40,8 +40,7 @@ module.exports = (url, pub_id) => {
         topics(content, artId);
       })
       .catch(err => {
-        //e('parseBotErrorLog', 'Article post error in parsebot', err);
-        console.log(err);
+        e('parseBotErrorLog', 'Article post error in parsebot', err);
       });
     });
   })
