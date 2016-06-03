@@ -12,6 +12,7 @@
     "babel-preset-react": "^6.5.0",
     "chron": "0.0.4",
     "express": "latest",
+    "limiter": "^1.1.0",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
     "request-promise": "^3.0.0",
