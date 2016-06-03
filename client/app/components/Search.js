@@ -12,10 +12,13 @@ export var Search = ({store}) => {
             input = node;
           }}
           onChange={
-            _.debounce((() =>
-              store.dispatch(
-                store.getState().appView,
-                fetchArticles(input.value)
+            _.debounce(
+              (() =>
+                store.dispatch(
+                  fetchArticles(
+                    store.getState().articleFilter.view,
+                    input.value
+                  )
               )),
             300)}
         />

@@ -13,5 +13,6 @@ export var Sidebar = ({}) => (
   </div>
 );
 
+//TODO: Delete
 window.Sidebar = Sidebar;
 

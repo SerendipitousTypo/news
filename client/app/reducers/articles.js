@@ -10,7 +10,7 @@ const article = (state, action) => {
 }
 
 const articles = (state = [], action) => {
-  console.log('action: ', action);
+  // console.log('action: ', action);
   switch (action.type) {
     //replace current articles with new articles
     case 'LOAD_ARTICLES':

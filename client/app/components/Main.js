@@ -4,12 +4,13 @@ import { ArticlesRow } from './ArticlesRow';
 
 export var Main = ({store, articles}) => (
   <div className="main-block">
-    {populateRows(articles, store)}
+    {populateRows(store, articles)}
   </div>
 );
 
 
-var populateRows = (articles, store) => {
+var populateRows = (store, articles) => {
+  //TODO: change name from 'topics'
   var topics = {};
 
   //sort articles by category, according to filter, ie. {'North America': [Articles. . . ]}
@@ -23,6 +24,7 @@ var populateRows = (articles, store) => {
       topics[article.publisher.region] = [article];
     }
   });
+
   // console.log('topics: ', topics);
 
   //create a row of articles per category, according to filter
@@ -31,5 +33,6 @@ var populateRows = (articles, store) => {
   });
 };
 
+//TODO: Delete
 window.Main = Main;
 

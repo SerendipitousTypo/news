@@ -36,7 +36,7 @@ export class App extends Component {
     const { store } = this.props;
     const state = store.getState();
 
-    console.log('state: ', state);
+    // console.log('state: ', state);
 
     return (
 

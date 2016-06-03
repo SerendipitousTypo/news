@@ -21,11 +21,9 @@ export var ArticlesRow = ({store, title, articles}) => (
 
 var populateRow = (articles, store) => {
   //perhaps temporary
-  //limit articleEntry / row to 4
-  console.log('articles: ', articles);
-
+  //limit articleEntry per row to 5
   let collection = [];
-  for (var i = 0; i < 4; i++) {
+  for (var i = 0; i < articles.length && i < 4; i++) {
     collection.push(
       <ArticleEntry
         store={store}
@@ -35,6 +33,7 @@ var populateRow = (articles, store) => {
     )
   }
 
+  // console.log('articlesRow: ', articles);
   return collection;
 
   // return articles.map((article, key) => {
