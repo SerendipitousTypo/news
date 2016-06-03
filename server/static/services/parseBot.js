@@ -6,6 +6,7 @@
 var parser = require ('rss-parser');
 var rp = require('request-promise');
 var e = require('./errors.js');
+var topics = require('./topics.js');
 
 /** parseBot
 *@params url
@@ -33,8 +34,14 @@ module.exports = (url, pub_id) => {
           json:true
       }
       rp(options)
+      .then(results => {
+        let content = results.data[0].content;
+        console.log(content);
+        topics(content);
+      })
       .catch(err => {
-        e('parseBotErrorLog', 'Article post error in parsebot', err);
+        //e('parseBotErrorLog', 'Article post error in parsebot', err);
+        console.log(err);
       });
     });
   })
