@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "elasticsearch": "^11.0.1",
-    "nodal": "0.10.0"
+    "nodal": "0.10.0",
+    "unfluff": "^1.0.0"
   },
   "devDependencies": {
     "chai": "~3.5.0",

@@ -2,7 +2,6 @@
 * v 0.0.1 called from the master.js bot. 
 * 
 */
-
 var parser = require ('rss-parser');
 var rp = require('request-promise');
 var e = require('./errors.js');

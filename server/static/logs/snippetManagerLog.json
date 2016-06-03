@@ -1,0 +1,53 @@
+{
+    "date": 1465005253422,
+    "location": "get articles with no content issue",
+    "message": {
+        "name": "RequestError",
+        "message": "Error: connect ECONNREFUSED 127.0.0.1:3000",
+        "cause": {
+            "code": "ECONNREFUSED",
+            "errno": "ECONNREFUSED",
+            "syscall": "connect",
+            "address": "127.0.0.1",
+            "port": 3000
+        },
+        "error": {
+            "code": "ECONNREFUSED",
+            "errno": "ECONNREFUSED",
+            "syscall": "connect",
+            "address": "127.0.0.1",
+            "port": 3000
+        },
+        "options": {
+            "uri": "http://127.0.0.1:3000/v1/articles?content=",
+            "simple": true,
+            "resolveWithFullResponse": false
+        }
+    }
+}{
+    "date": 1465005253424,
+    "location": "get articles with no content issue",
+    "message": {
+        "name": "RequestError",
+        "message": "Error: connect ECONNREFUSED 127.0.0.1:3000",
+        "cause": {
+            "code": "ECONNREFUSED",
+            "errno": "ECONNREFUSED",
+            "syscall": "connect",
+            "address": "127.0.0.1",
+            "port": 3000
+        },
+        "error": {
+            "code": "ECONNREFUSED",
+            "errno": "ECONNREFUSED",
+            "syscall": "connect",
+            "address": "127.0.0.1",
+            "port": 3000
+        },
+        "options": {
+            "uri": "http://127.0.0.1:3000/v1/articles?content=",
+            "simple": true,
+            "resolveWithFullResponse": false
+        }
+    }
+}
