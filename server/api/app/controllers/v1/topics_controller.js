@@ -3,13 +3,13 @@ module.exports = (function() {
   'use strict';
 
   const Nodal = require('nodal');
-  const Channel = Nodal.require('app/models/channel.js');
+  const Topic = Nodal.require('app/models/topic.js');
 
-  class ChannelsController extends Nodal.Controller {
+  class V1TopicsController extends Nodal.Controller {
 
     index() {
 
-      Channel.query()
+      Topic.query()
         .where(this.params.query)
         .end((err, models) => {
 
@@ -21,7 +21,7 @@ module.exports = (function() {
 
     show() {
 
-      Channel.find(this.params.route.id, (err, model) => {
+      Topic.find(this.params.route.id, (err, model) => {
 
         this.respond(err || model);
 
@@ -31,7 +31,7 @@ module.exports = (function() {
 
     create() {
 
-      Channel.create(this.params.body, (err, model) => {
+      Topic.create(this.params.body, (err, model) => {
 
         this.respond(err || model);
 
@@ -41,8 +41,8 @@ module.exports = (function() {
 
     update() {
 
-      Channel.update(this.params.route.id, this.params.body, (err, model) => {
-        console.log('params', this.params.route.id);
+      Topic.update(this.params.route.id, this.params.body, (err, model) => {
+
         this.respond(err || model);
 
       });
@@ -51,7 +51,7 @@ module.exports = (function() {
 
     destroy() {
 
-      Channel.destroy(this.params.route.id, (err, model) => {
+      Topic.destroy(this.params.route.id, (err, model) => {
 
         this.respond(err || model);
 
@@ -61,6 +61,6 @@ module.exports = (function() {
 
   }
 
-  return ChannelsController;
+  return V1TopicsController;
 
 })();

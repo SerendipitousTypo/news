@@ -24,12 +24,25 @@ module.exports = (function() {
 * returns an article, with it's publisher region and channel name as JSON
 */
     index() {
-
       let searchQuery = this.params.query; //{q:'query string'};
+      let searchTerm = {q: this.params.query.q} //separates keyword search from other search parameters
       let article_ids = [];
-      let results = [];
 
-      client.search(searchQuery)
+      //function to get other search parameters
+      let objToArray = (obj) => {
+        let object = {};
+        for (var key in obj) {
+          if (key !== 'q') {
+            object[key] = obj[key];
+          }
+        }
+        return object;
+      };
+
+      //creating object of other search parameters
+      let filter = objToArray(searchQuery);
+
+      client.search(searchTerm)
       .then(response => {
         var idArray = response.hits.hits;
 
@@ -39,15 +52,22 @@ module.exports = (function() {
         return article_ids;
       })
       .then(array => {
-          Article.query()
-            .join('publisher')
-            .join('channel')
-            .where({id__in: array})
-            .end((err, models) => {
-              this.respond(err || models, ['title','date','url','content', {publisher: ['name', 'region']},{channel:'name'}]);
-            })
-          });
-      }
+        //creating one queries object
+        let queries = {id__in: array};
+        for (var key in filter) {
+          queries[key] = filter[key];
+        }
+
+        //query article database by keyword and other search parameters
+        Article.query()
+          .join('publisher')
+          .join('channel')
+          .where(queries)
+          .end((err, models) => {
+            this.respond(err || models, ['title','date','url','content', {publisher: ['name', 'region']},{channel:'name'}]);
+          })
+      });
+    }
 
     show() {}
 
