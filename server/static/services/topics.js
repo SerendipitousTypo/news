@@ -50,7 +50,7 @@ let getTopics = function(content, artId) {
           method: 'POST',
           uri: 'http://127.0.0.1:3000/v1/art_topics/',
           body: {
-            article_id: artId, 
+            art_id: artId, 
             topic_id: response.data[0].id
           },
           json:true
