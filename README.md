@@ -1,6 +1,17 @@
 #Serendipitous News
 
-A news reader app offerring perspectives from around the world.
+A news reader app offerring perspectives from around the world. Our mission is to better inform our readers by providing a single location to get the whole worlds perspective on current events.
+
+##Table of Contents
+* [Team Members](#team-members-v0.1)
+* [Pages](#pages)
+
+
+##Team Members (v. 0.1)
+* Jonsa Sota
+* Elebert Lum
+* Nick Lebedev
+* Tj Carskadon
 
 ##How to start the app
 
@@ -26,6 +37,7 @@ A news reader app offerring perspectives from around the world.
 You can now open localhost:8085/ and load the index.html page
 
 ##Query to return article as json object
+####pages
 `localhost:3000/v1/pages?url=[http://www.someurl.com]`
 
 
