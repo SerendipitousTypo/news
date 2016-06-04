@@ -9,7 +9,7 @@ module.exports = () => {
   'use strict'
 
   //get all articles that have no content
-  console.log('Snippet Manager Running##############')
+
   rp('http://127.0.0.1:3000/v1/articles?content=')
   .then(articles => {
     let art = JSON.parse(articles);
@@ -19,8 +19,6 @@ module.exports = () => {
       .then(response => {
         let resp = JSON.parse(response);
         let snippet = resp.data[0].text.slice(0, 150) + '...';
-        // console.log('*************', snippet)
-      
        let putUrl ='http://127.0.0.1:3000/v1/articles/' + article.id;
        var options = {
         method: 'PUT',
@@ -32,12 +30,15 @@ module.exports = () => {
 
        };
         rp(options)
-        .then(response => console.log("should be good go check"))
-        .catch(err => console.log("error putting", err))
+        .catch(err => {
+          e('snippetManagerLog', 'PUT issue', err);
+        })
       })
     });
   })
-  .catch( err => console.log('error getting articles', err));
+  .catch( err => {
+    e('snippetManagerLog', 'get articles with no content issue', err);
+  });
 }
 
 module.exports();
