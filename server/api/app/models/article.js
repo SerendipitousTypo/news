@@ -7,6 +7,7 @@ module.exports = (function() {
   const Channel = require('./channel.js');
   const ArtTopic = require('./art_topic.js');
 
+
   class Article extends Nodal.Model {}
 
   Article.setDatabase(Nodal.require('db/main.js'));

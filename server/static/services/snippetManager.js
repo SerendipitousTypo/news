@@ -27,7 +27,9 @@ module.exports = () => {
         uri: putUrl,
         body: {
           content: snippet
-        }
+        },
+        json: true
+
        };
         rp(options)
         .then(response => console.log("should be good go check"))
