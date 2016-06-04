@@ -3,24 +3,24 @@
 A news reader app offerring perspectives from around the world. Our mission is to better inform our readers by providing a single location to get the whole worlds perspective on current events.
 
 ##Table of Contents
-* [Team Members](#Team-Members)
+* [Team Members](#team-members)
 * [Tech Stack, API's and Third-party Tools](#tech-stack-apis-and-third-party-tools)
 * [Folder and File Structure](#folder-and-file-structure)
-* [Setting up the Development Environment](#Setting-up-the-Development-Environment)
-* [Starting the app](#Starting-the-app)
-* [System Architecture](#System-Architecture)
-* [Database Schema](#Database-Schema)
-* [API](#API)
-* [Add Publishers](#Add-Publishers)
-* [Worker Description](#Worker-Description)
-* [License](#License)
+* [Setting up the Development Environment](#setting-up-the-development-environment)
+* [Starting the app](#starting-the-app)
+* [System Architecture](#system-architecture)
+* [Database Schema](#database-schema)
+* [API](#api)
+* [Add Publishers](#add-publishers)
+* [Worker Description](#worker-description)
+* [License](#license)
 
 ##Team Members
-[Jonsa Sota]
+[![Jonsa Sota](https://dl.dropboxusercontent.com/s/mqyqke84g66967l/jonassota.png?dl=0)](http://github.com/jonasms)
 
-[Elebert Lum]
+[![Elebert Lum](https://dl.dropboxusercontent.com/s/no2qvjt4pxry7g8/elbertlum.png?dl=0)](http://github.com/elbertlum)
 
-[Nick Lebedev]
+[![Nick Lebedev](https://dl.dropboxusercontent.com/s/okywz1xvgrl63zm/nlebedev.png?dl=0)](http://github.com/nlebedev)
 
 [![Tj Carskadon](https://dl.dropboxusercontent.com/s/yfzgicfwif8d5qo/tjcarskadon.png?dl=0)](http://github.com/tjcarskadon)
 
@@ -90,7 +90,7 @@ A news reader app offerring perspectives from around the world. Our mission is t
 - [ ] You can now open `http://localhost:8085/`
 
 ##System Architecture
-
+![architecture](https://dl.dropboxusercontent.com/s/gsaspp0btg0igbv/System%20Architecture.PNG?dl=0)
 
 ##Database Schema
 ![schema](https://dl.dropboxusercontent.com/s/wjy81qvsaba89pv/DB%20Schema%20Design.PNG?dl=0)
