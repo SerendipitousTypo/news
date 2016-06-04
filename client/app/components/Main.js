@@ -32,7 +32,7 @@ const populateRows = (store, articles) => {
         }
       });
   } else if (filter.view === 'A_REGION') {
-    //all articles should be of that region,
+    //all articles served should be of that region,
     //display all articles by Topic
     console.log('view is A_REGION!');
   }
