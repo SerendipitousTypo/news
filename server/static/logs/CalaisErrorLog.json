@@ -1,0 +1,1407 @@
+{
+    "date": 1465077580183,
+    "location": "topic parsing error in Open Calais",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 429,
+        "message": "429 - \"You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.\"",
+        "error": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+        "options": {
+            "method": "POST",
+            "uri": "https://api.thomsonreuters.com/permid/calais",
+            "headers": {
+                "Content-Type": "text/raw",
+                "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                "outputFormat": "application/json"
+            },
+            "body": "Nigeria said it has in the past year recovered $580 million stolen from government coffers as part of a fight against corruption instigated by President Muhammadu Buhari. Buhari has embarked on a widespread anti-corruption campaign although his critics accuse him of a political witch hunt.",
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 429,
+            "body": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+            "headers": {
+                "content-type": "text/plain",
+                "content-length": "130",
+                "connection": "close"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "https:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "api.thomsonreuters.com",
+                    "port": 443,
+                    "hostname": "api.thomsonreuters.com",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/permid/calais",
+                    "path": "/permid/calais",
+                    "href": "https://api.thomsonreuters.com/permid/calais"
+                },
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "text/raw",
+                    "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                    "outputFormat": "application/json",
+                    "content-length": 290
+                }
+            }
+        }
+    }
+}{
+    "date": 1465077580503,
+    "location": "topic parsing error in Open Calais",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 429,
+        "message": "429 - \"You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.\"",
+        "error": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+        "options": {
+            "method": "POST",
+            "uri": "https://api.thomsonreuters.com/permid/calais",
+            "headers": {
+                "Content-Type": "text/raw",
+                "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                "outputFormat": "application/json"
+            },
+            "body": "Organizers of the \"Rock am Ring\" music festival in Germany said on Saturday they had no plans to close the event after 51 people were injured by lightning strikes on Friday despite forecasts of further thunderstorms. The festival, now in its 31st year, takes place at the airport in Mendig.",
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 429,
+            "body": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+            "headers": {
+                "content-type": "text/plain",
+                "content-length": "130",
+                "connection": "close"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "https:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "api.thomsonreuters.com",
+                    "port": 443,
+                    "hostname": "api.thomsonreuters.com",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/permid/calais",
+                    "path": "/permid/calais",
+                    "href": "https://api.thomsonreuters.com/permid/calais"
+                },
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "text/raw",
+                    "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                    "outputFormat": "application/json",
+                    "content-length": 290
+                }
+            }
+        }
+    }
+}{
+    "date": 1465077582469,
+    "location": "topic parsing error in Open Calais",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 429,
+        "message": "429 - \"You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.\"",
+        "error": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+        "options": {
+            "method": "POST",
+            "uri": "https://api.thomsonreuters.com/permid/calais",
+            "headers": {
+                "Content-Type": "text/raw",
+                "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                "outputFormat": "application/json"
+            },
+            "body": "Investigators of the ULCA shooting case are yet to found any \"trigger event\" to explain why Mainak Sarkar decided to kill professor William Klug now as for the past three years Mainak believed that Klug had stolen his code.",
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 429,
+            "body": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+            "headers": {
+                "content-type": "text/plain",
+                "content-length": "130",
+                "connection": "close"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "https:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "api.thomsonreuters.com",
+                    "port": 443,
+                    "hostname": "api.thomsonreuters.com",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/permid/calais",
+                    "path": "/permid/calais",
+                    "href": "https://api.thomsonreuters.com/permid/calais"
+                },
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "text/raw",
+                    "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                    "outputFormat": "application/json",
+                    "content-length": 223
+                }
+            }
+        }
+    }
+}{
+    "date": 1465077587445,
+    "location": "topic parsing error in Open Calais",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 429,
+        "message": "429 - \"You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.\"",
+        "error": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+        "options": {
+            "method": "POST",
+            "uri": "https://api.thomsonreuters.com/permid/calais",
+            "headers": {
+                "Content-Type": "text/raw",
+                "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                "outputFormat": "application/json"
+            },
+            "body": "Syrian troops pushed into the Islamic State's bastion province Raqqa for the first time since 2014, in an advance towards the country's largest dam. Meanwhile, hundreds of kilometres downstream in neighbouring Iraq, elite Iraq troops have launched an assault on the emblematic IS bastion of Fallujah.",
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 429,
+            "body": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+            "headers": {
+                "content-type": "text/plain",
+                "content-length": "130",
+                "connection": "close"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "https:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "api.thomsonreuters.com",
+                    "port": 443,
+                    "hostname": "api.thomsonreuters.com",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/permid/calais",
+                    "path": "/permid/calais",
+                    "href": "https://api.thomsonreuters.com/permid/calais"
+                },
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "text/raw",
+                    "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                    "outputFormat": "application/json",
+                    "content-length": 300
+                }
+            }
+        }
+    }
+}{
+    "date": 1465077588582,
+    "location": "topic parsing error in Open Calais",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 429,
+        "message": "429 - \"You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.\"",
+        "error": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+        "options": {
+            "method": "POST",
+            "uri": "https://api.thomsonreuters.com/permid/calais",
+            "headers": {
+                "Content-Type": "text/raw",
+                "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                "outputFormat": "application/json"
+            },
+            "body": "China's demand for versatile utility aircraft capable of freight transportation will increase dramatically in the near future as the country invests huge money in infrastructure development in its remote regions, according to a leading industry executive.",
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 429,
+            "body": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+            "headers": {
+                "content-type": "text/plain",
+                "content-length": "130",
+                "connection": "close"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "https:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "api.thomsonreuters.com",
+                    "port": 443,
+                    "hostname": "api.thomsonreuters.com",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/permid/calais",
+                    "path": "/permid/calais",
+                    "href": "https://api.thomsonreuters.com/permid/calais"
+                },
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "text/raw",
+                    "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                    "outputFormat": "application/json",
+                    "content-length": 255
+                }
+            }
+        }
+    }
+}{
+    "date": 1465077589617,
+    "location": "topic parsing error in Open Calais",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - \"{\\\"error\\\": {\\\"status\\\": {\\n    \\\"code\\\": \\\"400\\\",\\n    \\\"errorCode\\\": \\\"Invalid-Content\\\",\\n    \\\"errorDescription\\\": \\\"Null or empty content submitted.\\\"\\n}}}\"",
+        "error": "{\"error\": {\"status\": {\n    \"code\": \"400\",\n    \"errorCode\": \"Invalid-Content\",\n    \"errorDescription\": \"Null or empty content submitted.\"\n}}}",
+        "options": {
+            "method": "POST",
+            "uri": "https://api.thomsonreuters.com/permid/calais",
+            "headers": {
+                "Content-Type": "text/raw",
+                "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                "outputFormat": "application/json"
+            },
+            "body": "",
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": "{\"error\": {\"status\": {\n    \"code\": \"400\",\n    \"errorCode\": \"Invalid-Content\",\n    \"errorDescription\": \"Null or empty content submitted.\"\n}}}",
+            "headers": {
+                "date": "Sat, 04 Jun 2016 21:59:49 GMT",
+                "set-cookie": [
+                    "TR-TMS-MDaaS-SESSIONID=AVUdbeY628mrWkqS1Vxo^4dc4b5dd;Path=/;HttpOnly"
+                ],
+                "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+                "errorcode": "Invalid-Content",
+                "errordescription": "Null or empty content submitted.",
+                "content-type": "application/json",
+                "transfer-encoding": "chunked",
+                "connection": "close"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "https:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "api.thomsonreuters.com",
+                    "port": 443,
+                    "hostname": "api.thomsonreuters.com",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/permid/calais",
+                    "path": "/permid/calais",
+                    "href": "https://api.thomsonreuters.com/permid/calais"
+                },
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "text/raw",
+                    "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                    "outputFormat": "application/json",
+                    "content-length": 0
+                }
+            }
+        }
+    }
+}{
+    "date": 1465077591645,
+    "location": "topic parsing error in Open Calais",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 429,
+        "message": "429 - \"You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.\"",
+        "error": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+        "options": {
+            "method": "POST",
+            "uri": "https://api.thomsonreuters.com/permid/calais",
+            "headers": {
+                "Content-Type": "text/raw",
+                "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                "outputFormat": "application/json"
+            },
+            "body": "China can empower women and eradicate gender inequality by improving employment opportunities and encouraging entrepreneurship among females, according to Song Xiuyan, vice-president of the All-China Women's Federation.",
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 429,
+            "body": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+            "headers": {
+                "content-type": "text/plain",
+                "content-length": "130",
+                "connection": "close"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "https:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "api.thomsonreuters.com",
+                    "port": 443,
+                    "hostname": "api.thomsonreuters.com",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/permid/calais",
+                    "path": "/permid/calais",
+                    "href": "https://api.thomsonreuters.com/permid/calais"
+                },
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "text/raw",
+                    "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                    "outputFormat": "application/json",
+                    "content-length": 219
+                }
+            }
+        }
+    }
+}{
+    "date": 1465077593681,
+    "location": "topic parsing error in Open Calais",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 429,
+        "message": "429 - \"You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.\"",
+        "error": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+        "options": {
+            "method": "POST",
+            "uri": "https://api.thomsonreuters.com/permid/calais",
+            "headers": {
+                "Content-Type": "text/raw",
+                "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                "outputFormat": "application/json"
+            },
+            "body": "The measures are part of the government’s response to reports that F.B.I. scientists have often vastly overstated their level of certainty about forensic test results.",
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 429,
+            "body": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+            "headers": {
+                "content-type": "text/plain",
+                "content-length": "130",
+                "connection": "close"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "https:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "api.thomsonreuters.com",
+                    "port": 443,
+                    "hostname": "api.thomsonreuters.com",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/permid/calais",
+                    "path": "/permid/calais",
+                    "href": "https://api.thomsonreuters.com/permid/calais"
+                },
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "text/raw",
+                    "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                    "outputFormat": "application/json",
+                    "content-length": 169
+                }
+            }
+        }
+    }
+}{
+    "date": 1465077596738,
+    "location": "topic parsing error in Open Calais",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 429,
+        "message": "429 - \"You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.\"",
+        "error": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+        "options": {
+            "method": "POST",
+            "uri": "https://api.thomsonreuters.com/permid/calais",
+            "headers": {
+                "Content-Type": "text/raw",
+                "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                "outputFormat": "application/json"
+            },
+            "body": "Foreign diplomats and business people got a closer look at China's Guangxi Zhuang autonomous region during a presentation by the Foreign Ministry in Beijing on Friday.",
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 429,
+            "body": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+            "headers": {
+                "content-type": "text/plain",
+                "content-length": "130",
+                "connection": "close"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "https:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "api.thomsonreuters.com",
+                    "port": 443,
+                    "hostname": "api.thomsonreuters.com",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/permid/calais",
+                    "path": "/permid/calais",
+                    "href": "https://api.thomsonreuters.com/permid/calais"
+                },
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "text/raw",
+                    "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                    "outputFormat": "application/json",
+                    "content-length": 167
+                }
+            }
+        }
+    }
+}{
+    "date": 1465077600801,
+    "location": "topic parsing error in Open Calais",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 429,
+        "message": "429 - \"You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.\"",
+        "error": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+        "options": {
+            "method": "POST",
+            "uri": "https://api.thomsonreuters.com/permid/calais",
+            "headers": {
+                "Content-Type": "text/raw",
+                "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                "outputFormat": "application/json"
+            },
+            "body": "Five years ago, there was debate in the Chinese scientific community over the country's funding system that allotted money according to the impact of the journals in which researchers publish their work.",
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 429,
+            "body": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+            "headers": {
+                "content-type": "text/plain",
+                "content-length": "130",
+                "connection": "close"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "https:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "api.thomsonreuters.com",
+                    "port": 443,
+                    "hostname": "api.thomsonreuters.com",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/permid/calais",
+                    "path": "/permid/calais",
+                    "href": "https://api.thomsonreuters.com/permid/calais"
+                },
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "text/raw",
+                    "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                    "outputFormat": "application/json",
+                    "content-length": 203
+                }
+            }
+        }
+    }
+}{
+    "date": 1465077602722,
+    "location": "topic parsing error in Open Calais",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 429,
+        "message": "429 - \"You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.\"",
+        "error": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+        "options": {
+            "method": "POST",
+            "uri": "https://api.thomsonreuters.com/permid/calais",
+            "headers": {
+                "Content-Type": "text/raw",
+                "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                "outputFormat": "application/json"
+            },
+            "body": "Most other people at their age would have retired to enjoy a peaceful life at a picturesque tourism spot, but Huang Quande, 87, and his 76-year-old brother, Huang Yuechuang, have found a new job that provides them with fun, a decent income and internet stardom.",
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 429,
+            "body": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+            "headers": {
+                "content-type": "text/plain",
+                "content-length": "130",
+                "connection": "close"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "https:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "api.thomsonreuters.com",
+                    "port": 443,
+                    "hostname": "api.thomsonreuters.com",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/permid/calais",
+                    "path": "/permid/calais",
+                    "href": "https://api.thomsonreuters.com/permid/calais"
+                },
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "text/raw",
+                    "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                    "outputFormat": "application/json",
+                    "content-length": 261
+                }
+            }
+        }
+    }
+}{
+    "date": 1465077603845,
+    "location": "topic parsing error in Open Calais",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 429,
+        "message": "429 - \"You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.\"",
+        "error": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+        "options": {
+            "method": "POST",
+            "uri": "https://api.thomsonreuters.com/permid/calais",
+            "headers": {
+                "Content-Type": "text/raw",
+                "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                "outputFormat": "application/json"
+            },
+            "body": "Libertarian Gary Johnson believes this could be the year his party, a perennial non-contender in US presidential elections, shakes up the campaign in a way it has failed to accomplish in past cycles.",
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 429,
+            "body": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+            "headers": {
+                "content-type": "text/plain",
+                "content-length": "130",
+                "connection": "close"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "https:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "api.thomsonreuters.com",
+                    "port": 443,
+                    "hostname": "api.thomsonreuters.com",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/permid/calais",
+                    "path": "/permid/calais",
+                    "href": "https://api.thomsonreuters.com/permid/calais"
+                },
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "text/raw",
+                    "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                    "outputFormat": "application/json",
+                    "content-length": 199
+                }
+            }
+        }
+    }
+}{
+    "date": 1465077609969,
+    "location": "topic parsing error in Open Calais",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 429,
+        "message": "429 - \"You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.\"",
+        "error": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+        "options": {
+            "method": "POST",
+            "uri": "https://api.thomsonreuters.com/permid/calais",
+            "headers": {
+                "Content-Type": "text/raw",
+                "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                "outputFormat": "application/json"
+            },
+            "body": "Body art boom also leads to increase in removal services",
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 429,
+            "body": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+            "headers": {
+                "content-type": "text/plain",
+                "content-length": "130",
+                "connection": "close"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "https:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "api.thomsonreuters.com",
+                    "port": 443,
+                    "hostname": "api.thomsonreuters.com",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/permid/calais",
+                    "path": "/permid/calais",
+                    "href": "https://api.thomsonreuters.com/permid/calais"
+                },
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "text/raw",
+                    "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                    "outputFormat": "application/json",
+                    "content-length": 56
+                }
+            }
+        }
+    }
+}{
+    "date": 1465077613031,
+    "location": "topic parsing error in Open Calais",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 429,
+        "message": "429 - \"You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.\"",
+        "error": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+        "options": {
+            "method": "POST",
+            "uri": "https://api.thomsonreuters.com/permid/calais",
+            "headers": {
+                "Content-Type": "text/raw",
+                "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                "outputFormat": "application/json"
+            },
+            "body": "Are Chinese students seeking to escape from the national college entrance exam?",
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 429,
+            "body": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+            "headers": {
+                "content-type": "text/plain",
+                "content-length": "130",
+                "connection": "close"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "https:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "api.thomsonreuters.com",
+                    "port": 443,
+                    "hostname": "api.thomsonreuters.com",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/permid/calais",
+                    "path": "/permid/calais",
+                    "href": "https://api.thomsonreuters.com/permid/calais"
+                },
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "text/raw",
+                    "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                    "outputFormat": "application/json",
+                    "content-length": 79
+                }
+            }
+        }
+    }
+}{
+    "date": 1465077670752,
+    "location": "topic parsing error in Open Calais",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 429,
+        "message": "429 - \"You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.\"",
+        "error": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+        "options": {
+            "method": "POST",
+            "uri": "https://api.thomsonreuters.com/permid/calais",
+            "headers": {
+                "Content-Type": "text/raw",
+                "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                "outputFormat": "application/json"
+            },
+            "body": "Editor's note: As media executives from the Asia News Network convene in Beijing for their annual meeting, China Daily reporters talk to some of the participants, seeking their insights into the challenges Asian media face, working concepts, cooperation among ANN members and how they help to defuse regional political tensions.",
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 429,
+            "body": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+            "headers": {
+                "content-type": "text/plain",
+                "content-length": "130",
+                "connection": "close"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "https:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "api.thomsonreuters.com",
+                    "port": 443,
+                    "hostname": "api.thomsonreuters.com",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/permid/calais",
+                    "path": "/permid/calais",
+                    "href": "https://api.thomsonreuters.com/permid/calais"
+                },
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "text/raw",
+                    "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                    "outputFormat": "application/json",
+                    "content-length": 328
+                }
+            }
+        }
+    }
+}{
+    "date": 1465077724756,
+    "location": "topic parsing error in Open Calais",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 429,
+        "message": "429 - \"You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.\"",
+        "error": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+        "options": {
+            "method": "POST",
+            "uri": "https://api.thomsonreuters.com/permid/calais",
+            "headers": {
+                "Content-Type": "text/raw",
+                "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                "outputFormat": "application/json"
+            },
+            "body": "Chinese residents in South Brooklyn have spotted two new regulars to the neighborhood who could be lifesavers.",
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 429,
+            "body": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+            "headers": {
+                "content-type": "text/plain",
+                "content-length": "130",
+                "connection": "close"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "https:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "api.thomsonreuters.com",
+                    "port": 443,
+                    "hostname": "api.thomsonreuters.com",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/permid/calais",
+                    "path": "/permid/calais",
+                    "href": "https://api.thomsonreuters.com/permid/calais"
+                },
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "text/raw",
+                    "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                    "outputFormat": "application/json",
+                    "content-length": 110
+                }
+            }
+        }
+    }
+}{
+    "date": 1465077728598,
+    "location": "topic parsing error in Open Calais",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 429,
+        "message": "429 - \"You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.\"",
+        "error": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+        "options": {
+            "method": "POST",
+            "uri": "https://api.thomsonreuters.com/permid/calais",
+            "headers": {
+                "Content-Type": "text/raw",
+                "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                "outputFormat": "application/json"
+            },
+            "body": "Fifteen children regularly use a rattan ladder to scale an 800-meter cliff on their way to and from boarding school every two weeks in Liangshan Yi autonomous prefecture in Sichuan province.",
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 429,
+            "body": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+            "headers": {
+                "content-type": "text/plain",
+                "content-length": "130",
+                "connection": "close"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "https:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "api.thomsonreuters.com",
+                    "port": 443,
+                    "hostname": "api.thomsonreuters.com",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/permid/calais",
+                    "path": "/permid/calais",
+                    "href": "https://api.thomsonreuters.com/permid/calais"
+                },
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "text/raw",
+                    "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                    "outputFormat": "application/json",
+                    "content-length": 190
+                }
+            }
+        }
+    }
+}{
+    "date": 1465077772408,
+    "location": "topic parsing error in Open Calais",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - \"{\\\"error\\\": {\\\"status\\\": {\\n    \\\"code\\\": \\\"400\\\",\\n    \\\"errorCode\\\": \\\"Invalid-Content\\\",\\n    \\\"errorDescription\\\": \\\"Null or empty content submitted.\\\"\\n}}}\"",
+        "error": "{\"error\": {\"status\": {\n    \"code\": \"400\",\n    \"errorCode\": \"Invalid-Content\",\n    \"errorDescription\": \"Null or empty content submitted.\"\n}}}",
+        "options": {
+            "method": "POST",
+            "uri": "https://api.thomsonreuters.com/permid/calais",
+            "headers": {
+                "Content-Type": "text/raw",
+                "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                "outputFormat": "application/json"
+            },
+            "body": "",
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": "{\"error\": {\"status\": {\n    \"code\": \"400\",\n    \"errorCode\": \"Invalid-Content\",\n    \"errorDescription\": \"Null or empty content submitted.\"\n}}}",
+            "headers": {
+                "date": "Sat, 04 Jun 2016 22:02:52 GMT",
+                "set-cookie": [
+                    "TR-TMS-MDaaS-SESSIONID=AVUdcK_rEC8q0Kfk8DI3^af844989;Path=/;HttpOnly"
+                ],
+                "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+                "errorcode": "Invalid-Content",
+                "errordescription": "Null or empty content submitted.",
+                "content-type": "application/json",
+                "transfer-encoding": "chunked",
+                "connection": "close"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "https:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "api.thomsonreuters.com",
+                    "port": 443,
+                    "hostname": "api.thomsonreuters.com",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/permid/calais",
+                    "path": "/permid/calais",
+                    "href": "https://api.thomsonreuters.com/permid/calais"
+                },
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "text/raw",
+                    "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                    "outputFormat": "application/json",
+                    "content-length": 0
+                }
+            }
+        }
+    }
+}{
+    "date": 1465077774439,
+    "location": "topic parsing error in Open Calais",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - \"{\\\"error\\\": {\\\"status\\\": {\\n    \\\"code\\\": \\\"400\\\",\\n    \\\"errorCode\\\": \\\"Invalid-Content\\\",\\n    \\\"errorDescription\\\": \\\"Null or empty content submitted.\\\"\\n}}}\"",
+        "error": "{\"error\": {\"status\": {\n    \"code\": \"400\",\n    \"errorCode\": \"Invalid-Content\",\n    \"errorDescription\": \"Null or empty content submitted.\"\n}}}",
+        "options": {
+            "method": "POST",
+            "uri": "https://api.thomsonreuters.com/permid/calais",
+            "headers": {
+                "Content-Type": "text/raw",
+                "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                "outputFormat": "application/json"
+            },
+            "body": "",
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": "{\"error\": {\"status\": {\n    \"code\": \"400\",\n    \"errorCode\": \"Invalid-Content\",\n    \"errorDescription\": \"Null or empty content submitted.\"\n}}}",
+            "headers": {
+                "date": "Sat, 04 Jun 2016 22:02:54 GMT",
+                "set-cookie": [
+                    "TR-TMS-MDaaS-SESSIONID=AVUdcLfXEd8PbCYZfBXI^0fc99af7;Path=/;HttpOnly"
+                ],
+                "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+                "errorcode": "Invalid-Content",
+                "errordescription": "Null or empty content submitted.",
+                "content-type": "application/json",
+                "transfer-encoding": "chunked",
+                "connection": "close"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "https:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "api.thomsonreuters.com",
+                    "port": 443,
+                    "hostname": "api.thomsonreuters.com",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/permid/calais",
+                    "path": "/permid/calais",
+                    "href": "https://api.thomsonreuters.com/permid/calais"
+                },
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "text/raw",
+                    "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                    "outputFormat": "application/json",
+                    "content-length": 0
+                }
+            }
+        }
+    }
+}{
+    "date": 1465077852248,
+    "location": "topic parsing error in Open Calais",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 429,
+        "message": "429 - \"You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.\"",
+        "error": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+        "options": {
+            "method": "POST",
+            "uri": "https://api.thomsonreuters.com/permid/calais",
+            "headers": {
+                "Content-Type": "text/raw",
+                "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                "outputFormat": "application/json"
+            },
+            "body": "Cargos from 47 Chinese cities and regions will be exported to Russia and to other countries in middle and eastern Europe through the newly opened Chifeng-Manzhouli-Europe railway route.",
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 429,
+            "body": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+            "headers": {
+                "content-type": "text/plain",
+                "content-length": "130",
+                "connection": "close"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "https:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "api.thomsonreuters.com",
+                    "port": 443,
+                    "hostname": "api.thomsonreuters.com",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/permid/calais",
+                    "path": "/permid/calais",
+                    "href": "https://api.thomsonreuters.com/permid/calais"
+                },
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "text/raw",
+                    "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                    "outputFormat": "application/json",
+                    "content-length": 185
+                }
+            }
+        }
+    }
+}{
+    "date": 1465077853283,
+    "location": "topic parsing error in Open Calais",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 400,
+        "message": "400 - \"{\\\"error\\\": {\\\"status\\\": {\\n    \\\"code\\\": \\\"400\\\",\\n    \\\"errorCode\\\": \\\"Invalid-Content\\\",\\n    \\\"errorDescription\\\": \\\"Null or empty content submitted.\\\"\\n}}}\"",
+        "error": "{\"error\": {\"status\": {\n    \"code\": \"400\",\n    \"errorCode\": \"Invalid-Content\",\n    \"errorDescription\": \"Null or empty content submitted.\"\n}}}",
+        "options": {
+            "method": "POST",
+            "uri": "https://api.thomsonreuters.com/permid/calais",
+            "headers": {
+                "Content-Type": "text/raw",
+                "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                "outputFormat": "application/json"
+            },
+            "body": "",
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 400,
+            "body": "{\"error\": {\"status\": {\n    \"code\": \"400\",\n    \"errorCode\": \"Invalid-Content\",\n    \"errorDescription\": \"Null or empty content submitted.\"\n}}}",
+            "headers": {
+                "date": "Sat, 04 Jun 2016 22:04:13 GMT",
+                "set-cookie": [
+                    "TR-TMS-MDaaS-SESSIONID=AVUdcewvJz4yilj2LvtH^6b34190c;Path=/;HttpOnly"
+                ],
+                "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+                "errorcode": "Invalid-Content",
+                "errordescription": "Null or empty content submitted.",
+                "content-type": "application/json",
+                "transfer-encoding": "chunked",
+                "connection": "close"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "https:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "api.thomsonreuters.com",
+                    "port": 443,
+                    "hostname": "api.thomsonreuters.com",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/permid/calais",
+                    "path": "/permid/calais",
+                    "href": "https://api.thomsonreuters.com/permid/calais"
+                },
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "text/raw",
+                    "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                    "outputFormat": "application/json",
+                    "content-length": 0
+                }
+            }
+        }
+    }
+}{
+    "date": 1465077863343,
+    "location": "topic parsing error in Open Calais",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 429,
+        "message": "429 - \"You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.\"",
+        "error": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+        "options": {
+            "method": "POST",
+            "uri": "https://api.thomsonreuters.com/permid/calais",
+            "headers": {
+                "Content-Type": "text/raw",
+                "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                "outputFormat": "application/json"
+            },
+            "body": "THE TELECOMMUNICATIONS giant Huawei Technologies Co Ltd has denied the rumor that it is planning to move its headquarters out of Shenzhen, South China's Guangdong province, due to the soaring price of land. Beijing News commented on Tuesday:",
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 429,
+            "body": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+            "headers": {
+                "content-type": "text/plain",
+                "content-length": "130",
+                "connection": "close"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "https:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "api.thomsonreuters.com",
+                    "port": 443,
+                    "hostname": "api.thomsonreuters.com",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/permid/calais",
+                    "path": "/permid/calais",
+                    "href": "https://api.thomsonreuters.com/permid/calais"
+                },
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "text/raw",
+                    "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                    "outputFormat": "application/json",
+                    "content-length": 241
+                }
+            }
+        }
+    }
+}{
+    "date": 1465077864264,
+    "location": "topic parsing error in Open Calais",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 429,
+        "message": "429 - \"You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.\"",
+        "error": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+        "options": {
+            "method": "POST",
+            "uri": "https://api.thomsonreuters.com/permid/calais",
+            "headers": {
+                "Content-Type": "text/raw",
+                "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                "outputFormat": "application/json"
+            },
+            "body": "Beijing will pressure Washington over maritime issues during the upcoming annual Strategic and Economic Dialogue, as the United States' increasing military presence in the South China Sea is among China's major concerns, officials told China Daily.",
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 429,
+            "body": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+            "headers": {
+                "content-type": "text/plain",
+                "content-length": "130",
+                "connection": "close"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "https:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "api.thomsonreuters.com",
+                    "port": 443,
+                    "hostname": "api.thomsonreuters.com",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/permid/calais",
+                    "path": "/permid/calais",
+                    "href": "https://api.thomsonreuters.com/permid/calais"
+                },
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "text/raw",
+                    "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                    "outputFormat": "application/json",
+                    "content-length": 248
+                }
+            }
+        }
+    }
+}{
+    "date": 1465077867437,
+    "location": "topic parsing error in Open Calais",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 429,
+        "message": "429 - \"You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.\"",
+        "error": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+        "options": {
+            "method": "POST",
+            "uri": "https://api.thomsonreuters.com/permid/calais",
+            "headers": {
+                "Content-Type": "text/raw",
+                "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                "outputFormat": "application/json"
+            },
+            "body": "Anbang Insurance Group Co, one of China's most-active buyers of overseas real estate, is poised to gain full ownership of Vancouver's largest office complex, according to unnamed industry sources.",
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 429,
+            "body": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+            "headers": {
+                "content-type": "text/plain",
+                "content-length": "130",
+                "connection": "close"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "https:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "api.thomsonreuters.com",
+                    "port": 443,
+                    "hostname": "api.thomsonreuters.com",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/permid/calais",
+                    "path": "/permid/calais",
+                    "href": "https://api.thomsonreuters.com/permid/calais"
+                },
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "text/raw",
+                    "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                    "outputFormat": "application/json",
+                    "content-length": 196
+                }
+            }
+        }
+    }
+}{
+    "date": 1465077875369,
+    "location": "topic parsing error in Open Calais",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 429,
+        "message": "429 - \"You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.\"",
+        "error": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+        "options": {
+            "method": "POST",
+            "uri": "https://api.thomsonreuters.com/permid/calais",
+            "headers": {
+                "Content-Type": "text/raw",
+                "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                "outputFormat": "application/json"
+            },
+            "body": "Donald Trump has been named one of the top 10 greatest risks to global stability, according to the Economist Intelligence Unit.",
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 429,
+            "body": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+            "headers": {
+                "content-type": "text/plain",
+                "content-length": "130",
+                "connection": "close"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "https:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "api.thomsonreuters.com",
+                    "port": 443,
+                    "hostname": "api.thomsonreuters.com",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/permid/calais",
+                    "path": "/permid/calais",
+                    "href": "https://api.thomsonreuters.com/permid/calais"
+                },
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "text/raw",
+                    "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                    "outputFormat": "application/json",
+                    "content-length": 127
+                }
+            }
+        }
+    }
+}{
+    "date": 1465077913874,
+    "location": "topic parsing error in Open Calais",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 429,
+        "message": "429 - \"You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.\"",
+        "error": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+        "options": {
+            "method": "POST",
+            "uri": "https://api.thomsonreuters.com/permid/calais",
+            "headers": {
+                "Content-Type": "text/raw",
+                "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                "outputFormat": "application/json"
+            },
+            "body": "Guru of cinematic writing Robert McKee says trying to be popular leads to bad work, Wang Kaihao reports.",
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 429,
+            "body": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+            "headers": {
+                "content-type": "text/plain",
+                "content-length": "130",
+                "connection": "close"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "https:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "api.thomsonreuters.com",
+                    "port": 443,
+                    "hostname": "api.thomsonreuters.com",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/permid/calais",
+                    "path": "/permid/calais",
+                    "href": "https://api.thomsonreuters.com/permid/calais"
+                },
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "text/raw",
+                    "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                    "outputFormat": "application/json",
+                    "content-length": 104
+                }
+            }
+        }
+    }
+}
