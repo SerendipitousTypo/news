@@ -4,8 +4,12 @@ var fs = require('fs');
 module.exports = (log, location, error) => {
   'use strict'
 
+  //filter log so it doesn't show duplicate key value errors
+  let dupes = error.message.match('duplicate key value');
+  // console.log('DUPES==============>', dupes[0]);
+
   //log any error that is not caused by a duplicate entry
-  if(error.statusCode !== 400 && error.error.meta.error.match('duplicate key value')) {
+  if(!dupes) {
     let file = log + '.json';
     let targetFile = path.resolve(__dirname, '..', 'logs', file);
     let errorObject = {

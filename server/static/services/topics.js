@@ -56,18 +56,15 @@ let getTopics = function(content, artId) {
         rp(options)
         .catch(err => {
           e('topicsErrorLog', 'article_topic post error in topics', err);
-          // console.log(err)
         });
       })
       .catch(err => {
         e('topicsErrorLog', 'Topic post error in topics', err);
-        // console.log(err)
       });
     });
   })
   .catch(err => {
     e('CalaisErrorLog', 'topic parsing error in Open Calais', err);
-    // console.log(err)
   });
 
 };
