@@ -60,11 +60,12 @@ module.exports = (function() {
 
         //query article database by keyword and other search parameters
         Article.query()
+          .join('artTopics__topic')
           .join('publisher')
           .join('channel')
           .where(queries)
           .end((err, models) => {
-            this.respond(err || models, ['title','date','url','content', {publisher: ['name', 'region']},{channel:'name'}]);
+            this.respond(err || models, ['title','date','url','content', {publisher: ['name', 'region']}, {artTopics: [{topic:['name']}]}, {channel: ['name']}]);
           })
       });
     }
