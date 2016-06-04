@@ -25,6 +25,10 @@ A news reader app offerring perspectives from around the world.
 
 You can now open localhost:8085/ and load the index.html page
 
+##Query to return article as json object
+`localhost:3000/v1/pages?url=[http://www.someurl.com]`
+
+
 ##Query Strings for Ajax calls
 Query for returning all articles from a particular publisher
 `localhost:3000/v1/articles?publisher__name=['NAME']`

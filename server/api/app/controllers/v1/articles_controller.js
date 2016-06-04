@@ -87,7 +87,6 @@ module.exports = (function() {
     update() {
 
       Article.update(this.params.route.id, this.params.body, (err, model) => {
-
         this.respond(err || model);
 
       });
