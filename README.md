@@ -3,9 +3,9 @@
 A news reader app offerring perspectives from around the world. Our mission is to better inform our readers by providing a single location to get the whole worlds perspective on current events.
 
 ##Table of Contents
-* [Team Members](#team-members-v.-0.1)
-* [Tech Stack, API's and Third-party Tools](#Tech-Stack,-API's-and-Third-party-Tools)
-* [Folder and File Structure](#Folder-and-File-Structure)
+* [Team Members](#Team-Members)
+* [Tech Stack, API's and Third-party Tools](#tech-stack-apis-and-third-party-tools)
+* [Folder and File Structure](#folder-and-file-structure)
 * [Setting up the Development Environment](#Setting-up-the-Development-Environment)
 * [Starting the app](#Starting-the-app)
 * [System Architecture](#System-Architecture)
@@ -15,7 +15,7 @@ A news reader app offerring perspectives from around the world. Our mission is t
 * [Worker Description](#Worker-Description)
 * [License](#License)
 
-##Team Members (v. 0.1)
+##Team Members
 [Jonsa Sota]
 
 [Elebert Lum]
@@ -37,29 +37,29 @@ A news reader app offerring perspectives from around the world. Our mission is t
 
 
 ##Folder and File Structure
-news/
-|
-|--client/
+    news/
     |
-    |--app/
+    |--client/
         |
-        |--React / Redux
+        |--app/
+            |
+            |--React / Redux
+        |
+        |--styles/
+            |
+            |--CSS
     |
-    |--styles/
-        |
-        |--CSS
-|
-|--docs/
-|
-|--server/
+    |--docs/
     |
-    |--api/
+    |--server/
         |
-        |--Nodal Server
-    |
-    |--static/
+        |--api/
+            |
+            |--Nodal Server
         |
-        |--Node / Express server
+        |--static/
+            |
+            |--Node / Express server
 
 ##Setting up the Development Environment
 
@@ -125,7 +125,7 @@ This service receives instructions from master.js.  It gets all the articles lis
 #####topics.js
 This service interfaces with the Open Calais API.  This API reads the articles provided by topics.js and returns an array of topics that are related to the article. These topics get stored in the topics table, and the art_topics join table is updated.
 
-####snippetManager.js
+#####snippetManager.js
 This service runs every 120 seconds.  It makes a query to the database for any articles that don't have any content.  If any are found it then makes a query for the page text, slices the first 150 characters, and stores that in the content field in the database.
 
 ##License
