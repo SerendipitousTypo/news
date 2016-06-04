@@ -17,7 +17,7 @@ A news reader app offerring perspectives from around the world. Our mission is t
 * [Jonsa Sota] 
 * [Elebert Lum]
 * [Nick Lebedev]
-* [![Tj Carskadon](https://www.dropbox.com/s/ploc7owpc1n0ofy/headshotBW.jpg?dl=0)][http://github.com/tjcarskadon]
+* [![Tj Carskadon](https://dl.dropboxusercontent.com/s/ploc7owpc1n0ofy/headshotBW.jpg?dl=0)][http://github.com/tjcarskadon]
 
 ##Tech Stack, API's and Third-party Tools
 * React for rendering views and Redux for managing state
