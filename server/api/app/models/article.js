@@ -5,6 +5,7 @@ module.exports = (function() {
   const Nodal = require('nodal');
   const Publisher = require('./publisher.js');
   const Channel = require('./channel.js');
+  const ArtTopic = require('./art_topic.js');
 
   class Article extends Nodal.Model {}
 
@@ -14,6 +15,7 @@ module.exports = (function() {
 //Join statements for articles table
   Article.joinsTo(Publisher, {multiple: true});
   Article.joinsTo(Channel, {multiple: true});
+  Article.joinedBy(ArtTopic, {multiple: true});
 
   return Article;
 

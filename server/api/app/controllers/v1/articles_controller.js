@@ -26,12 +26,13 @@ module.exports = (function() {
     index() {
 
       Article.query()
+        .join('artTopics__topic')
         .join('publisher')
         .join('channel')
         .where(this.params.query)
         .end((err, models) => {
 
-          this.respond(err || models, ['title','date','url','content', {publisher: ['name', 'region']},{channel:['name']}]);
+          this.respond(err || models, ['title','date','url','content', {publisher: ['name', 'region']}, {artTopics: [{topic:['name']}]}, {channel:['name']}]);
 
         });
 
