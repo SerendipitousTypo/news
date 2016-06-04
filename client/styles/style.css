@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-.articlesRow {
-  height: 300px;
-  width: 70%;
-}
-=======
 .search-box {
   position: absolute;
   left: 50%;
@@ -58,7 +52,7 @@
   height: 40px;
   width: 40px;
   box-sizing: border-box;
-  border-radius: 0; 
+  border-radius: 0;
   background-color: rgba(0, 0, 0, 0);
   font-size: 40px;
   color: #757575;
@@ -97,13 +91,3 @@
 .left-margin-fix {
   margin-left: 20px;
 }
-
-
-
-
-
-
-
-
-
->>>>>>> 9f35841a383964a7205f1c06e000be4abbcd16db

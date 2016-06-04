@@ -6,26 +6,6 @@ export var Search = ({store}) => {
   let input;
   //TODO: refactor into separate components?
   return (
-<<<<<<< HEAD
-    <div className="col-md-12">
-      <div className="search">
-        <input type="text" className="form-control" placeholder="Search..."
-          ref={node => {
-            input = node;
-          }}
-          onChange={
-            _.debounce(
-              (() =>
-                store.dispatch(
-                  fetchArticles(
-                    store.getState().articleFilter.view,
-                    input.value
-                  )
-                )),
-            300)}
-        />
-      </div>
-=======
     <div>
       <header className="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
         <div className="mdl-layout__header-row">
@@ -39,15 +19,15 @@ export var Search = ({store}) => {
             <div className="search-box">
               <div className="search-icon"><i className="material-icons">search</i></div>
               <div className="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <input className="mdl-textfield__input" 
-                       type="text" 
+                <input className="mdl-textfield__input"
+                       type="text"
                        id="search-input"
                        ref={node => {
                          input = node;
                        }}
                        onChange={
                          _.debounce((() =>
-                         store.dispatch(fetchArticles(input.value))), 
+                         store.dispatch(fetchArticles(input.value))),
                        300)}
                 />
                 <label className="mdl-textfield__label" htmlFor="search-input">Search for topics...</label>
@@ -63,7 +43,6 @@ export var Search = ({store}) => {
           </ul>
         </div>
       </header>
->>>>>>> 9f35841a383964a7205f1c06e000be4abbcd16db
     </div>
   );
 }

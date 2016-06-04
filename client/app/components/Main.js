@@ -8,8 +8,6 @@ export const Main = ({store, articles}) => (
   </div>
 );
 
-
-<<<<<<< HEAD
 const populateRows = (store, articles) => {
   let filter = store.getState().articleFilter;
   let categories = {};
@@ -45,29 +43,5 @@ const populateRows = (store, articles) => {
   //create a row of articles per categories, according to filter
   return _.map(categories, (category, catName) => {
     return <ArticlesRow store={store} key={catName} title={catName} articles={category} nextFilter={nextFilter} />;
-=======
-
-var populateRows = articles => {
-  var topics = {};
-
-  //sort articles by category, according to filter, ie. {'North America': [Articles. . . ]}
-  articles.forEach(article => {
-    //TODO: get rid of this
-    //IF topics does not have a category
-    //create key for category
-    if ( topics.hasOwnProperty(article.publisher.region) ) {
-      topics[article.publisher.region].push(article);
-    } else {
-      topics[article.publisher.region] = [article];
-    }
-  });
-  // console.log('topics: ', topics);
-
-  //create a row of articles per category, according to filter
-  var i = 0;
-  return _.map(topics, (topic, category) => {
-
-    return <ArticlesRow title={category} articles={topic} key={i++}/>;
->>>>>>> 9f35841a383964a7205f1c06e000be4abbcd16db
   });
 };

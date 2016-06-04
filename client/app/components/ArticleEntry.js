@@ -1,13 +1,5 @@
-<<<<<<< HEAD
 import React from 'react'
 import { fetchArticles, setView } from '../actions'
-
-export var ArticleEntry = ({store, article}) => (
-  <div className="articleEntry">
-    <div className='articleTitle'>{article.title}</div>
-    <div className='articleSnipper'>{article.content}</div>
-=======
-import React from 'react';
 
 export var ArticleEntry = ({article}) => (
   <div className="articleEntry mdl-cell mdl-cell--3-col ">
@@ -25,6 +17,5 @@ export var ArticleEntry = ({article}) => (
         </div>
       </div>
     </div>
->>>>>>> 9f35841a383964a7205f1c06e000be4abbcd16db
   </div>
 );

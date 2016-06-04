@@ -1,11 +1,10 @@
 //for every article served, create a articleEntry (4 articles served)
-<<<<<<< HEAD
 import React from 'react'
 import { ArticleEntry } from './articleEntry'
 import { fetchArticles, setFilter } from '../actions'
 
 export var ArticlesRow = ({store, title, articles, nextFilter}) => (
-  <div className='articlesRow'>
+  <div className='articles-row'>
     <div onClick={() => {
       //TODO: change view to a Region OR Topic
       //change view to a Region
@@ -17,24 +16,17 @@ export var ArticlesRow = ({store, title, articles, nextFilter}) => (
       ))
       // store.dispatch(fetchArticles())
     }}
-    className="rowTitle">{title}</div>
-    <div className='rowArticles'>
-      {populateRow(articles, store)}
-=======
-import React from 'react';
-import { ArticleEntry } from './ArticleEntry';
-
-export var ArticlesRow = ({title, articles}) => (
-  <div className='articles-row'>
-    <div className="left-margin-fix"><a href="#" className="main-link"><h4>{title}</h4></a></div>
+    className="left-margin-fix">
+      <a href="#" className="main-link"><h4>
+        {title}
+      </h4></a>
+    </div>
     <div className='mdl-grid'>
-      {populateRow(articles)}
->>>>>>> 9f35841a383964a7205f1c06e000be4abbcd16db
+      {populateRow(articles, store)}
     </div>
   </div>
 );
 
-<<<<<<< HEAD
 var populateRow = (articles, store) => {
   //perhaps temporary
   //limit articleEntry per row to 5
@@ -55,15 +47,4 @@ var populateRow = (articles, store) => {
   // return articles.map((article, key) => {
   //   return <ArticleEntry store={store} key={key} article={article} />;
   // });
-
-=======
-var populateRow = articles => {
-  let i = 0;
-  const articlesPerRegion = 4; 
-  return articles.map(article => {
-    if (i < articlesPerRegion) {
-      return <ArticleEntry article={article} key ={i++}/>;
-    }
-  });
->>>>>>> 9f35841a383964a7205f1c06e000be4abbcd16db
 };
