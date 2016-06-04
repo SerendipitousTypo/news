@@ -11,7 +11,7 @@ export var ArticlesRow = ({store, title, articles, nextFilter}) => (
 
       console.log('nextFilter: ', nextFilter);
       store.dispatch(setFilter(
-        nextFilter,
+        {view: nextFilter},
         title
       ))
       // store.dispatch(fetchArticles())
