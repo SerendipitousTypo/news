@@ -1,4 +1,4 @@
-/**Worker Service
+/**Snippet Manager
 * reads the articles table and checks for any article that doesn't have a snippet
 * gets the acutal text and adds the first 150 characters as a snippet
 */
@@ -9,7 +9,6 @@ module.exports = () => {
   'use strict'
 
   //get all articles that have no content
-
   rp('http://127.0.0.1:3000/v1/articles?content=')
   .then(articles => {
     let art = JSON.parse(articles);

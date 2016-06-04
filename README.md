@@ -33,7 +33,6 @@ A news reader app offerring perspectives from around the world. Our mission is t
 * [ElasticSearch](https://www.elastic.co/) for search table
 * [Open Calais](http://www.opencalais.com/) for term generation
 * [Webpack](https://webpack.github.io/) & [Babel](https://babeljs.io/)
-* [JSDoc](http://usejsdoc.org/) for documentation
 
 
 ##Folder and File Structure

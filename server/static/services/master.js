@@ -1,32 +1,22 @@
-/** Worker Service
-* v 0.0.1 runs when the /test endpoint is hit. 
-* will eventually run on a schedule
-*/
-
-var rp = require('request-promise');
-var pb = require('./parseBot.js');
-var e = require('./errors.js');
-
-
-/** Accepts and HTTP request and response
+/** Master service
 * reads the channels database
 * gets the last updated date
 * checks the publishers URL to see if they have fresh conent
 * if there is new conent it updates the last_updated date in the channel table
 * and calls the parseBot service passing in the appropriate params 
 */
-module.exports = (/*req,  res*/) => {
+
+
+
+var pb = require('./parseBot.js');
+var rp = require('request-promise');
+var e = require('./errors.js');
+
+
+
+module.exports = () => {
   'use strict'
 
-/**Logs errors to a flat file
-*@params [filename]
-*@params [location] - This is the location where the error was called.  The function name or description
-*@params [error] - This is the error as returned as an argument to each catch block
- */
-
-
-  //output to show the master bot is runnin
-  // console.log('<=====================>Master Bot Running<=======================>');
   rp('http://127.0.0.1:3000/v1/channels')
   .then( data => {
     data = JSON.parse(data);

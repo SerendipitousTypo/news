@@ -1,3 +1,9 @@
+/** Topics
+* sends articles to Open Calais API 
+* receives the information back from Open Calais
+* stores the topics keywords in the database
+*/
+
 'use strict'
 
 const rp = require('request-promise');
