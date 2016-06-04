@@ -8,7 +8,6 @@ var RateLimiter = require('limiter').RateLimiter;
 let getTopics = function(content, artId) {
   'use strict'
 
-  console.log('inside the getTopics function');
   let topics = [];
 
   let options = {
@@ -32,7 +31,6 @@ let getTopics = function(content, artId) {
         topics.push(results[topicExt].name);
       }
     };
-    console.log('these are the topics within the request', topics);
     topics.forEach(topic => {
       options = {
         method: 'POST',
