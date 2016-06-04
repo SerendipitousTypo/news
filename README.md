@@ -97,7 +97,7 @@ news/
 
 
 ##API 
-Please see the [ApiEndpoints.md](ApiEndpoints.md) file
+Please see the [APIEndpoints.md](APIEndpoints.md) file
 
 ##Add Publishers
 To add publishers and increase the amount of content available to users follow the below instructions.
