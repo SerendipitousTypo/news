@@ -32,7 +32,7 @@ module.exports = (function() {
         .where(this.params.query)
         .end((err, models) => {
 
-          this.respond(err || models, ['title','date','url','content', {publisher: ['name', 'region']}, {artTopics: [{topic:['name']}]}, {channel:['name']}]);
+          this.respond(err || models, ['id','title','date','url','content', {publisher: ['name', 'region']}, {artTopics: [{topic:['name']}]}, {channel:['name']}]);
 
         });
 

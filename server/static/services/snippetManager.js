@@ -12,13 +12,13 @@ module.exports = () => {
   rp('http://127.0.0.1:3000/v1/articles?content=')
   .then(articles => {
     let art = JSON.parse(articles);
+
     art.data.forEach(article => {
       let target = 'http://127.0.0.1:3000/v1/pages?url=' + article.url;
       rp(target)
       .then(response => {
         let resp = JSON.parse(response);
-        let snippet = resp.data[0].text.slice(0, 150) + '...';      
-
+        let snippet = resp.data[0].text.slice(0, 150) + '...';
        let putUrl ='http://127.0.0.1:3000/v1/articles/' + article.id;
        var options = {
         method: 'PUT',
