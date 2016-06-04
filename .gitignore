@@ -1,1 +1,3 @@
 node_modules/
+server/static/config/apikey.js
+server/api/db/schema.json

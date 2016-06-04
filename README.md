@@ -5,7 +5,7 @@ A news reader app offerring perspectives from around the world.
 ##How to start the app
 
 ###Install dependencies: 
-- [ ] navigate to the root directory and run `npm deps`
+- [ ] navigate to the root directory and run `npm run deps`
 - [ ] If you do not have elastic search - See instructions for installing Elastic search 
 - [ ] Install postrgres
 

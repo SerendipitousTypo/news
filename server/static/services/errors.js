@@ -12,12 +12,12 @@ module.exports = (log, location, error) => {
       date: Date.now(),
       location: location,
       message: error
-    } 
+    }
     fs.appendFile(targetFile, JSON.stringify(errorObject, null, 4), (err) => {
       if (err) {
         console.log('file system error');
       }
-      
+
     })
   }
 }

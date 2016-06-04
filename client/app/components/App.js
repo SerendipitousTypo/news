@@ -1,11 +1,12 @@
 import React from 'react'
 import { Component } from 'react'
 
-import { fetchArticles } from '../actions'
+import { fetchArticles, getFilteredArticles } from '../actions'
 
 import { Sidebar } from './Sidebar';
 import { Search } from './Search';
 import { Main } from './Main';
+import { Footer } from './Footer';
 
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
@@ -36,26 +37,30 @@ export class App extends Component {
     const { store } = this.props;
     const state = store.getState();
 
-    // console.log('state: ', state);
+    console.log('state: ', state);
 
     return (
+      <div className="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <Search store={store}/>
 
-      <div className="row">
-        <div className="col-md-3">
-          <Sidebar />
-        </div>
-        <div className="col-md-9">
-          <div className="row">
-            <div className="col-md-12">
-              <Search store={store}/>
+        <main className="mdl-layout__content">
+          <div className="mdl-grid">
+            <div className="mdl-cell mdl-cell--3-col">
+              <Sidebar />
+            </div>
+            <div className="mdl-cell mdl-cell--9-col graybox">
+              <Main store={store} articles={
+                getFilteredArticles(
+                  state.articles,
+                  state.articleFilter
+                )}
+              />
             </div>
           </div>
-          <div className="row">
-            <div className="col-md-12">
-              <Main articles={state.articles} />
-            </div>
-          </div>
-        </div>
+        </main>
+
+        <Footer />
+
       </div>
     );
   }

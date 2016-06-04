@@ -1,0 +1,6 @@
+const category = (
+  state = '',
+  action
+) => {
+
+}

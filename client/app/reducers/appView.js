@@ -1,15 +1,18 @@
-export default const appView = (
-  state = 'HOME',
+//TODO: delete file
+const filter = (
+  state = {
+    view: 'ALL_REGIONS',
+    specifier: ''
+  },
   action
-  ) => {
+) => {
   switch (action.type) {
-    case 'HOME':
-      //load main feed
-      //set article to none
-    case 'ARTICLE':
-      //set article to given article
-      //display article
+    case 'SET_VIEW':
+      return action.filter
+
     default:
       return state;
   }
 }
+
+export default filter;
