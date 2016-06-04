@@ -34,6 +34,7 @@ module.exports = () => {
         uri: putUrl,
         body: {
           content: snippet
+<<<<<<< 14de2776c240dd193ae3d1efbefe211b34531d5b
 <<<<<<< 441661066dfaef6e5d74b3d8a1178eab12fa0135
         },
         json: true
@@ -51,6 +52,11 @@ module.exports = () => {
   });
 =======
         }
+=======
+        },
+        json: true
+
+>>>>>>> FEAT - complete snippetManager
        };
         rp(options)
         .then(response => console.log("should be good go check"))
