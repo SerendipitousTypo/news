@@ -2,5 +2,5 @@ node_modules/
 server/static/config/apikey.js
 server/api/db/schema.json
 npm-debug.log
-server/static/logs/
+server/static/logs/*
 
