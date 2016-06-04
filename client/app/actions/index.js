@@ -3,12 +3,13 @@ import _ from 'lodash'
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
 
-const viewToQuery = view => {
-  switch (view) {
+const viewToQuery = (filter, searchQuery) => {
+  switch (filter.view) {
     case 'ALL_REGIONS':
-      return 'articles'
+      return searchQuery === undefined ?
+        'articles' : ''
     case 'A_REGION':
-      return 'articles?publisher__region='
+      return 'articles?publisher__region=' + filter.region
     case 'A_TOPIC':
       //TODO: return proper query
       return ''
@@ -16,7 +17,7 @@ const viewToQuery = view => {
       //TODO: return proper query
       return '';
     default:
-      console.log('error: view not properly defined');
+      console.log('error: filter not properly defined');
       return ''
   }
 }
@@ -61,14 +62,19 @@ export const getFilteredArticles = (articles, filter) => {
 */
 
 
-export const fetchArticles = (view, query) => {
-  // query = (query === undefined || query === '') ?
-  //   'articles' : 'search?q=' + query;
-  view = view || 'ALL_REGIONS';
-  query = (query === undefined || query === '') ?
-    viewToQuery(view) : 'search?q=' + query;
+export const fetchArticles = (filter, searchQuery) => {
+  // searchQuery = (searchQuery === undefined || searchQuery === '') ?
+  //   'articles' : 'search?q=' + searchQuery;
 
-  let url = 'http://localhost:3000/v1/' + query
+  //TODO: handle case where filter = 'All_REGIONS' and a
+  //user-searchQuery is passed-in
+  //search?q=[keyword]&&articles is an invalid searchQuery
+
+  filter = filter || {view: 'ALL_REGIONS'};
+  searchQuery = (searchQuery === undefined || searchQuery === '') ?
+    viewToQuery(filter) : 'search?q=' + searchQuery + '&&' + viewToQuery(filter, searchQuery);
+
+  let url = 'http://localhost:3000/v1/' + searchQuery
 
   return dispatch => {
 
