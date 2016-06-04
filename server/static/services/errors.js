@@ -1,5 +1,14 @@
+/**Logs errors to a flat file
+*@params [filename]
+*@params [location] - This is the location where the error was called.  The function name or description
+*@params [error] - This is the error as returned as an argument to each catch block
+ */
+
+
 var path = require('path');
 var fs = require('fs');
+
+
 
 module.exports = (log, location, error) => {
   'use strict'

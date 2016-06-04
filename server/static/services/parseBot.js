@@ -1,13 +1,3 @@
-/** Worker Service
-* v 0.0.1 called from the master.js bot. 
-* 
-*/
-
-var parser = require ('rss-parser');
-var rp = require('request-promise');
-var e = require('./errors.js');
-var topics = require('./topics.js');
-
 /** parseBot
 *@params url
 *@params publisher id
@@ -15,6 +5,13 @@ var topics = require('./topics.js');
 * parses url and stores appropriate fields in the articles table
 * if there are categories provided it will update the keywords table as well
 */
+
+var parser = require ('rss-parser');
+var rp = require('request-promise');
+var e = require('./errors.js');
+var topics = require('./topics.js');
+
+
 module.exports = (url, pub_id) => {
 'use strict'
   parser.parseURL(url, (err, parsed) => {
