@@ -1,0 +1,54 @@
+{
+    "date": 1465076374803,
+    "location": "topic parsing error in Open Calais",
+    "message": {
+        "name": "StatusCodeError",
+        "statusCode": 429,
+        "message": "429 - \"You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.\"",
+        "error": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+        "options": {
+            "method": "POST",
+            "uri": "https://api.thomsonreuters.com/permid/calais",
+            "headers": {
+                "Content-Type": "text/raw",
+                "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                "outputFormat": "application/json"
+            },
+            "body": "Browse New York Times photos and slideshows from the 2016 presidential campaign.",
+            "simple": true,
+            "resolveWithFullResponse": false
+        },
+        "response": {
+            "statusCode": 429,
+            "body": "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.",
+            "headers": {
+                "content-type": "text/plain",
+                "content-length": "130",
+                "connection": "close"
+            },
+            "request": {
+                "uri": {
+                    "protocol": "https:",
+                    "slashes": true,
+                    "auth": null,
+                    "host": "api.thomsonreuters.com",
+                    "port": 443,
+                    "hostname": "api.thomsonreuters.com",
+                    "hash": null,
+                    "search": null,
+                    "query": null,
+                    "pathname": "/permid/calais",
+                    "path": "/permid/calais",
+                    "href": "https://api.thomsonreuters.com/permid/calais"
+                },
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "text/raw",
+                    "x-ag-access-token": "iLXVkxLl8vNEKvP8ofezC4z4M7PGGM5a",
+                    "outputFormat": "application/json",
+                    "content-length": 80
+                }
+            }
+        }
+    }
+}
