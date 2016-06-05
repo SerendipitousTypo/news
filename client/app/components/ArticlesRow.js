@@ -11,15 +11,15 @@ export var ArticlesRow = ({store, title, articles, nextFilter}) => (
 
       console.log('nextFilter: ', nextFilter);
       store.dispatch(setFilter(
-        {view: nextFilter},
+        nextFilter,
         title
       ))
       // store.dispatch(fetchArticles())
     }}
     className="left-margin-fix">
-      <a href="#" className="main-link"><h4>
+      <h4 className="main-link">
         {title}
-      </h4></a>
+      </h4>
     </div>
     <div className='mdl-grid'>
       {populateRow(articles, store)}

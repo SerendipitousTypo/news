@@ -18,7 +18,8 @@ const populateRows = (store, articles) => {
   //filter articles based on state.articleFilter
   if (filter.view === 'ALL_REGIONS') {
       nextFilter.view = 'A_REGION';
-      nextFilter.type = 'TOPIC';
+      nextFilter.type = 'REGION';
+
       articles.forEach(article => {
 
         //TODO: limit articles rendered here?
@@ -33,7 +34,24 @@ const populateRows = (store, articles) => {
   } else if (filter.view === 'A_REGION') {
     //all articles served should be of that region,
     //display all articles by Topic
-    console.log('view is A_REGION!');
+    nextFilter.view = 'A_TOPIC_FROM_A_REGION';
+    nextFilter.type = 'TOPIC';
+    console.log('articles: ', articles);
+    articles.forEach(article => {
+
+      //TODO: limit articles rendered here?
+      //IF categories does not have a categories
+      //create key for categories
+      console.log('topic: ', article.artTopics);
+      article.artTopics.forEach(artTop => {
+        if ( categories.hasOwnProperty(artTop.topic.name) ) {
+          categories[artTop.topic.name].push(article);
+        } else {
+          categories[artTop.topic.name] = [article];
+        }
+      });
+    });
+    console.log('categories: ', categories);
   }
 
   //sort articles by categories, according to filter, ie. {'North America': [Articles. . . ]}

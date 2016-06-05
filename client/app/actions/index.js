@@ -36,7 +36,7 @@ export const getFilteredArticles = (articles, filter) => {
       return articles
     case 'A_REGION':
       return articles.filter(
-        a => a.publisher.region === filter.specifier
+        a => a.publisher.region === filter.region
       )
     // case 'A_TOPIC':
     //   //TODO: return proper query
