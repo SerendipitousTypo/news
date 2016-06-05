@@ -31,7 +31,7 @@ module.exports = (function() {
             Article.query()
               .where({publisher_id: i + 1})
               .orderBy('date', 'DESC')
-              .limit(5)
+              .limit(10)
               .end((err, PubArts) => {
                 let artCount = PubArts.length;
                 for(var j = 0; j < artCount; j++) {
