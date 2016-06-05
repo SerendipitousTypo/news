@@ -1,7 +1,9 @@
 import React from 'react'
 import { fetchArticles } from '../actions'
-
-
+import ReactMDL from '../../node_modules/react-mdl/out/ReactMDL.js';
+// var Textfield = ReactMDL.Textfield;
+// var Textfield = '/client/node_modules/react-mdl/lib/Textfield.js'
+import Button from 'react-mdl/lib/Button';
 export var Search = ({store}) => {
   let input;
   //TODO: refactor into separate components?
@@ -19,6 +21,7 @@ export var Search = ({store}) => {
             <div className="search-box">
               <div className="search-icon"><i className="material-icons">search</i></div>
               <div className="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+
                 <input
                   className="mdl-textfield__input"
                   type="text"
@@ -36,6 +39,7 @@ export var Search = ({store}) => {
                       300
                     )
                   }
+
                 />
 
               </div>
