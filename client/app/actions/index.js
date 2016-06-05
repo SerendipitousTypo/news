@@ -3,19 +3,19 @@ import _ from 'lodash'
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
 
-const viewToQuery = (filter, searchQuery) => {
+const createQuery = (filter, searchQuery) => {
   switch (filter.view) {
     case 'ALL_REGIONS':
       return searchQuery === undefined ?
-        'articles' : ''
+        'articles?__count=100' : ''
     case 'A_REGION':
       return 'articles?publisher__region=' + filter.region
     case 'A_TOPIC':
       //TODO: return proper query
       return ''
     case 'A_TOPIC_FROM_A_REGION':
-      //TODO: return proper query
-      return '';
+      //TODO: utilize multiple liness
+      return 'articles?artTopics__topic__name=' + filter.topic + '&&publisher__region=' + filter.region;
     default:
       console.log('error: filter not properly defined');
       return ''
@@ -30,6 +30,7 @@ export const setFilter = (filter, category) => (
     }
 )
 
+//TODO: DELETE?
 export const getFilteredArticles = (articles, filter) => {
   switch (filter.view) {
     case 'ALL_REGIONS':
@@ -50,33 +51,15 @@ export const getFilteredArticles = (articles, filter) => {
   }
 }
 
-/*
-  'ALL_REGIONS'
-    if query.length
-      return 'search?q=' + query
-    return 'articles'
-  'A_REGION'
-    if query.length
-      return 'search?q=' + query + '&&publisher__region='
-
-*/
-
 
 export const fetchArticles = (filter, searchQuery) => {
-  // searchQuery = (searchQuery === undefined || searchQuery === '') ?
-  //   'articles' : 'search?q=' + searchQuery;
-
-  //TODO: handle case where filter = 'All_REGIONS' and a
-  //user-searchQuery is passed-in
-  //search?q=[keyword]&&articles is an invalid searchQuery
-
 
   return dispatch => {
 
     filter = filter || {view: 'ALL_REGIONS'};
     searchQuery = (searchQuery === undefined || searchQuery === '') ?
-      viewToQuery(filter) :
-      'search?q=' + searchQuery + '&&' + viewToQuery(filter, searchQuery);
+      createQuery(filter) :
+      'search?q=' + searchQuery + '&&' + createQuery(filter, searchQuery);
 
     let url = 'http://localhost:3000/v1/' + searchQuery;
     console.log('url: ', url);

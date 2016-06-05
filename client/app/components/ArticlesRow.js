@@ -6,20 +6,24 @@ import { fetchArticles, setFilter } from '../actions'
 export var ArticlesRow = ({store, title, articles, nextFilter}) => (
   <div className='articles-row'>
     <div onClick={() => {
-      //TODO: change view to a Region OR Topic
-      //change view to a Region
+        //TODO: refactor
+        //change view to a Region
+        nextFilter.type === 'TOPIC' ?
+          nextFilter.topic = title :
+          nextFilter.region = title;
 
-      console.log('nextFilter: ', nextFilter);
-      store.dispatch(setFilter(
-        nextFilter,
-        title
-      ));
 
-      nextFilter.region = title;
+        console.log('nextFilter: ', nextFilter);
+        store.dispatch(setFilter(
+          nextFilter,
+          title
+        ));
 
-      store.dispatch(fetchArticles(
-        nextFilter
-      ));
+
+        store.dispatch(fetchArticles(
+          nextFilter
+        ));
+
     }}
     className="left-margin-fix">
       <h4 className="main-link">
