@@ -4,6 +4,8 @@ import { fetchArticles, setFilter } from '../actions'
 export const Sidebar = ({store}) => {
   let filter = store.getState().articleFilter;
   let nextFilter = Object.assign({}, filter);
+
+  nextFilter.view = nextFilter.view === 'ALL_REGIONS'
   nextFilter.view = 'A_TOPIC';
   nextFilter.type = 'TOPIC';
   return (
@@ -15,42 +17,76 @@ export const Sidebar = ({store}) => {
           <div className="mdl-list__item">
             <span className="mdl-list__item-primary-content">
 
-              <a href="#" className="main-link">
                 <span onClick={() => {
-                    //change filter.topic to
-                    //'Politics'
-                    nextFilter.topic = 'Politics';
-                    store.dispatch(setFilter(
-                      nextFilter,
-                      'Politics'
-                    ));
+                      //change filter.topic to
+                      //'Politics'
+                      nextFilter.topic = 'Politics';
+                      store.dispatch(setFilter(
+                        nextFilter,
+                        'Politics'
+                      ));
 
-                    //fetch articles w/ topic 'Politics'
-                    store.dispatch(fetchArticles(
-                      nextFilter
-                    ));
+                      //fetch articles w/ topic 'Politics'
+                      store.dispatch(fetchArticles(
+                        nextFilter
+                      ));
+                    }
                   }
-
-                  }
-                >Politics</span>
-              </a>
+                  className="main-link"
+                >
+                  Politics
+                </span>
 
             </span>
           </div>
           <div className="mdl-list__item">
               <span className="mdl-list__item-primary-content">
 
-                <a href="#" className="main-link">
-                  <span>Economics</span>
-                </a>
+                <span onClick={() => {
+                      //change filter.topic to
+                      //'Politics'
+                      nextFilter.topic = 'Business_Finance';
+                      store.dispatch(setFilter(
+                        nextFilter,
+                        'Business_Finance'
+                      ));
+
+                      //fetch articles w/ topic 'Politics'
+                      store.dispatch(fetchArticles(
+                        nextFilter
+                      ));
+                    }
+                  }
+                  className="main-link"
+                >
+                  Business
+                </span>
+
               </span>
           </div>
           <div className="mdl-list__item">
             <span className="mdl-list__item-primary-content">
 
-              <a href="#" className="main-link">
-                <span>US elections</span>
-              </a>
+                <span onClick={() => {
+                      //change filter.topic to
+                      //'Politics'
+                      nextFilter.topic = 'US Elections';
+                      store.dispatch(setFilter(
+                        nextFilter,
+                        'US Elections'
+                      ));
+
+                      //fetch articles w/ topic 'Politics'
+                      store.dispatch(fetchArticles(
+                        nextFilter
+                      ));
+                    }
+                  }
+                  className="main-link"
+                >
+                  US Elections
+                </span>
+
             </span>
           <span className="mdl-list__item-secondary-content">
             <a className="mdl-list__item-secondary-action" href="#"></a>

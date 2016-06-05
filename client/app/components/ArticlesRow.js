@@ -1,7 +1,8 @@
 //for every article served, create a articleEntry (4 articles served)
 import React from 'react'
-import { ArticleEntry } from './articleEntry'
 import { fetchArticles, setFilter } from '../actions'
+import { sanitize } from '../utils'
+import { ArticleEntry } from './articleEntry'
 
 export var ArticlesRow = ({store, title, articles, nextFilter}) => (
   <div className='articles-row'>
@@ -29,7 +30,7 @@ export var ArticlesRow = ({store, title, articles, nextFilter}) => (
     }}
     className="left-margin-fix">
       <h4 className="main-link">
-        {title}
+        {sanitize(title)}
       </h4>
     </div>
     <div className='mdl-grid'>

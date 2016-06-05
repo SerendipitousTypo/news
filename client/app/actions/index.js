@@ -8,16 +8,17 @@ const createQuery = (filter, searchQuery) => {
     case 'ALL_REGIONS':
       return searchQuery === undefined ?
         'articles?__count=100' : ''
+
     case 'A_REGION':
       return 'articles?publisher__region=' + filter.region
+
     case 'A_TOPIC':
-      //TODO: handle 2 cases
-        //all regions
-        //specific region
       return 'articles?artTopics__topic__name=' + filter.topic
+
     case 'A_TOPIC_FROM_A_REGION':
       //TODO: utilize multiple liness
       return 'articles?artTopics__topic__name=' + filter.topic + '&&publisher__region=' + filter.region
+
     default:
       console.log('error: filter not properly defined');
       return ''

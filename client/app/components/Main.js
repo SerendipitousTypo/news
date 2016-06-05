@@ -1,12 +1,30 @@
-import React from 'react';
-import _ from 'lodash';
-import { ArticlesRow } from './ArticlesRow';
+import React from 'react'
+import _ from 'lodash'
+import { sanitize } from '../utils'
+import { ArticlesRow } from './ArticlesRow'
 
 export const Main = ({store, articles}) => (
   <div className="main-block">
+    <h3>{createTitle(store)}</h3>
     {populateRows(store, articles)}
   </div>
 );
+
+const createTitle = (store) => {
+  let filter = store.getState().articleFilter;
+  switch (filter.view) {
+    case 'ALL_REGIONS':
+      return 'All Regions'
+    case 'A_REGION':
+      return filter.region
+    case 'A_TOPIC':
+      return sanitize(filter.topic)
+    case 'A_TOPIC_FROM_A_REGION':
+      return sanitize(filter.topic) + ' in ' + filter.region
+    default:
+      return '';
+  }
+}
 
 const populateRows = (store, articles) => {
   let filter = store.getState().articleFilter;
@@ -50,7 +68,7 @@ const populateRows = (store, articles) => {
     console.log('categories: ', categories);
   } else if (filter.view === 'A_TOPIC') {
     nextFilter.view = 'A_TOPIC_FROM_A_REGION';
-    nextFilter.type = 'TOPIC';
+    nextFilter.type = 'REGION';
 
     //TODO: use a utlity function
     articles.forEach(article => {
