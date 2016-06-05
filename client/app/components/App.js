@@ -36,17 +36,19 @@ export class App extends Component {
   render() {
     const { store } = this.props;
     const state = store.getState();
+    //TODO: create nextFilter here,
+    //pass down to Sidebar & Main
 
     console.log('state: ', state);
 
     return (
       <div className="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        <Search store={store}/>
+        <Search store={store} />
 
         <main className="mdl-layout__content">
           <div className="mdl-grid">
             <div className="mdl-cell mdl-cell--3-col">
-              <Sidebar />
+              <Sidebar store={store} />
             </div>
             <div className="mdl-cell mdl-cell--9-col graybox">
               <Main store={store} articles={state.articles}

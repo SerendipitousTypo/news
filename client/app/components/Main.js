@@ -48,6 +48,20 @@ const populateRows = (store, articles) => {
       });
     });
     console.log('categories: ', categories);
+  } else if (filter.view === 'A_TOPIC') {
+    nextFilter.view = 'A_TOPIC_FROM_A_REGION';
+    nextFilter.type = 'TOPIC';
+
+    //TODO: use a utlity function
+    articles.forEach(article => {
+
+      if ( categories.hasOwnProperty(article.publisher.region) ) {
+        categories[article.publisher.region].push(article);
+      } else {
+        categories[article.publisher.region] = [article];
+      }
+    });
+
   } else if (filter.view === 'A_TOPIC_FROM_A_REGION') {
     //create a row with every four articles
     let rows = [];

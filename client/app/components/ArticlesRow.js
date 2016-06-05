@@ -7,6 +7,8 @@ export var ArticlesRow = ({store, title, articles, nextFilter}) => (
   <div className='articles-row'>
     <div onClick={() => {
         //TODO: refactor
+          //modify nextFilter outside of ArticlesRow's
+          //return statement (see sidebar)
         //change view to a Region
         nextFilter.type === 'TOPIC' ?
           nextFilter.topic = title :
