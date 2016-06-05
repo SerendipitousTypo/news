@@ -6,20 +6,29 @@ import { fetchArticles, setFilter } from '../actions'
 export var ArticlesRow = ({store, title, articles, nextFilter}) => (
   <div className='articles-row'>
     <div onClick={() => {
-      //TODO: change view to a Region OR Topic
-      //change view to a Region
+        //TODO: refactor
+        //change view to a Region
+        nextFilter.type === 'TOPIC' ?
+          nextFilter.topic = title :
+          nextFilter.region = title;
 
-      console.log('nextFilter: ', nextFilter);
-      store.dispatch(setFilter(
-        nextFilter,
-        title
-      ))
-      // store.dispatch(fetchArticles())
+
+        console.log('nextFilter: ', nextFilter);
+        store.dispatch(setFilter(
+          nextFilter,
+          title
+        ));
+
+
+        store.dispatch(fetchArticles(
+          nextFilter
+        ));
+
     }}
     className="left-margin-fix">
-      <a href="#" className="main-link"><h4>
+      <h4 className="main-link">
         {title}
-      </h4></a>
+      </h4>
     </div>
     <div className='mdl-grid'>
       {populateRow(articles, store)}
