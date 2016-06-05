@@ -13,8 +13,13 @@ export var ArticlesRow = ({store, title, articles, nextFilter}) => (
       store.dispatch(setFilter(
         nextFilter,
         title
-      ))
-      // store.dispatch(fetchArticles())
+      ));
+
+      nextFilter.region = title;
+
+      store.dispatch(fetchArticles(
+        nextFilter
+      ));
     }}
     className="left-margin-fix">
       <h4 className="main-link">

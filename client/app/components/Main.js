@@ -42,7 +42,6 @@ const populateRows = (store, articles) => {
       //TODO: limit articles rendered here?
       //IF categories does not have a categories
       //create key for categories
-      console.log('topic: ', article.artTopics);
       article.artTopics.forEach(artTop => {
         if ( categories.hasOwnProperty(artTop.topic.name) ) {
           categories[artTop.topic.name].push(article);

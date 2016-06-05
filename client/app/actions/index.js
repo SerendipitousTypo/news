@@ -70,14 +70,16 @@ export const fetchArticles = (filter, searchQuery) => {
   //user-searchQuery is passed-in
   //search?q=[keyword]&&articles is an invalid searchQuery
 
-  filter = filter || {view: 'ALL_REGIONS'};
-  searchQuery = (searchQuery === undefined || searchQuery === '') ?
-    viewToQuery(filter) : 'search?q=' + searchQuery + '&&' + viewToQuery(filter, searchQuery);
-
-  let url = 'http://localhost:3000/v1/' + searchQuery
 
   return dispatch => {
 
+    filter = filter || {view: 'ALL_REGIONS'};
+    searchQuery = (searchQuery === undefined || searchQuery === '') ?
+      viewToQuery(filter) :
+      'search?q=' + searchQuery + '&&' + viewToQuery(filter, searchQuery);
+
+    let url = 'http://localhost:3000/v1/' + searchQuery;
+    console.log('url: ', url);
     //TODO: change isFetching state to TRUE
 
     return fetch(url)

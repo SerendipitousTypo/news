@@ -49,11 +49,7 @@ export class App extends Component {
               <Sidebar />
             </div>
             <div className="mdl-cell mdl-cell--9-col graybox">
-              <Main store={store} articles={
-                getFilteredArticles(
-                  state.articles,
-                  state.articleFilter
-                )}
+              <Main store={store} articles={state.articles}
               />
             </div>
           </div>
