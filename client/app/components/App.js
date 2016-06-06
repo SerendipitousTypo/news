@@ -9,7 +9,7 @@ import { Main } from './Main';
 import { Footer } from './Footer';
 
 require('es6-promise').polyfill();
-require('isomorphic-fetch');
+require('isomorphic-fetch');  
 
 
 export class App extends Component {
@@ -32,6 +32,7 @@ export class App extends Component {
   componentWillUnmount() {
     this.unsubscribe();
   }
+  
 
   render() {
     const { store } = this.props;

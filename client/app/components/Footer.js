@@ -13,6 +13,3 @@ export var Footer = ({}) => (
     </footer>
   </div>
 );
-
-window.Footer = Footer;
-
