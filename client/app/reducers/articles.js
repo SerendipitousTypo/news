@@ -1,3 +1,4 @@
+//TODO: delete?
 const article = (state, action) => {
   switch (action.type) {
     case 'OPEN_ARTICLE':

@@ -7,8 +7,8 @@ const filter = (
   },
   action
 ) => {
-  console.log('action: ', action);
-  //TODO: Refactor, simplify
+  console.log('filter reducer: ', action);
+  //TODO: Refactor, simplify action.filter
   // let { filter } = action;
   switch (action.type) {
     case 'SET_FILTER':

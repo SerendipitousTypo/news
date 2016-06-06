@@ -2,9 +2,9 @@
 import React from 'react'
 import { fetchArticles, setFilter } from '../actions'
 import { sanitize } from '../utils'
-import { ArticleEntry } from './articleEntry'
+import { ArticleEntry } from './ArticleEntry'
 
-export var ArticlesRow = ({store, title, articles, nextFilter}) => (
+export const ArticlesRow = ({store, title, articles, nextFilter}) => (
   <div className='articles-row'>
     <div onClick={() => {
         //TODO: refactor

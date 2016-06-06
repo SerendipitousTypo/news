@@ -70,7 +70,7 @@ export const Sidebar = ({store}) => {
                 <span onClick={() => {
                       //change filter.topic to
                       //'Politics'
-                      nextFilter.topic = 'US Elections';
+                      // nextFilter.view = 'A_Topic';
                       store.dispatch(setFilter(
                         nextFilter,
                         'US Elections'
@@ -78,7 +78,8 @@ export const Sidebar = ({store}) => {
 
                       //fetch articles w/ topic 'Politics'
                       store.dispatch(fetchArticles(
-                        nextFilter
+                        null,
+                        'election AND (US OR united states OR america)'
                       ));
                     }
                   }
