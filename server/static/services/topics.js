@@ -39,8 +39,7 @@ let getTopics = function(content, artId) {
           'Law_Crime',
           'Politics',
           'Social Issues',
-          'War_Conflict',
-          'Human Interest'
+          'War_Conflict'
           ];
         let topicName = results[topicExt].name;
         if (politicsGroup.indexOf(topicName) !== -1) {
