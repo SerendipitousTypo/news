@@ -64,6 +64,7 @@ module.exports = (function() {
           .join('publisher')
           .join('channel')
           .where(queries)
+          .orderBy('date', 'DESC')
           .end((err, models) => {
             this.respond(err || models, ['title','date','url','content', {publisher: ['name', 'region']}, {artTopics: [{topic:['name']}]}, {channel: ['name']}]);
           })

@@ -30,6 +30,7 @@ module.exports = (function() {
         .join('publisher')
         .join('channel')
         .where(this.params.query)
+        .orderBy('date', 'DESC')
         .end((err, models) => {
 
           this.respond(err || models, ['id','title','date','url','content', {publisher: ['name', 'region']}, {artTopics: [{topic:['name']}]}, {channel:['name']}]);
@@ -87,6 +88,7 @@ module.exports = (function() {
     update() {
 
       Article.update(this.params.route.id, this.params.body, (err, model) => {
+
         this.respond(err || model);
 
       });
