@@ -8,6 +8,7 @@ export const sanitize = (string) => (
 
 export const sortArticle = (sorted, article, prop) => {
   //make shallow copy for immutability
+  //TODO: waste of memory?
   sorted = Object.assign({}, sorted)
 
 

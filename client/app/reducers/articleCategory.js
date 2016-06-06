@@ -1,6 +1,0 @@
-const category = (
-  state = '',
-  action
-) => {
-
-}

@@ -33,6 +33,13 @@ export const setFilter = (filter, category) => (
     }
 )
 
+export const setContent = (content) => (
+  {
+    type: 'SET_CONTENT',
+    content
+  }
+)
+
 //TODO: DELETE?
 export const getFilteredArticles = (articles, filter) => {
   switch (filter.view) {

@@ -54,7 +54,7 @@ const populateRows = (store, articles) => {
 
       article.artTopics.forEach(artTop => {
         prop = artTop.topic.name;
-        categories = sortArticle(categories, artTop, prop);
+        categories = sortArticle(categories, article, prop);
       });
     });
 
@@ -95,7 +95,6 @@ const populateRows = (store, articles) => {
     });
   }
 
-  //TODO: make a utility function
   console.log('categories: ', categories);
   return _.map(categories, (category, catName) => {
 
