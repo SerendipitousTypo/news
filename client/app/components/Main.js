@@ -83,25 +83,29 @@ const populateRows = (store, articles) => {
 
     //return array of ArticlesRow's
     return _.map(rows, (articles, idx) => {
-      return
+      return(
         <ArticlesRow
           store={store}
           key={idx}
           articles = {articles}
           title={''}
         />
+      );
     });
   }
 
   //TODO: make a utility function
+  console.log('categories: ', categories);
   return _.map(categories, (category, catName) => {
-    return
+    console.log('blip');
+    return(
       <ArticlesRow
         store={store}
         key={catName}
         title={catName}
         articles={category}
         nextFilter={nextFilter}
-      />;
+      />
+    );
   });
 };
