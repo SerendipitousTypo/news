@@ -83,6 +83,7 @@ const populateRows = (store, articles) => {
 
     //return array of ArticlesRow's
     return _.map(rows, (articles, idx) => {
+
       return(
         <ArticlesRow
           store={store}
@@ -97,7 +98,7 @@ const populateRows = (store, articles) => {
   //TODO: make a utility function
   console.log('categories: ', categories);
   return _.map(categories, (category, catName) => {
-    console.log('blip');
+
     return(
       <ArticlesRow
         store={store}
