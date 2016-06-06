@@ -69,7 +69,7 @@ export const fetchArticles = (filter, searchQuery) => {
     filter = filter || {view: 'ALL_REGIONS'};
     searchQuery = (searchQuery === undefined || searchQuery === '') ?
       createQuery(filter) :
-      'search?q=' + searchQuery + '&&' + createQuery(filter, searchQuery);
+      'search?q=' + searchQuery + '&&' + createQuery(filter, searchQuery).slice(9);
 
     let url = 'http://localhost:3000/v1/' + searchQuery;
     console.log('url: ', url);
