@@ -7,7 +7,7 @@ const createQuery = (filter, searchQuery) => {
   switch (filter.view) {
     case 'ALL_REGIONS':
       return searchQuery === undefined ?
-        'articles?__count=100' : ''
+        'frontPage' : ''
 
     case 'A_REGION':
       return 'articles?publisher__region=' + filter.region
