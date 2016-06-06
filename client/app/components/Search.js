@@ -1,9 +1,6 @@
 import React from 'react'
 import { fetchArticles } from '../actions'
-import ReactMDL from '../../node_modules/react-mdl/out/ReactMDL.js';
-// var Textfield = ReactMDL.Textfield;
-// var Textfield = '/client/node_modules/react-mdl/lib/Textfield.js'
-console.log('reactMDL',ReactMDL);
+import {IconButton, Textfield, Menu, MenuItem} from 'react-mdl';
 // var Spinner = ReactMDL.Spinner;
 export var Search = ({store}) => {
   let input;
@@ -22,38 +19,37 @@ export var Search = ({store}) => {
           <div className="mdl-layout-spacer"></div>
             <div className="search-box">
               <div className="search-icon"><i className="material-icons">search</i></div>
-              <div className="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                
-                <input
-                  className="mdl-textfield__input"
+                <Textfield
+                  className="search-field"
+                  label="Search articles..."
                   type="text"
                   id="search-input"
                   ref={node => {
                     input = node;
                   }}
                   onChange={
-                    _.debounce((() =>
+                    _.debounce( ( () => {
                       store.dispatch(
                         fetchArticles(
                           store.getState().articleFilter,
-                          input.value
-                      ))),
+                          input.refs.input.value
+                        )
+                      )}
+                    ),
                       300
                     )
                   }
-
                 />
-
-              </div>
             </div>
-          <button className="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
-            <i className="material-icons">more_vert</i>
-          </button>
-          <ul className="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" htmlFor="hdrbtn">
-            <li className="mdl-menu__item">About</li>
-            <li className="mdl-menu__item">Contact</li>
-            <li className="mdl-menu__item">Legal information</li>
-          </ul>
+          <div style={{position: 'relative'}}>
+            <IconButton name="more_vert" id="demo-menu-lower-right" />
+            <Menu target="demo-menu-lower-right" align="right">
+              <MenuItem>About</MenuItem>
+              <MenuItem>Contact</MenuItem>
+              <MenuItem>Legal information</MenuItem>
+            </Menu>
+          </div>
         </div>
       </header>
     </div>
