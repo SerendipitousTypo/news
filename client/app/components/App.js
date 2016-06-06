@@ -9,7 +9,7 @@ import { Main } from './Main';
 import { Footer } from './Footer';
 
 require('es6-promise').polyfill();
-require('isomorphic-fetch');
+require('isomorphic-fetch');  
 
 
 export class App extends Component {
