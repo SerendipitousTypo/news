@@ -1,13 +1,7 @@
 import React from 'react'
 import { fsetContent } from '../actions'
 import { Component } from 'react'
-<<<<<<< d06716f35f7ec6867cbb49f7dff02bac15db3c0f
-import {IconButton, Textfield, Menu, MenuItem, Button, Dialog, DialogTitle, DialogContent, DialogActions} from 'react-mdl'
-
-
-=======
 import {IconButton, Textfield, Menu, MenuItem, Button, Dialog, DialogTitle, DialogContent, DialogActions, Spinner} from 'react-mdl';
->>>>>>> FEAT - show error message when article does not load
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
 // for the dialog example, we have to register the dialogs window

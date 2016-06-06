@@ -49,11 +49,12 @@ const populateRows = (store, articles, nextFilter) => {
     //display all articles by Topic
     nextFilter.view = 'A_TOPIC_FROM_A_REGION';
     nextFilter.type = 'TOPIC';
-
-    articles.forEach(article => {
+    articles.forEach(article => { 
+console.log('here');
 
       article.artTopics.forEach(artTop => {
         prop = artTop.topic.name;
+        
         categories = sortArticle(categories, article, prop);
       });
     });

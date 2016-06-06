@@ -33,8 +33,8 @@ footer {
 }
 
 .mdl-textfield__input {
-  font-size: 28px;
-  margin-top: -10px
+  /*font-size: 16px;*/
+  /*margin-top: -10px*/
 }
 
 .mdl-textfield__label:after {
@@ -74,6 +74,7 @@ footer {
 .main-link:hover {
   color:rgb(255,64,129);
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .logo-link {
@@ -102,6 +103,7 @@ footer {
 
 .card-title {
   font-size: 20px;
+  cursor:pointer;
 }
 
 .card {
@@ -126,8 +128,11 @@ footer {
 }
 
 .card-text {
-  height: 190px;
+  height: 183px;
   overflow: hidden;
+  margin-top: 7px;
+  cursor:pointer;
+
 }
 
 .left-margin-fix {
@@ -193,3 +198,13 @@ i.error-icon {
 .error-btn {
   margin-top: 10px;
 }
+
+.close-btn {
+      position: fixed;
+      display: block;
+      right: 160px;
+      bottom: 30px;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
