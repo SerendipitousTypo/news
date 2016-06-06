@@ -18,7 +18,7 @@ A news reader app offerring perspectives from around the world. Our mission is t
 ##Team Members
 [![Jonsa Sota](https://dl.dropboxusercontent.com/s/mqyqke84g66967l/jonassota.png?dl=0)](http://github.com/jonasms)
 
-[![Elebert Lum](https://dl.dropboxusercontent.com/s/no2qvjt4pxry7g8/elbertlum.png?dl=0)](http://github.com/elbertlum)
+[![Elbert Lum](https://dl.dropboxusercontent.com/s/no2qvjt4pxry7g8/elbertlum.png?dl=0)](http://github.com/elbertlum)
 
 [![Nick Lebedev](https://dl.dropboxusercontent.com/s/okywz1xvgrl63zm/nlebedev.png?dl=0)](http://github.com/nlebedev)
 
@@ -26,8 +26,9 @@ A news reader app offerring perspectives from around the world. Our mission is t
 
 ##Tech Stack, API's and Third-party Tools
 * [React](https://facebook.github.io/react/) for rendering views and [Redux](https://github.com/reactjs/redux) for managing state
-* [Node.js](https://nodejs.org/en/) and [Express](http://expressjs.com/) for serving static pages.
-* [Node.js](https://nodejs.org/en/) for workers 
+* [Material Design Lite](https://getmdl.io/)- a styling framework for google material design
+* [React-MDL](https://tleunen.github.io/react-mdl/) - the React version of MDL
+* [Node.js](https://nodejs.org/en/) and [Express](http://expressjs.com/) for serving static pages and services. 
 * [Nodal](http://www.nodaljs.com/) for API 
 * [Postgres](http://www.postgresql.org/) for database
 * [ElasticSearch](https://www.elastic.co/) for search table
@@ -46,7 +47,7 @@ A news reader app offerring perspectives from around the world. Our mission is t
         |
         |--styles/
             |
-            |--CSS
+            |--CSS/MDL
     |
     |--docs/
     |

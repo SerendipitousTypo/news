@@ -14,6 +14,8 @@ module.exports = (function() {
       rp(url)
       .then(data => {
         let page = extractor(data);
+        let textArray = page.text.split('(File photo)')
+        page.text = textArray[1] || page.text;
         page.text.replace(/\n/g, "<br />");
         this.respond(page);
       })

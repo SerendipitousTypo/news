@@ -1,5 +1,4 @@
 'use strict'
-
 const express = require('express');
 const mb = require('./services/master.js')
 const sm = require('./services/snippetManager.js');
@@ -7,7 +6,6 @@ const sm = require('./services/snippetManager.js');
 let chron = new require('chron')();
 
 const app = express();
-
 
 // require('./config/router.js')(app);
 require('./config/middleware.js')(app, express);
