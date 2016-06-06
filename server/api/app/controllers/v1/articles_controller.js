@@ -57,26 +57,27 @@ module.exports = (function() {
       let article_id;
 
       Article.create(this.params.body, (err, model) => {
+        if(!err){
+          article_id = model.get('id');
+          // console.log('this is the article id', article_id);
 
-        article_id = model.get('id');
-        // console.log('this is the article id', article_id);
+          const esPost = {
+            index: 'articles',
+            type: 'article',
+            body: {
+              id: article_id,
+              title: article_title,
+              url: article_url,
+              content: article_content
+            }
+          };
 
-        const esPost = {
-          index: 'articles',
-          type: 'article',
-          body: {
-            id: article_id,
-            title: article_title,
-            url: article_url,
-            content: article_content
-          }
-        };
-
-        client.create(esPost)
-        .then(response => {
-          // console.log('response ===========>', response);
-        }, error => console.log('error ===========>', error))
-        .catch(err => console.log('error ============>', err));
+          client.create(esPost)
+          .then(response => {
+            // console.log('response ===========>', response);
+          }, error => console.log('error ===========>', error))
+          .catch(err => console.log('error ============>', err));          
+        }
 
         this.respond(err || model);
 
