@@ -26,7 +26,7 @@ let getTopics = function(content, artId) {
     },
     body: content
   };
-
+  
   rp(options)
   .then(result => {
     let results = JSON.parse(result);
@@ -34,7 +34,19 @@ let getTopics = function(content, artId) {
     for (var i = 0; i < 5; i++) {
       let topicExt = docID + '/cat/' + i;
       if (results[topicExt]) {
-        topics.push(results[topicExt].name);
+        const politicsGroup = [
+          'Disaster_Accident',
+          'Law_Crime',
+          'Politics',
+          'Social Issues',
+          'War_Conflict',
+          'Human Interest'
+          ];
+        let topicName = results[topicExt].name;
+        if (politicsGroup.indexOf(topicName) !== -1) {
+          topicName = 'Politics';
+        }
+        topics.push(topicName);
       }
     };
     topics.forEach(topic => {
