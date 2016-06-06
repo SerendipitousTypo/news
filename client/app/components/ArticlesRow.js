@@ -1,12 +1,15 @@
 //for every article served, create a articleEntry (4 articles served)
 import React from 'react'
-import { ArticleEntry } from './articleEntry'
 import { fetchArticles, setFilter } from '../actions'
+import { sanitize } from '../utils'
+import { ArticleEntry } from './articleEntry'
 
 export var ArticlesRow = ({store, title, articles, nextFilter}) => (
   <div className='articles-row'>
     <div onClick={() => {
         //TODO: refactor
+          //modify nextFilter outside of ArticlesRow's
+          //return statement (see sidebar)
         //change view to a Region
         nextFilter.type === 'TOPIC' ?
           nextFilter.topic = title :
@@ -27,7 +30,7 @@ export var ArticlesRow = ({store, title, articles, nextFilter}) => (
     }}
     className="left-margin-fix">
       <h4 className="main-link">
-        {title}
+        {sanitize(title)}
       </h4>
     </div>
     <div className='mdl-grid'>
