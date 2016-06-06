@@ -54,7 +54,7 @@ const populateRows = (store, articles) => {
 
       article.artTopics.forEach(artTop => {
         prop = artTop.topic.name;
-        categories = sortArticle(categories, artTop, prop);
+        categories = sortArticle(categories, article, prop);
       });
     });
 
