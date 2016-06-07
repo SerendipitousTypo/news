@@ -10,31 +10,11 @@ export const Main = ({store, articles, nextFilter}) => (
   </div>
 );
 
-const createTitle = (store) => {
-  let filter = store.getState().articleFilter;
-  switch (filter.view) {
-    case 'ALL_REGIONS':
-      return 'All Regions'
-    case 'A_REGION':
-      return filter.region
-    case 'A_TOPIC':
-      return sanitize(filter.topic)
-    case 'A_TOPIC_FROM_A_REGION':
-      return sanitize(filter.topic) + ' in ' + filter.region
-    default:
-      return '';  
-  }
-}
-
 const populateRows = (store, articles, nextFilter) => {
   let filter = store.getState().articleFilter;
   let categories = {};
-   //will be set to articleFilter on category click
-   //in a article row
-  // let nextFilter = Object.assign({}, filter);
   let prop;
 
-  //filter articles based on state.articleFilter
   if (filter.view === 'ALL_REGIONS') {
       nextFilter.view = 'A_REGION';
       nextFilter.type = 'REGION';
@@ -45,44 +25,48 @@ const populateRows = (store, articles, nextFilter) => {
       });
 
   } else if (filter.view === 'A_REGION') {
-    //all articles served should be of that region,
-    //display all articles by Topic
-    nextFilter.view = 'A_TOPIC_FROM_A_REGION';
-    nextFilter.type = 'TOPIC';
-    articles.forEach(article => { 
-console.log('here');
+      //all articles served should be of filter.region,
+      //display all articles by Topic
+      nextFilter.view = 'A_TOPIC_FROM_A_REGION';
+      nextFilter.type = 'TOPIC';
+      articles.forEach(article => {
 
-      article.artTopics.forEach(artTop => {
-        prop = artTop.topic.name;
+        article.artTopics.forEach(artTop => {
+          prop = artTop.topic.name;
 
-        categories = sortArticle(categories, article, prop);
+          categories = sortArticle(categories, article, prop);
+        });
       });
-    });
 
   } else if (filter.view === 'A_TOPIC') {
-    nextFilter.view = 'A_TOPIC_FROM_A_REGION';
-    nextFilter.type = 'REGION';
+      //all articles served should be of filter.topic
+      //display all article by Region
+      nextFilter.view = 'A_TOPIC_FROM_A_REGION';
+      nextFilter.type = 'REGION';
 
-    articles.forEach(article => {
-        prop = article.publisher.region;
-        categories = sortArticle(categories, article, prop);
-    });
+      articles.forEach(article => {
+          prop = article.publisher.region;
+          categories = sortArticle(categories, article, prop);
+      });
 
   } else if (filter.view === 'A_TOPIC_FROM_A_REGION') {
-    //create a row with every four articles
-    let rows = [];
-    let row = [];
+      //all articles served should be of
+      //filter.topic and filter.region
+      //create rows of four articles
+      let rows = [];
+      let row = [];
 
-    articles.forEach((article, idx, collection) => {
-      row.push(article);
-      if ( (idx + 1) % 4 === 0 ||
-        idx >= collection.length - 1 ) {
-        rows.push(row);
-        row = [];
-      }
-    });
+      articles.forEach((article, idx, collection) => {
+        row.push(article);
+        if (
+          (idx + 1) % 4 === 0 ||
+          idx >= collection.length - 1
+        ) {
+          rows.push(row);
+          row = [];
+        }
+      });
 
-    //return array of ArticlesRow's
     return _.map(rows, (articles, idx) => {
 
       return(
@@ -109,3 +93,23 @@ console.log('here');
     );
   });
 };
+
+const createTitle = (store) => {
+  let filter = store.getState().articleFilter;
+  switch (filter.view) {
+    case 'ALL_REGIONS':
+      return 'All Regions'
+
+    case 'A_REGION':
+      return filter.region
+
+    case 'A_TOPIC':
+      return sanitize(filter.topic)
+
+    case 'A_TOPIC_FROM_A_REGION':
+      return sanitize(filter.topic) + ' in ' + filter.region
+
+    default:
+      return '';
+  }
+}
