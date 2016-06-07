@@ -11,9 +11,9 @@ export const Sidebar = ({store, nextFilter}) => {
 
 
   return (
-    <div>
-      <h3 className="topics-heading left-margin-fix">Topics</h3>
-      <div className="demo-list-action mdl-list">
+    <div className="fixed-sidebar">
+      <div className="topics-heading left-margin-fix">Topics</div>
+      <div className="demo-list-action mdl-list ">
         {populateSidebar(store, nextFilter)}
       </div>
     </div>

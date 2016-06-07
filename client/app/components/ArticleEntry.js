@@ -138,7 +138,7 @@ export class ArticleEntry extends Component {
                       {this.state.modalText}</div>
                     </DialogContent>
                     <DialogActions>
-                      <Button type='button' onClick={this.handleCloseDialog}>Close</Button>
+                      <Button type='button' onClick={this.handleCloseDialog} className="close-btn">Close</Button>
                     </DialogActions>
                   </Dialog>
               </div>

@@ -6,7 +6,7 @@ import { ArticlesRow } from './ArticlesRow'
 export const Main = ({store, articles, nextFilter}) => (
   <div className="main-block">
     <h3 className="top-header">{createTitle(store)}</h3>
-    {populateRows(store, articles)}
+    {populateRows(store, articles, nextFilter)}
   </div>
 );
 
@@ -22,7 +22,7 @@ const createTitle = (store) => {
     case 'A_TOPIC_FROM_A_REGION':
       return sanitize(filter.topic) + ' in ' + filter.region
     default:
-      return '';
+      return '';  
   }
 }
 
