@@ -40,7 +40,7 @@ export class App extends Component {
     // let filter = state.articleFilter;
     let nextFilter = Object.assign({}, state.articleFilter);
 
-    // console.log('state: ', state);
+    console.log('state: ', state);
 
     return (
       <div className="mdl-layout mdl-js-layout mdl-layout--fixed-header">
