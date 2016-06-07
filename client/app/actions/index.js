@@ -73,9 +73,7 @@ export const fetchArticles = (filter, searchQuery) => {
       'search?q=' + searchQuery + '&&' + createQuery(filter, searchQuery).slice(9);
 
     let url = 'http://52.40.185.187:3000/v1/' + searchQuery;
-    console.log('url: ', url);
-
-    //TODO: change isFetching state to TRUE
+    // console.log('url: ', url);
 
     return fetch(url)
         .then(response => {
