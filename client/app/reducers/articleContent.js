@@ -9,3 +9,5 @@ const articleContent = (
       return state;
   }
 }
+
+export default articleContent;
