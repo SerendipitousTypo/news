@@ -1,9 +1,13 @@
 import React from 'react'
 import { fsetContent } from '../actions'
 import { Component } from 'react'
+<<<<<<< d06716f35f7ec6867cbb49f7dff02bac15db3c0f
 import {IconButton, Textfield, Menu, MenuItem, Button, Dialog, DialogTitle, DialogContent, DialogActions} from 'react-mdl'
 
 
+=======
+import {IconButton, Textfield, Menu, MenuItem, Button, Dialog, DialogTitle, DialogContent, DialogActions, Spinner} from 'react-mdl';
+>>>>>>> FEAT - show error message when article does not load
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
 // for the dialog example, we have to register the dialogs window
@@ -79,16 +83,36 @@ export class ArticleEntry extends Component {
       return text.json();
     })
     .then(function(text) {
-      context.setState({
+      return context.setState({
         modalText: text.data[0].text
-      });
+      })
+    })
+    .catch(function(e) {
+      context.setState({
+        modalText:  <div className="error-message">
+                      <div className="error-icon-wrapper">
+                        <i className="material-icons error-icon">error_outline</i>
+                      </div>
+                      Sorry, the article is not available at this time. You can view source here:
+                      <Button colored raised className="error-btn">
+                        <a href={context.props.article.url} target="_blank" className="error-link">View source</a>
+                      </Button>
+                    </div>
+      })
     });
+    
 
   }
 
   handleCloseDialog() {
     this.setState({
       openDialog: false
+    });
+  }
+  
+  componentDidMount() {
+    this.setState({
+      modalText: <Spinner className="spinner"/>
     });
   }
 
@@ -105,9 +129,11 @@ export class ArticleEntry extends Component {
                 <Button colored onClick={this.handleOpenDialog} raised ripple>Full article</Button>
                 <div className="url-link-btn"><a href={this.props.article.url} target="_blank" className="btn-link mdl-button mdl-js-button mdl-js-ripple-effect"><i className="material-icons">public</i></a></div>
                   <Dialog open={this.state.openDialog} className="article-dialog">
-                    <DialogTitle>{this.props.article.title}</DialogTitle>
+                    <DialogTitle className="dialog-title">{this.props.article.title}</DialogTitle>
                     <DialogContent>
-                      <div className="article-main-text">{this.state.modalText}</div>
+                      
+                      <div className="article-main-text">
+                      {this.state.modalText}</div>
                     </DialogContent>
                     <DialogActions>
                       <Button type='button' onClick={this.handleCloseDialog}>Close</Button>

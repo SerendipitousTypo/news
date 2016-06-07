@@ -156,4 +156,40 @@ footer {
   padding-right: 15px;*/
 }
 
+.dialog-title {
+  text-align: center;
+}
 
+.spinner {
+  text-indent: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.error-message {
+  text-align:center;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+}
+
+.error-message .error-link {
+  color: #fff ;
+}
+
+i.error-icon {
+  font-size: 50px;
+}
+
+.error-icon-wrapper {
+  position: absolute;
+  position: absolute;
+  top: -8px;
+  left: -40px;
+}
+
+.error-btn {
+  margin-top: 10px;
+}
