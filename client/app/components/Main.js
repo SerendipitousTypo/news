@@ -3,10 +3,10 @@ import _ from 'lodash'
 import { sanitize, sortArticle } from '../utils'
 import { ArticlesRow } from './ArticlesRow'
 
-export const Main = ({store, articles}) => (
+export const Main = ({store, articles, nextFilter}) => (
   <div className="main-block">
-    <h3>{createTitle(store)}</h3>
-    {populateRows(store, articles)}
+    <h3 className="top-header">{createTitle(store)}</h3>
+    {populateRows(store, articles, nextFilter)}
   </div>
 );
 
@@ -22,16 +22,16 @@ const createTitle = (store) => {
     case 'A_TOPIC_FROM_A_REGION':
       return sanitize(filter.topic) + ' in ' + filter.region
     default:
-      return '';
+      return '';  
   }
 }
 
-const populateRows = (store, articles) => {
+const populateRows = (store, articles, nextFilter) => {
   let filter = store.getState().articleFilter;
   let categories = {};
    //will be set to articleFilter on category click
    //in a article row
-  let nextFilter = Object.assign({}, filter);
+  // let nextFilter = Object.assign({}, filter);
   let prop;
 
   //filter articles based on state.articleFilter
@@ -49,11 +49,12 @@ const populateRows = (store, articles) => {
     //display all articles by Topic
     nextFilter.view = 'A_TOPIC_FROM_A_REGION';
     nextFilter.type = 'TOPIC';
-
-    articles.forEach(article => {
+    articles.forEach(article => { 
+console.log('here');
 
       article.artTopics.forEach(artTop => {
         prop = artTop.topic.name;
+
         categories = sortArticle(categories, article, prop);
       });
     });
@@ -95,7 +96,6 @@ const populateRows = (store, articles) => {
     });
   }
 
-  console.log('categories: ', categories);
   return _.map(categories, (category, catName) => {
 
     return(

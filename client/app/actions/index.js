@@ -7,7 +7,7 @@ const createQuery = (filter, searchQuery) => {
   switch (filter.view) {
     case 'ALL_REGIONS':
       return searchQuery === undefined ?
-        'articles?__count=100' : ''
+        'frontPage' : ''
 
     case 'A_REGION':
       return 'articles?publisher__region=' + filter.region
@@ -69,9 +69,9 @@ export const fetchArticles = (filter, searchQuery) => {
     filter = filter || {view: 'ALL_REGIONS'};
     searchQuery = (searchQuery === undefined || searchQuery === '') ?
       createQuery(filter) :
-      'search?q=' + searchQuery + '&&' + createQuery(filter, searchQuery);
+      'search?q=' + searchQuery + '&&' + createQuery(filter, searchQuery).slice(9);
 
-    let url = 'http://localhost:3000/v1/' + searchQuery;
+    let url = 'http://52.40.185.187:3000/v1/' + searchQuery;
     console.log('url: ', url);
     //TODO: change isFetching state to TRUE
 

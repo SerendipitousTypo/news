@@ -27,7 +27,7 @@ module.exports = (function() {
           var pubCount = models.length;
           for(var i = 0; i < pubCount; i ++) {
             var pubName = models[i]._data.name;
-            console.log(pubName);
+            // console.log(pubName);
             Article.query()
               .where({publisher_id: i + 1})
               .orderBy('date', 'DESC')
@@ -37,7 +37,7 @@ module.exports = (function() {
                 for(var j = 0; j < artCount; j++) {
                   artIDs.push(PubArts[j]._data.id);
                   if(j === artCount -1) {
-                    console.log('in here?');
+                    // console.log('in here?');
                     Article.query()
                       .join('artTopics__topic')
                       .join('publisher')
@@ -45,7 +45,7 @@ module.exports = (function() {
                       .where({id__in: artIDs})
                       .orderBy('date', 'DESC')
                       .end((err, Arts) => {
-                        console.log(Arts);
+                        // console.log(Arts);
                         this.respond(err || Arts, ['title','date','url','content', {publisher: ['name', 'region']}, {artTopics: [{topic:['name']}]}, {channel: ['name']}]);
                       })
                   }

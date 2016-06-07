@@ -3,24 +3,27 @@ import { fetchArticles, setFilter } from '../actions'
 import { sanitize } from '../utils'
 
 
-export const SidebarButton = ({store, button, filter}) => {
-  button.query = button.query || '';
+export const SidebarButton = ({store, button, nextFilter}) => {
+  nextFilter = Object.assign({}, nextFilter);
+
+  //if button.query is provided then a special
+  //query is being sought (e.g. 'US Elections')
+  !!button.query ?
+    nextFilter.view = 'ALL_REGIONS' :
+    button.query = '';
 
   return (
     <div className="mdl-list__item">
       <span className="mdl-list__item-primary-content">
         <span onClick={() => {
-              //change filter.topic to
-              //'Politics'
-              filter.topic = button.title;
+              nextFilter.topic = button.title;
               store.dispatch(setFilter(
-                filter,
+                nextFilter,
                 button.title
               ));
 
-              //fetch articles w/ topic 'Politics'
               store.dispatch(fetchArticles(
-                filter,
+                nextFilter,
                 button.query
               ));
             }

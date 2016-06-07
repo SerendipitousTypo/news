@@ -36,10 +36,9 @@ module.exports = () => {
       
       rp(data.url, options)
       .then(response => {  
-        let modDate = Date.parse(response.headers['last-modified']);
-
+        let modDate = Date.parse(response.headers['last-modified'] || response.headers['date']);
         if(modDate > lastUpdate && response.body !== undefined) {
-         let options = {
+          let options = {
             method: 'PUT',
             uri: 'http://127.0.0.1:3000/v1/channels/' + data.id,
             body: {

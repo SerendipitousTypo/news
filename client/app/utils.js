@@ -1,6 +1,6 @@
 
 
-//return string before '_'
+//return chars that occur before any '_'
 export const sanitize = (string) => (
   string.replace(/_.*/, '')
 );

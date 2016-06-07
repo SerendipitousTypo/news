@@ -25,7 +25,7 @@ module.exports = (function() {
 */
     index() {
       let searchQuery = this.params.query; //{q:'query string'};
-      let searchTerm = {q: this.params.query.q} //separates keyword search from other search parameters
+      let searchTerm = {q: this.params.query.q, size: 10000} //separates keyword search from other search parameters
       let article_ids = [];
 
       //function to get other search parameters

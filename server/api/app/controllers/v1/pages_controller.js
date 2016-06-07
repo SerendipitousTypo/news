@@ -11,14 +11,19 @@ module.exports = (function() {
     index() {
       let url = this.params.query.url;
       
-      rp(url)
-      .then(data => {
-        let page = extractor(data);
-        this.respond(page);
-      })
-      .catch(err => {
-        this.respond(err);
-      });
+      if(url) {
+        rp(url)
+        .then(data => {
+          let page = extractor(data);
+          let textArray = page.text.split('(File photo)')
+          page.text = textArray[1] || page.text;
+          page.text.replace(/\n/g, "<br />");
+          this.respond(page);
+        })
+        .catch(err => {
+          this.respond(err);
+        });
+      }
 
 
 

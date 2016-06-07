@@ -12,7 +12,6 @@ module.exports = () => {
   rp('http://127.0.0.1:3000/v1/articles?content=')
   .then(articles => {
     let art = JSON.parse(articles);
-
     art.data.forEach(article => {
       let target = 'http://127.0.0.1:3000/v1/pages?url=' + article.url;
       rp(target)
@@ -33,6 +32,8 @@ module.exports = () => {
         .catch(err => {
           e('snippetManagerLog', 'PUT issue', err);
         })
+      }).catch(err => {
+        e('snippetManagerLog', 'line 37 catch', err);
       })
     });
   })
