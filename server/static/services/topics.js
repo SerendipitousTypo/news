@@ -45,7 +45,9 @@ let getTopics = function(content, artId) {
         if (politicsGroup.indexOf(topicName) !== -1) {
           topicName = 'Politics';
         }
-        topics.push(topicName);
+        if(topics.indexOf(topicName) === -1) {
+          topics.push(topicName);
+        }
       }
     };
     topics.forEach(topic => {
