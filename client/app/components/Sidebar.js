@@ -27,7 +27,7 @@ const populateSidebar = (store, filter) => {
       <SidebarButton
         store={store}
         button={button}
-        filter={filter}
+        nextFilter={filter}
         key={id}
       />
     );
