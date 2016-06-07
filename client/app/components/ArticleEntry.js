@@ -26,7 +26,7 @@ export class ArticleEntry extends Component {
     });
     var context = this;
     //make request, then change the state of modal text
-    fetch("http://localhost:3000/v1/pages?url=" + this.props.article.url)
+    fetch("http://52.40.185.187:3000/v1/pages?url=" + this.props.article.url)
     .then( function(text) {
       return text.json();
     })
