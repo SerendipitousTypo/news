@@ -3,6 +3,12 @@
 pink: color: #E91E63;
 grey: color: #EFEFEF;*/
 
+
+/*new dark-grey color: #3B3D40; */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #EFEFEF;
   color: #757575;
@@ -10,17 +16,18 @@ body {
 
 main {
   overflow:auto;
-  padding-bottom: 36px;
+  padding-bottom: 100px;
   height: auto;
-  min-height: calc(100% - 169px);
+  min-height: calc(100% - 69px);
   /*padding:0 5%*/
 }
 
 footer {
   position: relative;
-  margin-top: -36px;
-  height: 36px;
+  margin-top: -100px;
+  height: 100px;
   clear: both;
+  z-index:999;
 }
 
 .search-box {
@@ -97,7 +104,7 @@ footer {
   box-sizing: border-box;
   border-radius: 0;
   background-color: rgba(0, 0, 0, 0);
-  font-size: 40px;
+  font-size: 30px;
   color: #757575;
 }
 
@@ -128,7 +135,7 @@ footer {
 }
 
 .card-text {
-  height: 183px;
+  height: 163px;
   overflow: hidden;
   margin-top: 7px;
   cursor:pointer;
@@ -142,6 +149,8 @@ footer {
 .article-dialog {
   width: 80%;
   height: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
   overflow-y: scroll;
 }
 
@@ -151,9 +160,18 @@ footer {
   line-height: 2.3em;
 }
 
+.article-paragraph {
+  
+  line-height: 2.3em;
+  font-size: 16px;
+    letter-spacing: 0;
+    margin: 0 0 -5px;
+}
+
 .url-link-btn {
   float:right;
   display:inline-block;
+  width: 65px;
 }
 .url-link-btn a {
  /* min-width: 0px;
@@ -192,7 +210,7 @@ i.error-icon {
   position: absolute;
   position: absolute;
   top: -8px;
-  left: -40px;
+  left: -45px;
 }
 
 .error-btn {
@@ -202,9 +220,38 @@ i.error-icon {
 .close-btn {
       position: fixed;
       display: block;
-      right: 160px;
-      bottom: 30px;
+      right: 180px;
+      bottom: 40px;
       margin-right: 40px;
       margin-bottom: 40px;
       z-index: 900;
-    }
+}
+
+.topics-heading {
+  font-size: 22px;
+  /*text-decoration: underline;*/
+  font-weight: bold;
+  margin-left: 20px;
+
+  /*text-align: ;: center;*/
+}
+
+.fixed-sidebar {
+  position: fixed;
+  top: 120px;
+  left: 0px;
+}
+
+.my-sidebar {
+  border-right: 1px solid lightgrey;
+}
+
+
+.top-header {
+  text-align: center;
+}
+
+.main-block {
+  margin-right: 20px;
+  margin-left: -20px;
+}

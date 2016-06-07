@@ -5,8 +5,8 @@ import { ArticlesRow } from './ArticlesRow'
 
 export const Main = ({store, articles, nextFilter}) => (
   <div className="main-block">
-    <h3>{createTitle(store)}</h3>
-    {populateRows(store, articles, nextFilter)}
+    <h3 className="top-header">{createTitle(store)}</h3>
+    {populateRows(store, articles)}
   </div>
 );
 
@@ -54,7 +54,7 @@ console.log('here');
 
       article.artTopics.forEach(artTop => {
         prop = artTop.topic.name;
-        
+
         categories = sortArticle(categories, article, prop);
       });
     });

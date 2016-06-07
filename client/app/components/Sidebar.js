@@ -9,6 +9,7 @@ export const Sidebar = ({store, nextFilter}) => {
   nextFilter.view = 'A_TOPIC';
   nextFilter.type = 'TOPIC';
 
+
   return (
     <div>
       <h3 className="topics-heading left-margin-fix">Topics</h3>

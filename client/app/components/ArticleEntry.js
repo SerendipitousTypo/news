@@ -77,8 +77,16 @@ export class ArticleEntry extends Component {
       return text.json();
     })
     .then(function(text) {
+      console.log('formated text', text.data[0].text);
       return context.setState({
-        modalText: text.data[0].text
+        modalText:  text.data[0].text.split('\n').map(function(item) {
+                        return (
+                          <p className="article-paragraph">
+                            {item}
+                            <br/>
+                          </p>
+                        )
+                      }) 
       })
     })
     .catch(function(e) {
@@ -117,15 +125,15 @@ export class ArticleEntry extends Component {
         <div className="col s6 offset-s3 valign">
           <div className="card mdl-color--white mdl-shadow--2dp">
             <div className="card-content white-text">
-              <div className="card-title">{this.props.article.title}</div>
-              <div className="card-text">{this.props.article.content}</div>
+              <div className="card-title" onClick={ this.handleOpenDialog}>{this.props.article.title}</div>
+              <div className="card-text" onClick={ this.handleOpenDialog}>{this.props.article.content}</div>
               <div className="mdl-card__actions mdl-card--border">
                 <Button colored onClick={this.handleOpenDialog} raised ripple>Full article</Button>
                 <div className="url-link-btn"><a href={this.props.article.url} target="_blank" className="btn-link mdl-button mdl-js-button mdl-js-ripple-effect"><i className="material-icons">public</i></a></div>
+                  
                   <Dialog open={this.state.openDialog} className="article-dialog">
                     <DialogTitle className="dialog-title">{this.props.article.title}</DialogTitle>
                     <DialogContent>
-                      
                       <div className="article-main-text">
                       {this.state.modalText}</div>
                     </DialogContent>
