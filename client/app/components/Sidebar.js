@@ -2,11 +2,10 @@ import React from 'react'
 import { SidebarButton } from './SideBarButton'
 import { fetchArticles, setFilter } from '../actions'
 
-export const Sidebar = ({store}) => {
-  let filter = store.getState().articleFilter;
-  let nextFilter = Object.assign({}, filter);
+export const Sidebar = ({store, nextFilter}) => {
+  // let filter = store.getState().articleFilter;
+  nextFilter = Object.assign({}, nextFilter);
 
-  nextFilter.view = nextFilter.view === 'ALL_REGIONS'
   nextFilter.view = 'A_TOPIC';
   nextFilter.type = 'TOPIC';
 
@@ -23,12 +22,13 @@ export const Sidebar = ({store}) => {
 
 const populateSidebar = (store, filter) => {
   //for each button define variables
-  return sidebarButtons.map(button => {
+  return sidebarButtons.map((button, id) => {
     return (
       <SidebarButton
         store={store}
         button={button}
         filter={filter}
+        key={id}
       />
     );
   });

@@ -3,10 +3,10 @@ import _ from 'lodash'
 import { sanitize, sortArticle } from '../utils'
 import { ArticlesRow } from './ArticlesRow'
 
-export const Main = ({store, articles}) => (
+export const Main = ({store, articles, nextFilter}) => (
   <div className="main-block">
     <h3>{createTitle(store)}</h3>
-    {populateRows(store, articles)}
+    {populateRows(store, articles, nextFilter)}
   </div>
 );
 
@@ -26,12 +26,12 @@ const createTitle = (store) => {
   }
 }
 
-const populateRows = (store, articles) => {
+const populateRows = (store, articles, nextFilter) => {
   let filter = store.getState().articleFilter;
   let categories = {};
    //will be set to articleFilter on category click
    //in a article row
-  let nextFilter = Object.assign({}, filter);
+  // let nextFilter = Object.assign({}, filter);
   let prop;
 
   //filter articles based on state.articleFilter
@@ -95,7 +95,6 @@ const populateRows = (store, articles) => {
     });
   }
 
-  console.log('categories: ', categories);
   return _.map(categories, (category, catName) => {
 
     return(

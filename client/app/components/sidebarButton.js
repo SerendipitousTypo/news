@@ -4,21 +4,23 @@ import { sanitize } from '../utils'
 
 
 export const SidebarButton = ({store, button, filter}) => {
-  button.query = button.query || '';
+
+  //if button.query is provided then a special
+  //query is being sought (e.g. 'US Elections')
+  !!button.query ?
+    filter.view = 'ALL_REGIONS' :
+    button.query = '';
 
   return (
     <div className="mdl-list__item">
       <span className="mdl-list__item-primary-content">
         <span onClick={() => {
-              //change filter.topic to
-              //'Politics'
               filter.topic = button.title;
               store.dispatch(setFilter(
                 filter,
                 button.title
               ));
 
-              //fetch articles w/ topic 'Politics'
               store.dispatch(fetchArticles(
                 filter,
                 button.query

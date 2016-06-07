@@ -9,7 +9,7 @@ import { Main } from './Main';
 import { Footer } from './Footer';
 
 require('es6-promise').polyfill();
-require('isomorphic-fetch');  
+require('isomorphic-fetch');
 
 
 export class App extends Component {
@@ -32,15 +32,15 @@ export class App extends Component {
   componentWillUnmount() {
     this.unsubscribe();
   }
-  
+
 
   render() {
     const { store } = this.props;
     const state = store.getState();
-    //TODO: create nextFilter here,
-    //pass down to Sidebar & Main
+    // let filter = state.articleFilter;
+    let nextFilter = Object.assign({}, state.articleFilter);
 
-    console.log('state: ', state);
+    // console.log('state: ', state);
 
     return (
       <div className="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -49,10 +49,13 @@ export class App extends Component {
         <main className="mdl-layout__content">
           <div className="mdl-grid">
             <div className="mdl-cell mdl-cell--3-col">
-              <Sidebar store={store} />
+              <Sidebar store={store} nextFilter={nextFilter}/>
             </div>
             <div className="mdl-cell mdl-cell--9-col graybox">
-              <Main store={store} articles={state.articles}
+              <Main
+                store={store}
+                articles={state.articles}
+                nextFilter={nextFilter}
               />
             </div>
           </div>
