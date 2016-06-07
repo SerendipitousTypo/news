@@ -18,8 +18,6 @@ export const ArticlesRow = ({store, title, articles, nextFilter}) => {
             nextFilter.topic = title :
             nextFilter.region = title;
 
-
-          console.log('nextFilter: ', nextFilter);
           store.dispatch(setFilter(
             nextFilter,
             title
@@ -42,11 +40,11 @@ export const ArticlesRow = ({store, title, articles, nextFilter}) => {
   )
 };
 
-var populateRow = (articles, store) => {
+const populateRow = (articles, store) => {
   //perhaps temporary
   //limit articleEntry per row to 5
   let collection = [];
-  for (var i = 0; i < articles.length && i < 4; i++) {
+  for (let i = 0; i < articles.length && i < 4; i++) {
     collection.push(
       <ArticleEntry
         store={store}

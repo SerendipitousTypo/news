@@ -95,7 +95,6 @@ const populateRows = (store, articles, nextFilter) => {
     });
   }
 
-  console.log('categories: ', categories);
   return _.map(categories, (category, catName) => {
 
     return(
