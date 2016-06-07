@@ -48,10 +48,10 @@ export class App extends Component {
 
         <main className="mdl-layout__content">
           <div className="mdl-grid">
-            <div className="mdl-cell mdl-cell--3-col">
+            <div className="mdl-cell mdl-cell--2-col my-sidebar">
               <Sidebar store={store} nextFilter={nextFilter}/>
             </div>
-            <div className="mdl-cell mdl-cell--9-col graybox">
+            <div className="mdl-cell mdl-cell--10-col graybox">
               <Main
                 store={store}
                 articles={state.articles}

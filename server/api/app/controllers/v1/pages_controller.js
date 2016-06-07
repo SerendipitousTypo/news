@@ -14,6 +14,7 @@ module.exports = (function() {
       rp(url)
       .then(data => {
         let page = extractor(data);
+        page.text.replace(/\n/g, "<br />");
         this.respond(page);
       })
       .catch(err => {

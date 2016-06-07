@@ -10,7 +10,7 @@ export var Search = ({store}) => {
 
       <header className="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
         <div className="mdl-layout__header-row">
-          <a href="#" className="logo-link">
+          <a href="" className="logo-link">
             <span className="mdl-layout-title">
               <div className="logo"><i className="material-icons logo-icon">public</i></div>
               Worldwide news

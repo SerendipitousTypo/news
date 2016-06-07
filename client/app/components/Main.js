@@ -5,7 +5,7 @@ import { ArticlesRow } from './ArticlesRow'
 
 export const Main = ({store, articles, nextFilter}) => (
   <div className="main-block">
-    <h3>{createTitle(store)}</h3>
+    <h3 className="top-header">{createTitle(store)}</h3>
     {populateRows(store, articles, nextFilter)}
   </div>
 );
@@ -22,7 +22,7 @@ const createTitle = (store) => {
     case 'A_TOPIC_FROM_A_REGION':
       return sanitize(filter.topic) + ' in ' + filter.region
     default:
-      return '';
+      return '';  
   }
 }
 
@@ -49,11 +49,12 @@ const populateRows = (store, articles, nextFilter) => {
     //display all articles by Topic
     nextFilter.view = 'A_TOPIC_FROM_A_REGION';
     nextFilter.type = 'TOPIC';
-
-    articles.forEach(article => {
+    articles.forEach(article => { 
+console.log('here');
 
       article.artTopics.forEach(artTop => {
         prop = artTop.topic.name;
+
         categories = sortArticle(categories, article, prop);
       });
     });
