@@ -18,6 +18,7 @@ export class ArticleEntry extends Component {
     this.state = {};
     this.handleOpenDialog = this.handleOpenDialog.bind(this);
     this.handleCloseDialog = this.handleCloseDialog.bind(this);
+    this.handleAnalyze = this.handleAnalyze.bind(this);
   }
 
   handleOpenDialog() {
@@ -56,8 +57,47 @@ export class ArticleEntry extends Component {
                     </div>
       })
     });
-
-
+  }
+  //return fetch("http://localhost:3000/v1/pages?text=" + text)
+  handleAnalyze() {
+    var hello = 'hello'
+    this.setState({
+      openDialog: true
+    });
+    var context = this;
+    //make request, then change the state of modal text
+    fetch("http://localhost:3000/v1/pages?url=" + this.props.article.url)
+    .then( function(text) {
+      return text.json();
+    })
+    .then(function(text){
+      var text = text.data[0].text
+      console.log('this is text', text);
+      return fetch("http://localhost:3000/v1/tone_analyzers?text=" + text)
+    })
+    .then(function(data){
+      return data.json();
+    })
+    .then(function(data) {
+      console.log('this is data', data);
+      var data = JSON.stringify(data);
+      return context.setState({
+        modalText:  <p className="article-paragraph">
+                      {data}
+                      <br/>
+                    </p>
+      })
+    })
+    .catch(function(e) {
+      context.setState({
+        modalText:  <div className="error-message">
+                      <div className="error-icon-wrapper">
+                        <i className="material-icons error-icon">error_outline</i>
+                      </div>
+                      Sorry, the article is not available at this time.
+                    </div>
+      })
+    });
   }
 
   handleCloseDialog() {
@@ -83,6 +123,7 @@ export class ArticleEntry extends Component {
               <div className="card-text" onClick={ this.handleOpenDialog}>{this.props.article.content}</div>
               <div className="mdl-card__actions mdl-card--border">
                 <Button colored onClick={this.handleOpenDialog} raised ripple>Full article</Button>
+                <Button colored onClick={this.handleAnalyze} raised ripple>Analyze</Button>
                 <div className="url-link-btn"><a href={this.props.article.url} target="_blank" className="btn-link mdl-button mdl-js-button mdl-js-ripple-effect"><i className="material-icons">public</i></a></div>
 
                   <Dialog open={this.state.openDialog} className="article-dialog">
