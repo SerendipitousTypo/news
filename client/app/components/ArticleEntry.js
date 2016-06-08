@@ -1,6 +1,9 @@
 import React from 'react'
+var update = require('react-addons-update');
+import ReactDOM from 'react-dom';
 import { fsetContent } from '../actions'
 import { Component } from 'react'
+import Chart from './PieChart.js'
 import {IconButton, Textfield, Menu, MenuItem, Button, Dialog, DialogTitle, DialogContent, DialogActions, Spinner} from 'react-mdl'
 
 require('es6-promise').polyfill();
@@ -15,7 +18,12 @@ export class ArticleEntry extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      emotion_tone: {
+        watsonData: [],
+        circleAttributes: {}
+      },
+    };
     this.handleOpenDialog = this.handleOpenDialog.bind(this);
     this.handleCloseDialog = this.handleCloseDialog.bind(this);
     this.handleAnalyze = this.handleAnalyze.bind(this);
@@ -79,13 +87,27 @@ export class ArticleEntry extends Component {
       return data.json();
     })
     .then(function(data) {
-      console.log('this is data', data);
-      var data = JSON.stringify(data);
+      // populate emotion property
+      let emotion_Arr = [];
+      for (let watsonData of data.data[0].tone_categories[0].tones) {
+        const obj = {
+          label: watsonData.tone_name,
+          value: Math.floor(watsonData.score * 100)
+        }
+        emotion_Arr.push(obj);
+      }
+      console.log('this is emotion arr: ', emotion_Arr);
+      context.setState({
+        emotion_tone: update(context.state.emotion_tone, {
+          watsonData: {$set: emotion_Arr}
+        }),
+      });
+      //emotion_Arr = JSON.stringify(emotion_Arr);
       return context.setState({
-        modalText:  <p className="article-paragraph">
-                      {data}
+        modalText:  <div className="article-paragraph">
+                      <Chart pieData={ context.state.emotion_tone }/>
                       <br/>
-                    </p>
+                    </div>
       })
     })
     .catch(function(e) {
@@ -108,7 +130,8 @@ export class ArticleEntry extends Component {
 
   componentDidMount() {
     this.setState({
-      modalText: <Spinner className="spinner"/>
+      modalText: <Spinner className="spinner"/>,
+      // emotion_tone: initialData[0].emotion_tone
     });
   }
 
