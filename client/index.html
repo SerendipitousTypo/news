@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
   <title>News</title>
   <!-- load styles -->
   <link rel="stylesheet" href="node_modules/react-mdl/extra/css/material.pink-amber.min.css">
@@ -14,8 +15,10 @@
   <!-- load client dependencies -->
   <script src="node_modules/react-mdl/extra/material.js"></script>
   <!-- /client dependencies -->
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
 <body>
+  <div class="g-signin2" data-onsuccess="onSignIn"></div>
   <div id="app" class="mdl-color--grey-100"></div>
   <script type="text/javascript" src="/static/bundle.js"></script>
 </body>
