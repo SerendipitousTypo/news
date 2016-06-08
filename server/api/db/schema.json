@@ -1,6 +1,6 @@
 {
 
-  "migration_id": 2016060321300197,
+  "migration_id": 2016060800191636,
 
   "models": {
 
@@ -72,6 +72,18 @@
         {"name": "id", "type": "serial", "properties": {"nullable":false,"primary_key":true,"auto_increment":true}},
         {"name": "name", "type": "string", "properties": {"unique":true}},
         {"name": "region", "type": "string", "properties": {}},
+        {"name": "created_at", "type": "datetime", "properties": {}},
+        {"name": "updated_at", "type": "datetime", "properties": {}}
+      ]
+
+    },
+
+    "ToneAnalyzer": {
+
+      "table": "tone_analyzers",
+
+      "columns": [
+        {"name": "id", "type": "serial", "properties": {"nullable":false,"primary_key":true,"auto_increment":true}},
         {"name": "created_at", "type": "datetime", "properties": {}},
         {"name": "updated_at", "type": "datetime", "properties": {}}
       ]
