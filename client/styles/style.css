@@ -110,13 +110,20 @@ footer {
 }
 
 .card-title {
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: bold;
   cursor:pointer;
+  color: black;
+  text-align: center
+}
+
+.card-title:hover {
+  color: #E91E63;
 }
 
 .card {
   padding: 20px 20px 0px 20px;
-  height: 300px;
+  height: 320px;
 }
 
 .mdl-card__actions a {
@@ -141,6 +148,13 @@ footer {
   margin-top: 7px;
   cursor:pointer;
 
+}
+
+.card-editor {
+  font-weight: bold;
+  font-style: italic;
+  /*color: #E91E63;*/
+  text-align: center;
 }
 
 .left-margin-fix {
