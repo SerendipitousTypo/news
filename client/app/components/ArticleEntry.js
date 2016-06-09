@@ -75,14 +75,10 @@ export class ArticleEntry extends Component {
                               {mainText}
                               <br/>
                             </p>
-<<<<<<< f0a01e4bb95524f933b112277d37b66007eeaa5b
                             <div className="article-paragraph">
                               <Chart pieData={ context.state.emotion_tone }/>
                               <br/>
                             </div>
-=======
-                            <br/>
->>>>>>> Comments now specific to article
                           </div>
 
 
