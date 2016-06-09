@@ -1,7 +1,9 @@
-import React from 'react'
-import { Component } from 'react'
+import React from 'react';
+import { Component } from 'react';
 
-import { fetchArticles, getFilteredArticles } from '../actions'
+import { fetchArticles, getFilteredArticles } from '../actions';
+
+import GoogleMap from './GoogleMap';
 
 import { Sidebar } from './Sidebar';
 import { Search } from './Search';
@@ -14,7 +16,7 @@ require('isomorphic-fetch');
 
 export class App extends Component {
   //TODO: what is purpose of constructor?
-  constructor (props) {
+  constructor(props) {
     super(props);
   }
 
@@ -38,17 +40,18 @@ export class App extends Component {
     const { store } = this.props;
     const state = store.getState();
 
-    //nextFilter is changed according to user interactions
-    //determines what articles will be queried & rendered
-    //shallow copy used for sake of isolating conflicting changes from each other
+    // nextFilter is changed according to user interactions
+    // determines what articles will be queried & rendered
+    // shallow copy used for sake of isolating conflicting changes from each other
     let nextFilter = Object.assign({}, state.articleFilter);
 
-    //will display the current state before every render
+    // will display the current state before every render
     // console.log('state: ', state);
 
     return (
       <div className="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <Search store={store} />
+
 
         <main className="mdl-layout__content">
           <div className="mdl-grid">
@@ -56,6 +59,9 @@ export class App extends Component {
               <Sidebar store={store} nextFilter={nextFilter}/>
             </div>
             <div className="mdl-cell mdl-cell--10-col graybox">
+
+              <GoogleMap />
+
               <Main
                 store={store}
                 articles={state.articles}
