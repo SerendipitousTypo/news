@@ -9,19 +9,26 @@
   <link rel="stylesheet" href="node_modules/react-mdl/extra/css/material.pink-amber.min.css">
   <link rel="stylesheet" type="text/css" href="styles/style.css">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
   <!-- /styles -->
   <!-- Google Maps -->
   <script src="https://maps.googleapis.com/maps/api/js"></script>
   <!-- load client dependencies -->
+
   <script src="node_modules/react-mdl/extra/material.js"></script>
-  <!-- /client dependencies -->
-  <script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
 
 
 
 <body>
-  <div class="g-signin2" data-onsuccess="onSignIn"></div>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
   <div id="app" class="mdl-color--grey-100"></div>
   <script type="text/javascript" src="/static/bundle.js"></script>
 </body>
