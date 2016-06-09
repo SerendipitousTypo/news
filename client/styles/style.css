@@ -123,7 +123,7 @@ footer {
 
 .card {
   padding: 20px 20px 0px 20px;
-  height: 300px;
+  height: 320px;
 }
 
 .mdl-card__actions a {
@@ -148,6 +148,13 @@ footer {
   margin-top: 7px;
   cursor:pointer;
 
+}
+
+.card-editor {
+  font-weight: bold;
+  font-style: italic;
+  /*color: #E91E63;*/
+  text-align: center;
 }
 
 .left-margin-fix {
