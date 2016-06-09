@@ -71,14 +71,14 @@ export class ArticleEntry extends Component {
         modalText:
 
                           <div>
-                            <div className="article-paragraph">
-                              <Chart pieData={ context.state.emotion_tone }/>
-                              <br/>
-                            </div>
                             <p className="article-paragraph">
                               {mainText}
                               <br/>
                             </p>
+                            <div className="article-paragraph">
+                              <Chart pieData={ context.state.emotion_tone }/>
+                              <br/>
+                            </div>
                           </div>
 
 
@@ -92,7 +92,7 @@ export class ArticleEntry extends Component {
                       <div className="error-icon-wrapper">
                         <i className="material-icons error-icon">error_outline</i>
                       </div>
-                      Sorry, the article is not available at this time.
+                      Sorry, this article is not available to be shared. Please visit the source.
                       <Button colored raised className="error-btn">
                         <a href={context.props.article.url} target="_blank" className="error-link">View source</a>
                       </Button>
