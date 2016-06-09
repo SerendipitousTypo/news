@@ -36,6 +36,7 @@ export class ArticleEntry extends Component {
     });
     var mainText;
     var context = this;
+    var regionName = this.props.article.publisher.region;
     console.log('pprops article: ', this.props.article.publisher.region);
     //make request, then change the state of modal text
     fetch("http://localhost:3000/v1/pages?url=" + this.props.article.url)
