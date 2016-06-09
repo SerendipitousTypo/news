@@ -10,3 +10,6 @@ compiled/
 ## API keys ##
 src/config/youtube.js
 compiled/config/youtube.js
+
+## temp ##
+app/components/GoogleMapOld.js

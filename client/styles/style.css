@@ -50,6 +50,7 @@ footer {
 
 .mdl-layout__header-row {
   background-color: #E91E63;
+  /*background: black url(/images/rangitoto-3072x200.jpg) center no-repeat;*/
   color: #fff;
 }
 
@@ -161,7 +162,7 @@ footer {
 }
 
 .article-paragraph {
-  
+
   line-height: 2.3em;
   font-size: 16px;
     letter-spacing: 0;
@@ -256,4 +257,11 @@ i.error-icon {
 .main-block {
   margin-right: 30px;
   margin-left: 30px;
+}
+
+.g-map {
+  margin-left: auto;
+  margin-right: auto;
+  /*width: auto;*/
+  height: 125px;
 }
