@@ -1,13 +1,13 @@
 import React from 'react';
 
 const locations = {
-  'Oceania':        [-13.431129, 134.1783639],
-  'North America':  [36.2106946, -113.7217515],
-  'Europe':         [48.0997728, 4.1534819],
-  'Asia':           [23.7027273, 62.3750637],
+  'Oceania':        [-3.5141071, 126.6769916],
+  'North America':  [36.2106946, -97.250977],
+  'Europe':         [48.0997728, 9.1534819],
+  'Asia':           [41.5738472, 74.6457416],
   'Africa':         [-3.6872377, -20.6307395],
   'Russia':         [49.7361415, 68.7625474],
-  'South America':  [-15.2171868, -99.7801229],
+  'South America':  [-11.781998, -57.5417584],
 };
 
 export default class GoogleMap extends React.Component {
