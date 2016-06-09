@@ -1,14 +1,19 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
+
+const locations = {
+  'Oceania': [-13.431129, 134.1783639],
+  'North America': [36.2106946, -113.7217515],
+  'Europe': [48.0997728, 4.1534819],
+  'Asia': [23.7027273, 62.3750637],
+  'Africa': [-3.6872377, -20.6307395],
+  'Russia': [49.7361415, 68.7625474],
+  'South America': [-15.2171868, -99.7801229],
+};
 
 export default class GoogleMap extends React.Component {
 	render() {
     return (
-      // <div className="GoogleMap">
-      //   <div className='GoogleMap-canvas' ref="mapCanvas">
-      //   </div>
-      // </div>
-        <div ref="mapCanvas" className="g-map" ></div>
+      <div ref="mapCanvas" className="g-map" ></div>
     )
   }
 
@@ -17,27 +22,14 @@ export default class GoogleMap extends React.Component {
   // }
 
   componentDidMount() {
-    // create the map, marker and infoWindow after the component has
-    // been rendered because we need to manipulate the DOM for Google =(
     this.map = this.createMap();
     this.marker = this.createMarker();
     // this.infoWindow = this.createInfoWindow()
-/*
-    // have to define google maps event listeners here too
-    // because we can't add listeners on the map until its created
-    google.maps.event.addListener(this.map, 'zoom_changed', () => this.handleZoomChange());
-*/
-  }
-
-
-  // clean up event listeners when component unmounts
-  componentDidUnMount() {
-    google.maps.event.clearListeners(map, 'zoom_changed');
   }
 
   createMap() {
     let mapOptions = {
-      zoom: 10,
+      zoom: 4,
       center: this.mapCenter(),
     }
     return new google.maps.Map(this.refs.mapCanvas, mapOptions);
@@ -45,8 +37,8 @@ export default class GoogleMap extends React.Component {
 
   mapCenter() {
     let position = {
-      lng: -90.1056957,
-      lat: 29.9717272,
+      lat: locations[this.props.location][0],
+      lng: locations[this.props.location][1],
     };
     return new google.maps.LatLng(
       position.lat,
@@ -76,5 +68,3 @@ export default class GoogleMap extends React.Component {
     });
   }
 }
-
-// var initialCenter = { lng: -90.1056957, lat: 29.9717272 };

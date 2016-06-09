@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import { fsetContent } from '../actions'
 import { Component } from 'react'
 import Chart from './PieChart.js'
+import GoogleMap from './GoogleMap'
 import {IconButton, Textfield, Menu, MenuItem, Button, Dialog, DialogTitle, DialogContent, DialogActions, Spinner} from 'react-mdl'
 
 require('es6-promise').polyfill();
@@ -39,6 +40,11 @@ export class ArticleEntry extends Component {
     });
     var mainText = '';
     var context = this;
+<<<<<<< 4d56cdccef436f1fa52f93d7c653ac715b967797
+=======
+    var regionName = this.props.article.publisher.region;
+    console.log('pprops article: ', this.props.article.publisher.region);
+>>>>>>> Show region location on google map
     //make request, then change the state of modal text
     fetch("http://localhost:3000/v1/pages?url=" + this.props.article.url)
     .then( function(text) {
@@ -71,26 +77,22 @@ export class ArticleEntry extends Component {
         }),
       });
       return context.setState({
-        modalText:
-
-                          <div>
-                            <div className="article-paragraph">
-                              <Chart pieData={ context.state.emotion_tone }/>
-                              <br/>
-                            </div>
-                            <p className="article-paragraph">
-                              {mainText}
-                              <br/>
-                            </p>
-                            <div className="fb-comments"
-                            data-href="https://developers.facebook.com/docs/plugins/comments"
-                            data-numposts="5">
-                            </div>
-                            <br/>
-                          </div>
-
-
-
+        modalText:  <div>
+                      <GoogleMap location={regionName} />
+                      <div className="article-paragraph">
+                        <Chart pieData={ context.state.emotion_tone }/>
+                        <br/>
+                      </div>
+                      <p className="article-paragraph">
+                        {mainText}
+                        <br/>
+                      </p>
+                      <div className="fb-comments"
+                      data-href="https://developers.facebook.com/docs/plugins/comments"
+                      data-numposts="5">
+                      </div>
+                      <br/>
+                    </div>
 
       })
     })
