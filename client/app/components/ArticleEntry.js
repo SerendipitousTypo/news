@@ -23,9 +23,16 @@ export class ArticleEntry extends Component {
         watsonData: [],
         circleAttributes: {}
       },
+      currentBool : false
     };
+
+
     this.handleOpenDialog = this.handleOpenDialog.bind(this);
     this.handleCloseDialog = this.handleCloseDialog.bind(this);
+    // disqus_config = function () {
+    //   this.page.url = 'localhost:8085'; // Replace PAGE_URL with your page's canonical URL variable
+    //   this.page.identifier = 0; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    // };
   }
 
   //return fetch("http://localhost:3000/v1/pages?text=" + text)
@@ -98,7 +105,18 @@ export class ArticleEntry extends Component {
                     </div>
       })
     });
-  }
+}
+
+  //
+  //   handleForum() {
+  //     this.setState({
+  //       modalText:
+  //       <div className="fb-comments"
+  //       data-href="https://developers.facebook.com/docs/plugins/comments#configurator"
+  //       data-numposts="5">
+  //       </div>
+  //   });
+  // };
 
   handleCloseDialog() {
     this.setState({
@@ -132,6 +150,18 @@ export class ArticleEntry extends Component {
                     <DialogContent>
                       <div className="article-main-text">
                       {this.state.modalText}</div>
+                      <div id="disqus_thread"></div>
+<script>{
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//worldwidenews1.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})()}
+</script>
                     </DialogContent>
                     <DialogActions>
                       <Button type='button' onClick={this.handleCloseDialog} className="close-btn">Close</Button>
