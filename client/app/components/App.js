@@ -3,8 +3,6 @@ import { Component } from 'react';
 
 import { fetchArticles, getFilteredArticles } from '../actions';
 
-import GoogleMap from './GoogleMap';
-
 import { Sidebar } from './Sidebar';
 import { Search } from './Search';
 import { Main } from './Main';
@@ -59,8 +57,6 @@ export class App extends Component {
               <Sidebar store={store} nextFilter={nextFilter}/>
             </div>
             <div className="mdl-cell mdl-cell--10-col graybox">
-
-              <GoogleMap />
 
               <Main
                 store={store}
