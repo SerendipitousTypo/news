@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom';
 import { fsetContent } from '../actions'
 import { Component } from 'react'
 import Chart from './PieChart.js'
-import GoogleMap from './GoogleMap'
 import {IconButton, Textfield, Menu, MenuItem, Button, Dialog, DialogTitle, DialogContent, DialogActions, Spinner} from 'react-mdl'
 
 require('es6-promise').polyfill();
@@ -25,11 +24,8 @@ export class ArticleEntry extends Component {
         circleAttributes: {}
       },
     };
-
-
     this.handleOpenDialog = this.handleOpenDialog.bind(this);
     this.handleCloseDialog = this.handleCloseDialog.bind(this);
-    // this.handleForum = this.handleForum.bind(this);
   }
 
   //return fetch("http://localhost:3000/v1/pages?text=" + text)
@@ -38,13 +34,9 @@ export class ArticleEntry extends Component {
     this.setState({
       openDialog: true
     });
-    var mainText = '';
+    var mainText;
     var context = this;
-<<<<<<< 4d56cdccef436f1fa52f93d7c653ac715b967797
-=======
-    var regionName = this.props.article.publisher.region;
     console.log('pprops article: ', this.props.article.publisher.region);
->>>>>>> Show region location on google map
     //make request, then change the state of modal text
     fetch("http://localhost:3000/v1/pages?url=" + this.props.article.url)
     .then( function(text) {
@@ -52,9 +44,8 @@ export class ArticleEntry extends Component {
     })
     .then(function(text){
       mainText = text.data[0].text
-      text = text.data[0].text
       console.log('this is text', mainText);
-      return fetch("http://localhost:3000/v1/tone_analyzers?text=" + text);
+      return fetch("http://localhost:3000/v1/tone_analyzers?text=" + mainText);
     })
     .then(function(data){
       return data.json();
@@ -70,29 +61,27 @@ export class ArticleEntry extends Component {
         emotion_Arr.push(obj);
       }
       console.log('this is emotion arr: ', emotion_Arr);
-      console.log('this is maintext', mainText);
       context.setState({
         emotion_tone: update(context.state.emotion_tone, {
           watsonData: {$set: emotion_Arr}
         }),
       });
       return context.setState({
-        modalText:  <div>
-                      <GoogleMap location={regionName} />
-                      <div className="article-paragraph">
-                        <Chart pieData={ context.state.emotion_tone }/>
-                        <br/>
-                      </div>
-                      <p className="article-paragraph">
-                        {mainText}
-                        <br/>
-                      </p>
-                      <div className="fb-comments"
-                      data-href="https://developers.facebook.com/docs/plugins/comments"
-                      data-numposts="5">
-                      </div>
-                      <br/>
-                    </div>
+        modalText:
+
+                          <div>
+                            <p className="article-paragraph">
+                              {mainText}
+                              <br/>
+                            </p>
+                            <div className="article-paragraph">
+                              <Chart pieData={ context.state.emotion_tone }/>
+                              <br/>
+                            </div>
+                          </div>
+
+
+
 
       })
     })
@@ -102,25 +91,14 @@ export class ArticleEntry extends Component {
                       <div className="error-icon-wrapper">
                         <i className="material-icons error-icon">error_outline</i>
                       </div>
-                      Sorry, the article is not available at this time.
+                      Sorry, this article is not available to be shared. Please visit the source.
                       <Button colored raised className="error-btn">
                         <a href={context.props.article.url} target="_blank" className="error-link">View source</a>
                       </Button>
                     </div>
       })
     });
-}
-
-  //
-  //   handleForum() {
-  //     this.setState({
-  //       modalText:
-  //       <div className="fb-comments"
-  //       data-href="https://developers.facebook.com/docs/plugins/comments#configurator"
-  //       data-numposts="5">
-  //       </div>
-  //   });
-  // };
+  }
 
   handleCloseDialog() {
     this.setState({
@@ -132,17 +110,10 @@ export class ArticleEntry extends Component {
     this.setState({
       modalText: <Spinner className="spinner"/>,
       // emotion_tone: initialData[0].emotion_tone
-    // });
-    // };
-  });
+    });
   }
 
   render() {
-    var disqus_config = function () {
-      this.page.url = 'a unique URL for each page where Disqus is present';
-      this.page.identifier = this.props.article.url;
-      this.page.title = 'a unique title for each page where Disqus is present';
-    };
     return (
     <div className="articleEntry mdl-cell mdl-cell--3-col ">
       <div className="row valign-wrapper">
@@ -161,10 +132,6 @@ export class ArticleEntry extends Component {
                     <DialogContent>
                       <div className="article-main-text">
                       {this.state.modalText}</div>
-                      <div className="fb-comments"
-                      data-href="https://developers.facebook.com/docs/plugins/comments#hello"
-                      data-numposts="5">
-                      </div>
                     </DialogContent>
                     <DialogActions>
                       <Button type='button' onClick={this.handleCloseDialog} className="close-btn">Close</Button>
