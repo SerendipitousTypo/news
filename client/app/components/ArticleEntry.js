@@ -75,10 +75,14 @@ export class ArticleEntry extends Component {
                               {mainText}
                               <br/>
                             </p>
+<<<<<<< f0a01e4bb95524f933b112277d37b66007eeaa5b
                             <div className="article-paragraph">
                               <Chart pieData={ context.state.emotion_tone }/>
                               <br/>
                             </div>
+=======
+                            <br/>
+>>>>>>> Comments now specific to article
                           </div>
 
 
@@ -109,11 +113,21 @@ export class ArticleEntry extends Component {
 
   componentDidMount() {
     this.setState({
-      modalText: <Spinner className="spinner"/>,
+      modalText:
+      <div>
+      <Spinner className="spinner"/>
+      <div id="fb-root"></div>
+      <script>{(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'))}</script>
+      </div>
       // emotion_tone: initialData[0].emotion_tone
     });
   }
-
   render() {
     return (
     <div className="articleEntry mdl-cell mdl-cell--3-col ">
@@ -133,6 +147,10 @@ export class ArticleEntry extends Component {
                     <DialogContent>
                       <div className="article-main-text">
                       {this.state.modalText}</div>
+                      <div className="fb-comments"
+                      data-href={this.props.article.url}
+                      data-numposts="5">
+                      </div>
                     </DialogContent>
                     <DialogActions>
                       <Button type='button' onClick={this.handleCloseDialog} className="close-btn">Close</Button>
