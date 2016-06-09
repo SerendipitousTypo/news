@@ -1,13 +1,13 @@
 import React from 'react';
 
 const locations = {
-  'Oceania': [-13.431129, 134.1783639],
-  'North America': [36.2106946, -113.7217515],
-  'Europe': [48.0997728, 4.1534819],
-  'Asia': [23.7027273, 62.3750637],
-  'Africa': [-3.6872377, -20.6307395],
-  'Russia': [49.7361415, 68.7625474],
-  'South America': [-15.2171868, -99.7801229],
+  'Oceania':        [-13.431129, 134.1783639],
+  'North America':  [36.2106946, -113.7217515],
+  'Europe':         [48.0997728, 4.1534819],
+  'Asia':           [23.7027273, 62.3750637],
+  'Africa':         [-3.6872377, -20.6307395],
+  'Russia':         [49.7361415, 68.7625474],
+  'South America':  [-15.2171868, -99.7801229],
 };
 
 export default class GoogleMap extends React.Component {
@@ -23,7 +23,7 @@ export default class GoogleMap extends React.Component {
 
   componentDidMount() {
     this.map = this.createMap();
-    this.marker = this.createMarker();
+    // this.marker = this.createMarker();
     // this.infoWindow = this.createInfoWindow()
   }
 
@@ -46,12 +46,12 @@ export default class GoogleMap extends React.Component {
     );
   }
 
-  createMarker() {
-    return new google.maps.Marker({
-      position: this.mapCenter(),
-      map: this.map
-    });
-	}
+ //  createMarker() {
+ //    return new google.maps.Marker({
+ //      position: this.mapCenter(),
+ //      map: this.map
+ //    });
+	// }
 
   // createInfoWindow() {
   //   let contentString = "<div class='InfoWindow'>I'm a Window that contains Info Yay</div>"

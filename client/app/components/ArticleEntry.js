@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import { fsetContent } from '../actions'
 import { Component } from 'react'
 import Chart from './PieChart.js'
+import GoogleMap from './GoogleMap'
 import {IconButton, Textfield, Menu, MenuItem, Button, Dialog, DialogTitle, DialogContent, DialogActions, Spinner} from 'react-mdl'
 
 require('es6-promise').polyfill();
@@ -71,6 +72,7 @@ export class ArticleEntry extends Component {
         modalText:
 
                           <div>
+                            <GoogleMap location={regionName} />
                             <p className="article-paragraph">
                               {mainText}
                               <br/>
