@@ -34,8 +34,9 @@ export class ArticleEntry extends Component {
     this.setState({
       openDialog: true
     });
-    var mainText = '';
+    var mainText;
     var context = this;
+    console.log('pprops article: ', this.props.article.publisher.region);
     //make request, then change the state of modal text
     fetch("http://localhost:3000/v1/pages?url=" + this.props.article.url)
     .then( function(text) {
@@ -43,9 +44,8 @@ export class ArticleEntry extends Component {
     })
     .then(function(text){
       mainText = text.data[0].text
-      text = text.data[0].text
       console.log('this is text', mainText);
-      return fetch("http://localhost:3000/v1/tone_analyzers?text=" + text);
+      return fetch("http://localhost:3000/v1/tone_analyzers?text=" + mainText);
     })
     .then(function(data){
       return data.json();
@@ -61,7 +61,6 @@ export class ArticleEntry extends Component {
         emotion_Arr.push(obj);
       }
       console.log('this is emotion arr: ', emotion_Arr);
-      console.log('this is maintext', mainText);
       context.setState({
         emotion_tone: update(context.state.emotion_tone, {
           watsonData: {$set: emotion_Arr}
