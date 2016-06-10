@@ -1,6 +1,6 @@
 /**
 * This is the api controller for the aricles table.
-* It manages the creation and retrival of all articles 
+* It manages the creation and retrival of all articles
 */
 
 module.exports = (function() {
@@ -50,7 +50,6 @@ module.exports = (function() {
     }
 
     create() {
-
       let article_title = this.params.body.title || '';
       let article_url = this.params.body.url || '';
       let article_content = this.params.body.content || '';
@@ -76,7 +75,7 @@ module.exports = (function() {
           .then(response => {
             // console.log('response ===========>', response);
           }, error => console.log('error ===========>', error))
-          .catch(err => console.log('error ============>', err));          
+          .catch(err => console.log('error ============>', err));
         }
 
         this.respond(err || model);

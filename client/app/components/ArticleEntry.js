@@ -34,12 +34,40 @@ export class ArticleEntry extends Component {
     this.setState({
       openDialog: true
     });
-    var mainText = this.props.article.content;
+    var mainText;
+    var bool = true;
     var context = this;
     var regionName = this.props.article.publisher.region;
-    console.log('props url: ', this.props.article.url);
-    console.log('this.props', this.props);
-    fetch("http://localhost:3000/v1/tone_analyzers?text=" + mainText)
+    var snippit = this.props.article.content;
+    var url = this.props.article.url.trim();
+    console.log('props regionName: ', regionName);
+    //make request, then change the state of modal text
+    fetch("http://localhost:3000/v1/pages?url=" + url)
+    .then( function(data) {
+      return data.json()
+    })
+    .then(function(text){
+      console.log('this is text: ', text);
+      if(regionName === 'Oceania'){
+        mainText = snippit;
+        bool = false
+      } else {
+        mainText = text.data[0].text
+      }
+      return mainText;
+    })
+    .catch(function(e){
+      if(e){
+        console.log('i am error in first catch', e);
+        mainText = snippit;
+        bool = false;
+      };
+      return mainText;
+    })
+    .then(function(data){
+      console.log('this is text', mainText);
+      return fetch("http://localhost:3000/v1/tone_analyzers?text=" + mainText);
+    })
     .then(function(data){
       return data.json();
     })
@@ -59,50 +87,69 @@ export class ArticleEntry extends Component {
           watsonData: {$set: emotion_Arr}
         }),
       });
-      return context.setState({
-        modalText:
-
-                          <div>
-                            <GoogleMap location={regionName} />
-                            <p className="article-paragraph">
-                              {mainText}
-                              <br/>
-                            </p>
-                            <div className="article-paragraph">
-                              <Chart pieData={ context.state.emotion_tone }/>
-                              <br/>
-                            </div>
-                            <div className="article-paragraph">
-                              <div id="fb-root"></div>
-                                <script>{(function(d, s, id) {
-                                  var js, fjs = d.getElementsByTagName(s)[0];
-                                  if (d.getElementById(id)) return;
-                                  js = d.createElement(s); js.id = id;
-                                  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
-                                  fjs.parentNode.insertBefore(js, fjs);
-                                }(document, 'script', 'facebook-jssdk'))}</script>
-                              <br/>
-                            </div>
-                          </div>
-
-
-
-
-      })
-    })
-    .catch(function(e) {
-      context.setState({
-        modalText:  <div className="error-message">
-                      <div className="error-icon-wrapper">
-                        <i className="material-icons error-icon">error_outline</i>
+      if(bool){
+        return context.setState({
+          modalText:
+                    <div>
+                      <GoogleMap location={regionName} />
+                      <p className="article-paragraph">
+                        {mainText}
+                        <br/>
+                      </p>
+                      <div className="article-paragraph">
+                        <Chart pieData={ context.state.emotion_tone }/>
+                        <br/>
                       </div>
-                      Sorry, this article is not available to be shared. Please visit the source.
-                      <Button colored raised className="error-btn">
-                        <a href={context.props.article.url} target="_blank" className="error-link">View source</a>
-                      </Button>
+                      <div>
+                      <div id="fb-root"></div>
+                      <script>{(function(d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return;
+                        js = d.createElement(s); js.id = id;
+                        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+                        fjs.parentNode.insertBefore(js, fjs);
+                      }(document, 'script', 'facebook-jssdk'))}</script>
+                      </div>
                     </div>
-      })
-    });
+        })
+      }else{
+        context.setState({
+          modalText:
+                    <div>
+                      <GoogleMap location={regionName} />
+                      <p className="article-paragraph">
+                        {mainText}
+                        <br/>
+                      </p>
+                      <div className="article-paragraph">
+                        <Chart pieData={ context.state.emotion_tone }/>
+                        <br/>
+                      </div>
+                      <div>
+                      <div id="fb-root"></div>
+                      <script>{(function(d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return;
+                        js = d.createElement(s); js.id = id;
+                        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+                        fjs.parentNode.insertBefore(js, fjs);
+                      }(document, 'script', 'facebook-jssdk'))}</script>
+                      </div>
+                      <div>
+                      <div className="error-message">
+                        <div className="error-icon-wrapper">
+                          <i className="material-icons error-icon">error_outline</i>
+                        </div>
+                        Sorry, this article is not available to be shared. Please visit the source.
+                        <Button colored raised className="error-btn">
+                          <a href={context.props.article.url} target="_blank" className="error-link">View source</a>
+                        </Button>
+                      </div>
+                    </div>
+                    </div>
+        })
+      }
+    })
   }
 
   handleCloseDialog() {
@@ -114,11 +161,7 @@ export class ArticleEntry extends Component {
   componentDidMount() {
     this.setState({
       modalText:
-      <div>
       <Spinner className="spinner"/>
-
-
-      </div>
       // emotion_tone: initialData[0].emotion_tone
     });
 
