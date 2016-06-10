@@ -6,9 +6,9 @@ const PieChart = rd3.PieChart;
 let colorMap = [
   '#FC0204',
   '#9D02CC',
-  '#038103',
+  '#049a04',
   '#FCFE03',
-  '#0402FD'
+  '#3634fd'
 
   // '#C8020A', // 'Anger'
   // '#6EE017', // 'Disgust'
