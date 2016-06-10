@@ -10,9 +10,18 @@ grey: color: #EFEFEF;*/
 }
 
 body {
+  background: url("http://www.wpclipart.com/geography/world_maps/World_Map_page_suitable_to_label_inverted.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 185px;
+  background-size: cover;
+  width:100%;
+  height: 100%;
   background-color: #EFEFEF;
   color: #757575;
 }
+
+
 
 main {
   overflow:auto;
@@ -257,6 +266,7 @@ i.error-icon {
   left: 0px;
 }
 
+
 .my-sidebar {
   border-right: 1px solid lightgrey;
   width: 170px;
@@ -278,3 +288,21 @@ i.error-icon {
   /*width: auto;*/
   height: 125px;
 }
+
+/*when screen is a certain size, hide sidebar and shift bg picture*/
+@media (max-width: 480px) {
+  .card {
+    width: 300px;
+  }
+}
+@media (max-width: 1020px) {
+  body {
+    background-position: 0px;
+    background-size: cover;
+  }
+
+  .my-sidebar {
+  display: none;
+  }
+}
+
