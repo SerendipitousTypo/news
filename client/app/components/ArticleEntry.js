@@ -38,9 +38,7 @@ export class ArticleEntry extends Component {
     var context = this;
     var regionName = this.props.article.publisher.region;
     console.log('props url: ', this.props.article.url);
-    //make request, then change the state of modal text
     console.log('this.props', this.props);
-
     fetch("http://localhost:3000/v1/tone_analyzers?text=" + mainText)
     .then(function(data){
       return data.json();
@@ -72,6 +70,17 @@ export class ArticleEntry extends Component {
                             </p>
                             <div className="article-paragraph">
                               <Chart pieData={ context.state.emotion_tone }/>
+                              <br/>
+                            </div>
+                            <div className="article-paragraph">
+                              <div id="fb-root"></div>
+                                <script>{(function(d, s, id) {
+                                  var js, fjs = d.getElementsByTagName(s)[0];
+                                  if (d.getElementById(id)) return;
+                                  js = d.createElement(s); js.id = id;
+                                  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+                                  fjs.parentNode.insertBefore(js, fjs);
+                                }(document, 'script', 'facebook-jssdk'))}</script>
                               <br/>
                             </div>
                           </div>
@@ -107,17 +116,12 @@ export class ArticleEntry extends Component {
       modalText:
       <div>
       <Spinner className="spinner"/>
-      <div id="fb-root"></div>
-      <script>{(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'))}</script>
+
+
       </div>
       // emotion_tone: initialData[0].emotion_tone
     });
+
   }
   render() {
     return (
