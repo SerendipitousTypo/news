@@ -43,10 +43,8 @@ export class ArticleEntry extends Component {
     console.log('props regionName: ', regionName);
     //make request, then change the state of modal text
     fetch("http://localhost:3000/v1/pages?url=" + url)
-    .then( function(data) {
-      return data.json()
-    })
-    .then(function(text){
+    .then(data => data.json())
+    .then(text => {
       console.log('this is text: ', text);
       if(regionName === 'Oceania'){
         mainText = snippit;
@@ -56,7 +54,7 @@ export class ArticleEntry extends Component {
       }
       return mainText;
     })
-    .catch(function(e){
+    .catch(e => {
       if(e){
         console.log('i am error in first catch', e);
         mainText = snippit;
@@ -64,14 +62,12 @@ export class ArticleEntry extends Component {
       };
       return mainText;
     })
-    .then(function(data){
+    .then(data => {
       console.log('this is text', mainText);
       return fetch("http://localhost:3000/v1/tone_analyzers?text=" + mainText);
     })
-    .then(function(data){
-      return data.json();
-    })
-    .then(function(data) {
+    .then(data => data.json())
+    .then(data => {
       // populate emotion property
       let emotion_Arr = [];
       for (let watsonData of data.data[0].tone_categories[0].tones) {
@@ -112,7 +108,7 @@ export class ArticleEntry extends Component {
                       </div>
                     </div>
         })
-      }else{
+      } else {
         context.setState({
           modalText:
                     <div>
