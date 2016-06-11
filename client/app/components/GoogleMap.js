@@ -3,9 +3,9 @@ import React from 'react';
 const locations = {
   'Oceania':        [-3.5141071, 126.6769916],
   'North America':  [36.2106946, -97.250977],
-  'Europe':         [48.0997728, 9.1534819],
-  'Asia':           [23.2644949, 110.976414],
-  'Africa':         [-3.6872377, -20.6307395],
+  'Europe':         [48.0997728, 10.1534819],
+  'Asia':           [21.2644949, 112.976414],
+  'Africa':         [11.6972377, 26.6307395],
   'Russia':         [49.7361415, 68.7625474],
   'South America':  [-11.781998, -57.5417584],
 };
@@ -29,7 +29,8 @@ export default class GoogleMap extends React.Component {
 
   createMap() {
     let mapOptions = {
-      zoom: 4,
+      zoom: 3,
+      disableDefaultUI: true,
       center: this.mapCenter(),
     }
     return new google.maps.Map(this.refs.mapCanvas, mapOptions);
