@@ -1,20 +1,26 @@
 import React from 'react';
 
 export default class Chat extends React.Component {
+  //console.log('this is url in chat', this.props.url);
 	render() {
     return (
-      <div></div>
+        <div id="fb-root"></div>
     )
   }
 
-  componentDidMount() {
-    //this.chat = this.createChat();
+  componentWillMount() {
+    this.createChat()
   }
 
   createChat() {
-    let chatOptions = {
-    }
-    //return new google.maps.Map(this.refs.mapCanvas, mapOptions);
+    ((d, s, id) => {
+       let js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) return;
+       js = d.createElement(s); js.id = id;
+       js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+       fjs.parentNode.insertBefore(js, fjs);
+     })(document, 'script', 'facebook-jssdk');
+
   }
 
 }
