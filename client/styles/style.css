@@ -135,7 +135,7 @@ footer {
 }
 
 .card-title {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
   cursor:pointer;
   color: black;
@@ -148,7 +148,7 @@ footer {
 }
 
 .card {
-  padding: 20px 20px 0px 20px;
+  padding: 20px 15px 0px 15px;
   height: 350px;
 }
 
@@ -164,8 +164,9 @@ footer {
 }
 
 .card-title {
-  height:85px;
+  height:82px;
   overflow: hidden;
+  border-bottom: 2px double #00BCD4;
 }
 
 .card-text {
@@ -262,8 +263,8 @@ i.error-icon {
       position: fixed;
       display: block;
       right: 180px;
-      bottom: 40px;
-      margin-right: 40px;
+      bottom: 65px;
+      margin-right: 45px;
       margin-bottom: 40px;
       z-index: 900;
 }
