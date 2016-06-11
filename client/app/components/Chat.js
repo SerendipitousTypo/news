@@ -8,11 +8,13 @@ export default class Chat extends React.Component {
     )
   }
 
-  componentWillMount() {
+  componentDidMount() {
+    console.log('inside component did mount')
     this.createChat()
   }
 
   createChat() {
+    console.log('inside creat chat');
     ((d, s, id) => {
        let js, fjs = d.getElementsByTagName(s)[0];
        if (d.getElementById(id)) return;
