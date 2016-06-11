@@ -64,7 +64,7 @@ class Chart extends React.Component {
             labelTextFill='#5c5c5c'
             valueTextFill='#000'
           />
-          <p>The Emotional Tone Analyzer uses linguistic analysis to show the probability that a certain emotion comes across through the text.</p>
+          <span>The Emotional Tone Analyzer uses linguistic analysis to show the probability that certain emotions comes across through the text.</span>
       </div>
       );
   }

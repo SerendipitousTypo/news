@@ -74,7 +74,7 @@ footer {
 }
 
 .mdl-layout__header-row {
-  background-color: #00BCD4;
+  background-color:   #424242;
   /*background: black url(/images/rangitoto-3072x200.jpg) center no-repeat;*/
   color: #fff;
 }
@@ -166,6 +166,10 @@ footer {
 .card-title {
   height:82px;
   overflow: hidden;
+  border-bottom: 2px double #333;
+}
+
+.card-title:hover {
   border-bottom: 2px double #00BCD4;
 }
 
@@ -294,12 +298,18 @@ i.error-icon {
 .my-sidebar {
   width: 170px;
   margin-top:3px;
-  background-color: rgba(0,188,212,.13);
+  margin-left: 5px;
+  background-color: rgba(200,200,200,.725);
 }
 
-.my-sidebar:hover {
+/*.my-sidebar:hover {
 
-  background-color: rgba(0,188,212,.175);
+  background-color: rgba(127,0,37,.975);
+}*/
+
+
+.mdl-list__item-primary-content{
+  padding-left: 14px;
 }
 
 .top-header {
@@ -331,8 +341,19 @@ i.error-icon {
     background-size: cover;
   }
 
-  .my-sidebar {
+.my-sidebar {
   display: none;
   }
 }
 
+.mdl-button .mdl-js-button .mdl-js-ripple-effect .mdl-button--raised .mdl-button--colored {
+  color:#333;
+}
+
+.textfield {
+  color: white;
+}
+
+/*.mdl-button--raised.mdl-button--colored {
+  color: #333;
+}*/
