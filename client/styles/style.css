@@ -216,10 +216,10 @@ footer {
 
 .error-message {
   text-align:center;
-  position: absolute;
+/*  position: absolute;
   left: 50%;
   top:50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);*/
 }
 
 .error-message .error-link {
@@ -231,10 +231,11 @@ i.error-icon {
 }
 
 .error-icon-wrapper {
-  position: absolute;
+  display: inline;
+/*  position: absolute;
   position: absolute;
   top: -8px;
-  left: -45px;
+  left: -45px;*/
 }
 
 .error-btn {
