@@ -232,6 +232,8 @@ footer {
 }
 
 .error-message {
+  margin-top: 40px;
+  margin-bottom: 120px;
   text-align:center;
 /*  position: absolute;
   left: 50%;
@@ -308,8 +310,9 @@ i.error-icon {
 .g-map {
   margin-left: auto;
   margin-right: auto;
-  /*width: auto;*/
-  height: 125px;
+  width: auto;
+  height: 250px;
+  margin-bottom: 10px;
 }
 
 /*when screen is a certain size, hide sidebar and shift bg picture*/
