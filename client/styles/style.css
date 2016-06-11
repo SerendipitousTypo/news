@@ -209,6 +209,10 @@ footer {
     margin: 0 0 -5px;
 }
 
+.watson-pie {
+
+}
+
 .url-link-btn {
   float:right;
   display:inline-block;
@@ -312,7 +316,7 @@ i.error-icon {
   margin-right: auto;
   width: auto;
   height: 250px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 /*when screen is a certain size, hide sidebar and shift bg picture*/

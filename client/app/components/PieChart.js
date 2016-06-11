@@ -4,11 +4,18 @@ const rd3 = require('react-d3');
 const PieChart = rd3.PieChart;
 
 let colorMap = [
-  '#FC0204',
-  '#9D02CC',
-  '#049a04',
-  '#FCFE03',
-  '#3634fd'
+
+  '#327e87',
+  '#008394',
+  '#00bcd4',
+  '#7faeb4',
+  '#b2ced2'
+
+  // '#FC0204',
+  // '#9D02CC',
+  // '#049a04',
+  // '#FCFE03',
+  // '#3634fd'
 
   // '#C8020A', // 'Anger'
   // '#6EE017', // 'Disgust'
@@ -43,7 +50,7 @@ class Chart extends React.Component {
           <PieChart
 
             data={ this.props.pieData.watsonData }
-            width={width}
+            width={500}
             height={350}
             radius={ 120}
             // innerRadius={ 15  }
@@ -54,7 +61,7 @@ class Chart extends React.Component {
             title="Emotional Tone Analyzer"
             showInnerLabels={labels}
             showOuterLabels={labels}
-            labelTextFill='#000'
+            labelTextFill='#5c5c5c'
             valueTextFill='#000'
           />
           <p>The Emotional Tone Analyzer uses linguistic analysis to show the probability that a certain emotion comes across through the text.</p>

@@ -94,7 +94,7 @@ export class ArticleEntry extends Component {
                         {mainText}
                         <br/>
                       </p>
-                      <div className="article-paragraph">
+                      <div className="watson-pie">
                         <Chart pieData={ context.state.emotion_tone }/>
                         <br/>
                       </div>
@@ -118,7 +118,7 @@ export class ArticleEntry extends Component {
                           <a href={context.props.article.url} target="_blank" className="error-link">View Full Text</a>
                         </Button>
                       </div>
-                      <div className="article-paragraph">
+                      <div className="watson-pie">
                         <Chart pieData={ context.state.emotion_tone }/>
                         <br/>
                       </div>
