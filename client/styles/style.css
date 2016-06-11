@@ -10,15 +10,27 @@ grey: color: #EFEFEF;*/
 }
 
 body {
-  background: url("http://www.wpclipart.com/geography/world_maps/World_Map_page_suitable_to_label_inverted.jpg");
+  background: url("https://www.zeutschel.de/zeutschel/export/sites/zeutschel/media/maps/world-map.png") repeat-y;
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: 185px;
+  background-repeat: repeat;
+  background-position: 185px, 200px;
   background-size: cover;
   width:100%;
   height: 100%;
   background-color: #EFEFEF;
   color: #757575;
+  -webkit-animation: backgroundScroll 20s linear infinite;
+  animation: backgroundScroll 450s linear infinite;
+}
+
+@-webkit-keyframes backgroundScroll {
+from {background-position: 0 0;}
+to {background-position: -900px 0;}
+}
+
+@keyframes backgroundScroll {
+from {background-position: 0 0;}
+to {background-position: -9200px 0;}
 }
 
 
@@ -272,6 +284,7 @@ i.error-icon {
   border-right: 1px solid lightgrey;
   width: 170px;
   margin-top:-6px;
+  background-color: rgba(200,200,200,.9);
 }
 
 .top-header {
