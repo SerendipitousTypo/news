@@ -132,6 +132,7 @@ footer {
   background-color: rgba(0, 0, 0, 0);
   font-size: 30px;
   color: #757575;
+
 }
 
 .card-title {
@@ -218,9 +219,14 @@ footer {
 }
 
 .url-link-btn {
-  float:right;
+  /*float:right;*/
   display:inline-block;
-  width: 65px;
+  width: 30px;
+}
+
+.expedia {
+  display: inline-block;
+  width: 30px;
 }
 .url-link-btn a {
  /* min-width: 0px;

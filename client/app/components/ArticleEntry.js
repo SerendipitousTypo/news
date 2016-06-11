@@ -158,7 +158,8 @@ export class ArticleEntry extends Component {
               <div className="card-editor" onClick={ this.handleOpenDialog}> - {this.props.article.publisher.name}</div>
               <div className="mdl-card__actions mdl-card--border">
                 <Button colored onClick={this.handleOpenDialog} raised ripple>View article</Button>
-                <div className="url-link-btn"><a href={this.props.article.url} target="_blank" className="btn-link mdl-button mdl-js-button mdl-js-ripple-effect"><i className="material-icons">public</i></a></div>
+                <span className="expedia"><a href="http://www.expedia.com" className="btn-link mdl-button mdl-js-button mdl-js-ripple-effect"><i className="material-icons">flight takeoff</i></a></span>
+                <span className="url-link-btn"><a href={this.props.article.url} target="_blank" className="btn-link mdl-button mdl-js-button mdl-js-ripple-effect"><i className="material-icons">public</i></a></span>
                   <Dialog open={this.state.openDialog} className="article-dialog">
                     <DialogTitle className="dialog-title">{this.props.article.title}</DialogTitle>
                     <DialogContent>
