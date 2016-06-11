@@ -121,6 +121,11 @@ export class ArticleEntry extends Component {
                         {mainText}
                         <br/>
                       </p>
+                      <div className="error-message">
+                        <Button colored raised className="error-btn">
+                          <a href={context.props.article.url} target="_blank" className="error-link">View Full Text</a>
+                        </Button>
+                      </div>
                       <div className="article-paragraph">
                         <Chart pieData={ context.state.emotion_tone }/>
                         <br/>
@@ -136,15 +141,6 @@ export class ArticleEntry extends Component {
                       }(document, 'script', 'facebook-jssdk'))}</script>
                       </div>
                       <div>
-                      <div className="error-message">
-                        <div className="error-icon-wrapper">
-                          <i className="material-icons error-icon">error_outline</i>
-                        </div>
-                        Sorry, this article is not available to be shared. Please visit the source.
-                        <Button colored raised className="error-btn">
-                          <a href={context.props.article.url} target="_blank" className="error-link">View source</a>
-                        </Button>
-                      </div>
                     </div>
                     </div>
         })

@@ -6,9 +6,9 @@ const PieChart = rd3.PieChart;
 let colorMap = [
   '#FC0204',
   '#9D02CC',
-  '#038103',
+  '#049a04',
   '#FCFE03',
-  '#0402FD'
+  '#3634fd'
 
   // '#C8020A', // 'Anger'
   // '#6EE017', // 'Disgust'
@@ -43,7 +43,7 @@ class Chart extends React.Component {
           <PieChart
 
             data={ this.props.pieData.watsonData }
-            width={550}
+            width={width}
             height={350}
             radius={ 120}
             // innerRadius={ 15  }
