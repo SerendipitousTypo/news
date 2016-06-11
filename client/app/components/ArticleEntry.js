@@ -5,6 +5,7 @@ import { fsetContent } from '../actions'
 import { Component } from 'react'
 import Chart from './PieChart.js'
 import GoogleMap from './GoogleMap'
+import Chat from './Chat.js'
 import {IconButton, Textfield, Menu, MenuItem, Button, Dialog, DialogTitle, DialogContent, DialogActions, Spinner} from 'react-mdl'
 
 require('es6-promise').polyfill();
@@ -43,10 +44,8 @@ export class ArticleEntry extends Component {
     console.log('props regionName: ', regionName);
     //make request, then change the state of modal text
     fetch("http://localhost:3000/v1/pages?url=" + url)
-    .then( function(data) {
-      return data.json()
-    })
-    .then(function(text){
+    .then(data => data.json())
+    .then(text => {
       console.log('this is text: ', text);
       if(regionName === 'Oceania'){
         mainText = snippit;
@@ -56,7 +55,7 @@ export class ArticleEntry extends Component {
       }
       return mainText;
     })
-    .catch(function(e){
+    .catch(e => {
       if(e){
         console.log('i am error in first catch', e);
         mainText = snippit;
@@ -64,14 +63,12 @@ export class ArticleEntry extends Component {
       };
       return mainText;
     })
-    .then(function(data){
+    .then(data => {
       console.log('this is text', mainText);
       return fetch("http://localhost:3000/v1/tone_analyzers?text=" + mainText);
     })
-    .then(function(data){
-      return data.json();
-    })
-    .then(function(data) {
+    .then(data => data.json())
+    .then(data => {
       // populate emotion property
       let emotion_Arr = [];
       for (let watsonData of data.data[0].tone_categories[0].tones) {
@@ -100,19 +97,13 @@ export class ArticleEntry extends Component {
                         <Chart pieData={ context.state.emotion_tone }/>
                         <br/>
                       </div>
-                      <div>
-                      <div id="fb-root"></div>
-                      <script>{(function(d, s, id) {
-                        var js, fjs = d.getElementsByTagName(s)[0];
-                        if (d.getElementById(id)) return;
-                        js = d.createElement(s); js.id = id;
-                        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
-                        fjs.parentNode.insertBefore(js, fjs);
-                      }(document, 'script', 'facebook-jssdk'))}</script>
+                      <div className="article-paragraph">
+                        <Chat />
+                        <br/>
                       </div>
                     </div>
         })
-      }else{
+      } else {
         context.setState({
           modalText:
                     <div>
@@ -130,18 +121,10 @@ export class ArticleEntry extends Component {
                         <Chart pieData={ context.state.emotion_tone }/>
                         <br/>
                       </div>
-                      <div>
-                      <div id="fb-root"></div>
-                      <script>{(function(d, s, id) {
-                        var js, fjs = d.getElementsByTagName(s)[0];
-                        if (d.getElementById(id)) return;
-                        js = d.createElement(s); js.id = id;
-                        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
-                        fjs.parentNode.insertBefore(js, fjs);
-                      }(document, 'script', 'facebook-jssdk'))}</script>
+                      <div className="article-paragraph">
+                        <Chat />
+                        <br/>
                       </div>
-                      <div>
-                    </div>
                     </div>
         })
       }
@@ -175,15 +158,14 @@ export class ArticleEntry extends Component {
               <div className="mdl-card__actions mdl-card--border">
                 <Button colored onClick={this.handleOpenDialog} raised ripple>Full article</Button>
                 <div className="url-link-btn"><a href={this.props.article.url} target="_blank" className="btn-link mdl-button mdl-js-button mdl-js-ripple-effect"><i className="material-icons">public</i></a></div>
-
                   <Dialog open={this.state.openDialog} className="article-dialog">
                     <DialogTitle className="dialog-title">{this.props.article.title}</DialogTitle>
                     <DialogContent>
                       <div className="article-main-text">
                       {this.state.modalText}</div>
                       <div className="fb-comments"
-                      data-href={this.props.article.url}
-                      data-numposts="5">
+                        data-href={this.props.article.url}
+                        data-numposts="5">
                       </div>
                     </DialogContent>
                     <DialogActions>
