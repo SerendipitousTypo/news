@@ -6,6 +6,7 @@ import { Component } from 'react'
 import Chart from './PieChart.js'
 import GoogleMap from './GoogleMap'
 import Chat from './Chat.js'
+import ChatComments from './ChatComments.js'
 import {IconButton, Textfield, Menu, MenuItem, Button, Dialog, DialogTitle, DialogContent, DialogActions, Spinner} from 'react-mdl'
 
 require('es6-promise').polyfill();
@@ -163,10 +164,7 @@ export class ArticleEntry extends Component {
                     <DialogContent>
                       <div className="article-main-text">
                       {this.state.modalText}</div>
-                      <div className="fb-comments"
-                        data-href={this.props.article.url}
-                        data-numposts="5">
-                      </div>
+                      <ChatComments url={this.props.article.url}/>
                     </DialogContent>
                     <DialogActions>
                       <Button type='button' onClick={this.handleCloseDialog} className="close-btn">Close</Button>
