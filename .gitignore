@@ -1,6 +1,7 @@
-node_modules/
+node_modules/*
+npm-debug.log
+!node_modules/react-mdl/extra/css
 server/static/config/apikey.js
 server/api/db/schema.json
 server/static/logs/
-npm-debug.log
 

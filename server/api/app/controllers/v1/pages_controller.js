@@ -10,7 +10,7 @@ module.exports = (function() {
 
     index() {
       let url = this.params.query.url;
-      
+
       if(url) {
         rp(url)
         .then(data => {

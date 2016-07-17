@@ -28,8 +28,8 @@ A news reader app offerring perspectives from around the world. Our mission is t
 * [React](https://facebook.github.io/react/) for rendering views and [Redux](https://github.com/reactjs/redux) for managing state
 * [Material Design Lite](https://getmdl.io/)- a styling framework for google material design
 * [React-MDL](https://tleunen.github.io/react-mdl/) - the React version of MDL
-* [Node.js](https://nodejs.org/en/) and [Express](http://expressjs.com/) for serving static pages and services. 
-* [Nodal](http://www.nodaljs.com/) for API 
+* [Node.js](https://nodejs.org/en/) and [Express](http://expressjs.com/) for serving static pages and services.
+* [Nodal](http://www.nodaljs.com/) for API
 * [Postgres](http://www.postgresql.org/) for database
 * [ElasticSearch](https://www.elastic.co/) for search table
 * [Open Calais](http://www.opencalais.com/) for term generation
@@ -65,15 +65,22 @@ A news reader app offerring perspectives from around the world. Our mission is t
 
 ##How to start the app
 
-###Install dependencies: 
+###Install dependencies:
 - [ ] navigate to the root directory and run `npm run deps`
-- [ ] If you do not have elastic search - See instructions for installing Elastic search 
+- [ ] If you do not have elastic search - See instructions for installing Elastic search
 - [ ] Install postrgres
 
-####Installing Elastic Search - MAC 
+####Installing Elastic Search - MAC
 + `brew update`
 + `brew install elasticsearch`
     * You may be prompted to install java, if so follow the brew instructions to install java then try `brew install elasticsearch` again.
+
+####Initializing Postgres Database
+- [ ] If you haven't, create a superuser in a terminal window: `createuser postgres -s`
+- [ ] Navigate to server/api, then
++ run `nodal db:create` to create the database
++ run `nodal db:prepare` to prepare the database
+
 
 ####Get API Keys for Open Calias
 * Got to http://www.opencalais.com/ and follow the instructions for accessing the api.  Note the limit for the free account is 5K requests per day.
@@ -86,7 +93,7 @@ A news reader app offerring perspectives from around the world. Our mission is t
 - [ ] If this is the first time you are starting the app you need to navigate to `server/api` and run `nodal db:create` to build the database. 
 - [ ] run `npm run nodal` from the root directory of the project - this bootstraps the db and launches node. NOTE: Everytime you run this command you have to rebuild the elasticsearch database.  Do this by running `curl -X "DELETE" http://localhost:9200/articles` 
 - [ ] Open a new terminal window and navigate to the root file of the project
-- [ ] run `npm start` 
+- [ ] run `npm start`
 
 - [ ] You can now open `http://localhost:8085/`
 
@@ -97,7 +104,7 @@ A news reader app offerring perspectives from around the world. Our mission is t
 ![schema](https://dl.dropboxusercontent.com/s/wjy81qvsaba89pv/DB%20Schema%20Design.PNG?dl=0)
 
 
-##API 
+##API
 Please see the [APIEndpoints.md](APIEndpoints.md) file
 
 ##Add Publishers
