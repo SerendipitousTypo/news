@@ -74,7 +74,7 @@ export class ArticleEntry extends Component {
 
   render() {
     return (
-    <div className="articleEntry mdl-cell mdl-cell--3-col ">
+    <div className="articleEntry mdl-cell mdl-cell--3-col-desktop mdl-cell--4-col-tablet ">
       <div className="row valign-wrapper">
         <div className="col s6 offset-s3 valign">
           <div className="card mdl-color--white mdl-shadow--2dp">
@@ -82,7 +82,7 @@ export class ArticleEntry extends Component {
               <div className="card-title" onClick={ this.handleOpenDialog}>{this.props.article.title}</div>
               <div className="card-text" onClick={ this.handleOpenDialog}>{this.props.article.content}</div>
               <div className="mdl-card__actions mdl-card--border">
-                <Button colored onClick={this.handleOpenDialog} raised ripple>Full article</Button>
+                <Button colored className="full-article-btn" onClick={this.handleOpenDialog} raised ripple>Full article</Button>
                 <div className="url-link-btn"><a href={this.props.article.url} target="_blank" className="btn-link mdl-button mdl-js-button mdl-js-ripple-effect"><i className="material-icons">public</i></a></div>
 
                   <Dialog open={this.state.openDialog} className="article-dialog">

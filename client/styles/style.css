@@ -49,8 +49,12 @@ footer {
 }
 
 .mdl-layout__header-row {
-  background-color: #E91E63;
+  background-color: rgba(30, 149, 233, 0.85);
   color: #fff;
+}
+
+.full-article-btn {
+  background: rgba(30, 149, 233, 0.85) !important;
 }
 
 .search-icon {
@@ -79,7 +83,7 @@ footer {
 }
 
 .main-link:hover {
-  color:rgb(255,64,129);
+  color: rgba(30, 149, 233, 0.85);
   text-decoration: underline;
   cursor: pointer;
 }
@@ -161,7 +165,7 @@ footer {
 }
 
 .article-paragraph {
-  
+
   line-height: 2.3em;
   font-size: 16px;
     letter-spacing: 0;
