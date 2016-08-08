@@ -1,62 +1,16 @@
 import React from 'react'
 import { fsetContent } from '../actions'
 import { Component } from 'react'
-import {IconButton, Textfield, Menu, MenuItem, Button, Dialog, DialogTitle, DialogContent, DialogActions, Spinner} from 'react-mdl';
+import {IconButton, Textfield, Menu, MenuItem, Button, Dialog, DialogTitle, DialogContent, DialogActions, Spinner} from 'react-mdl'
+
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
+
 // for the dialog example, we have to register the dialogs window
-//TODO: delete?
 const dialogs = document.querySelector("dialog");
 dialogs && dialogPolyfill.registerDialog(dialogs);
 
-// export const ArticleEntry = ({store, article}) => {
-
-//   return (
-//     <div className="articleEntry mdl-cell mdl-cell--3-col ">
-//       <div className="row valign-wrapper">
-//         <div className="col s6 offset-s3 valign">
-//           <div className="card mdl-color--white mdl-shadow--2dp">
-//             <div className="card-content white-text">
-//               <div className="card-title">{article.title}</div>
-//               <div className="card-text">{article.content}</div>
-
-//               <div className="mdl-card__actions mdl-card--border">
-//                 <Button colored raised ripple
-//                   onClick={store.dispatch(setContent())}
-//                 >
-//                   Full article
-//                 </Button>
-//                 <div className="url-link-btn">
-//                   <a href={this.props.article.url} target="_blank" className="btn-link mdl-button mdl-js-button mdl-js-ripple-effect">
-//                     <i className="material-icons">public</i>
-//                   </a>
-//                 </div>
-//                 <Dialog open={this.state.openDialog} className="article-dialog">
-//                   <DialogTitle>
-//                     {this.props.article.title}
-//                   </DialogTitle>
-//                   <DialogContent>
-//                     <div className="article-main-text">
-//                       {this.state.modalText}
-//                     </div>
-//                   </DialogContent>
-//                   <DialogActions>
-//                     <Button type='button' onClick={this.handleCloseDialog}>
-//                       Close
-//                     </Button>
-//                   </DialogActions>
-//                 </Dialog>
-//               </div>
-
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
-
+//TODO: convert to Redux
 export class ArticleEntry extends Component {
 
   constructor(props) {
@@ -72,7 +26,7 @@ export class ArticleEntry extends Component {
     });
     var context = this;
     //make request, then change the state of modal text
-    fetch("http://52.40.185.187:3000/v1/pages?url=" + this.props.article.url)
+    fetch("http://52.41.240.48:3000/v1/pages?url=" + this.props.article.url)
     .then( function(text) {
       return text.json();
     })
@@ -86,7 +40,7 @@ export class ArticleEntry extends Component {
                             <br/>
                           </p>
                         )
-                      }) 
+                      })
       })
     })
     .catch(function(e) {
@@ -102,7 +56,7 @@ export class ArticleEntry extends Component {
                     </div>
       })
     });
-    
+
 
   }
 
@@ -111,7 +65,7 @@ export class ArticleEntry extends Component {
       openDialog: false
     });
   }
-  
+
   componentDidMount() {
     this.setState({
       modalText: <Spinner className="spinner"/>
@@ -120,7 +74,7 @@ export class ArticleEntry extends Component {
 
   render() {
     return (
-    <div className="articleEntry mdl-cell mdl-cell--3-col ">
+    <div className="articleEntry mdl-cell mdl-cell--3-col-desktop mdl-cell--4-col-tablet ">
       <div className="row valign-wrapper">
         <div className="col s6 offset-s3 valign">
           <div className="card mdl-color--white mdl-shadow--2dp">
@@ -128,9 +82,9 @@ export class ArticleEntry extends Component {
               <div className="card-title" onClick={ this.handleOpenDialog}>{this.props.article.title}</div>
               <div className="card-text" onClick={ this.handleOpenDialog}>{this.props.article.content}</div>
               <div className="mdl-card__actions mdl-card--border">
-                <Button colored onClick={this.handleOpenDialog} raised ripple>Full article</Button>
+                <Button colored className="full-article-btn" onClick={this.handleOpenDialog} raised ripple>Full article</Button>
                 <div className="url-link-btn"><a href={this.props.article.url} target="_blank" className="btn-link mdl-button mdl-js-button mdl-js-ripple-effect"><i className="material-icons">public</i></a></div>
-                  
+
                   <Dialog open={this.state.openDialog} className="article-dialog">
                     <DialogTitle className="dialog-title">{this.props.article.title}</DialogTitle>
                     <DialogContent>

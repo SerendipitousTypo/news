@@ -80,10 +80,11 @@ A news reader app offerring perspectives from around the world. Our mission is t
 
 ###Starting the app
 - [ ] Start your postgres database
-- [ ] Open a terminal window and navigate to the root file of the project
-- [ ] run `npm run nodal` - this bootstraps the db and launches node
 - [ ] Open a new terminal window and navigate to the root file of the project
 - [ ] run `elasticsearch`
+- [ ] Open a terminal window and navigate to the root file of the project
+- [ ] If this is the first time you are starting the app you need to navigate to `server/api` and run `nodal db:create` to build the database. 
+- [ ] run `npm run nodal` from the root directory of the project - this bootstraps the db and launches node. NOTE: Everytime you run this command you have to rebuild the elasticsearch database.  Do this by running `curl -X "DELETE" http://localhost:9200/articles` 
 - [ ] Open a new terminal window and navigate to the root file of the project
 - [ ] run `npm start` 
 

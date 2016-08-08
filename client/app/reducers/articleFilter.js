@@ -9,7 +9,6 @@ const filter = (
 ) => {
   console.log('filter reducer: ', action);
   //TODO: Refactor, simplify action.filter
-  // let { filter } = action;
   switch (action.type) {
     case 'SET_FILTER':
       if (action.filter.type === 'TOPIC') {

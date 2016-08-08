@@ -37,10 +37,14 @@ export class App extends Component {
   render() {
     const { store } = this.props;
     const state = store.getState();
-    // let filter = state.articleFilter;
+
+    //nextFilter is changed according to user interactions
+    //determines what articles will be queried & rendered
+    //shallow copy used for sake of isolating conflicting changes from each other
     let nextFilter = Object.assign({}, state.articleFilter);
 
-    console.log('state: ', state);
+    //will display the current state before every render
+    // console.log('state: ', state);
 
     return (
       <div className="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -48,10 +52,10 @@ export class App extends Component {
 
         <main className="mdl-layout__content">
           <div className="mdl-grid">
-            <div className="mdl-cell mdl-cell--2-col my-sidebar">
+            <div className="mdl-cell mdl-cell--2-col-desktop mdl-cell--2-col-tablet mdl-cell--hide-phone my-sidebar">
               <Sidebar store={store} nextFilter={nextFilter}/>
             </div>
-            <div className="mdl-cell mdl-cell--10-col graybox">
+            <div className="mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet graybox">
               <Main
                 store={store}
                 articles={state.articles}

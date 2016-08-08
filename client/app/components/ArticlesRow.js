@@ -1,23 +1,24 @@
-//for every article served, create a articleEntry (4 articles served)
 import React from 'react'
 import { fetchArticles, setFilter } from '../actions'
 import { sanitize } from '../utils'
 import { ArticleEntry } from './ArticleEntry'
 
 export const ArticlesRow = ({store, title, articles, nextFilter}) => {
+
+  //shallow copy isolates THIS nextFilter object
+  //from changes to other nextFilter objects
   nextFilter = Object.assign({}, nextFilter);
 
   return (
     <div className='articles-row'>
       <div onClick={() => {
-          //TODO: refactor
-            //modify nextFilter outside of ArticlesRow's
-            //return statement (see sidebar)
-          //change view to a Region
+          //Assign 'title' to topic or region
+          //depending on the current state of the app
           nextFilter.type === 'TOPIC' ?
             nextFilter.topic = title :
             nextFilter.region = title;
 
+          //TODO: batch these dispatches
           store.dispatch(setFilter(
             nextFilter,
             title
@@ -41,7 +42,7 @@ export const ArticlesRow = ({store, title, articles, nextFilter}) => {
 };
 
 const populateRow = (articles, store) => {
-  //perhaps temporary
+
   //limit articleEntry per row to 5
   let collection = [];
   for (let i = 0; i < articles.length && i < 4; i++) {
@@ -54,10 +55,5 @@ const populateRow = (articles, store) => {
     )
   }
 
-  // console.log('articlesRow: ', articles);
   return collection;
-
-  // return articles.map((article, key) => {
-  //   return <ArticleEntry store={store} key={key} article={article} />;
-  // });
 };

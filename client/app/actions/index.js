@@ -3,6 +3,43 @@ import _ from 'lodash'
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
 
+
+export const setFilter = (filter, category) => (
+    //category is the name of  a region or topic
+    {
+      type: 'SET_FILTER',
+      filter: Object.assign({}, filter, {category})
+    }
+)
+
+export const setContent = (content) => (
+  {
+    type: 'SET_CONTENT',
+    content
+  }
+)
+
+//Not currently in use
+export const getFilteredArticles = (articles, filter) => {
+  switch (filter.view) {
+    case 'ALL_REGIONS':
+      return articles
+    case 'A_REGION':
+      return articles.filter(
+        a => a.publisher.region === filter.region
+      )
+    // case 'A_TOPIC':
+    //   //TODO: return proper query
+    //   return ''
+    // case 'A_TOPIC_FROM_A_REGION':
+    //   //TODO: return proper query
+    //   return '';
+    default:
+      console.log('error: filter not properly defined');
+      return articles
+  }
+}
+
 const createQuery = (filter, searchQuery) => {
   switch (filter.view) {
     case 'ALL_REGIONS':
@@ -25,55 +62,19 @@ const createQuery = (filter, searchQuery) => {
   }
 }
 
-export const setFilter = (filter, category) => (
-    //category is the name of  a region or topic
-    {
-      type: 'SET_FILTER',
-      filter: Object.assign({}, filter, {category})
-    }
-)
-
-export const setContent = (content) => (
-  {
-    type: 'SET_CONTENT',
-    content
-  }
-)
-
-//TODO: DELETE?
-export const getFilteredArticles = (articles, filter) => {
-  switch (filter.view) {
-    case 'ALL_REGIONS':
-      return articles
-    case 'A_REGION':
-      return articles.filter(
-        a => a.publisher.region === filter.region
-      )
-    // case 'A_TOPIC':
-    //   //TODO: return proper query
-    //   return ''
-    // case 'A_TOPIC_FROM_A_REGION':
-    //   //TODO: return proper query
-    //   return '';
-    default:
-      console.log('error: filter not properly defined');
-      return articles
-  }
-}
-
-
 export const fetchArticles = (filter, searchQuery) => {
 
   return dispatch => {
 
     filter = filter || {view: 'ALL_REGIONS'};
-    searchQuery = (searchQuery === undefined || searchQuery === '') ?
+    searchQuery = (searchQuery === undefined ||
+    searchQuery === '') ?
       createQuery(filter) :
       'search?q=' + searchQuery + '&&' + createQuery(filter, searchQuery).slice(9);
 
-    let url = 'http://52.40.185.187:3000/v1/' + searchQuery;
-    console.log('url: ', url);
-    //TODO: change isFetching state to TRUE
+
+    let url = 'http://52.41.240.48:3000/v1/' + searchQuery;
+    // console.log('url: ', url);
 
     return fetch(url)
         .then(response => {
@@ -84,5 +85,6 @@ export const fetchArticles = (filter, searchQuery) => {
           console.log('data: ', result.data);
           dispatch({type: 'LOAD_ARTICLES', articles: result.data})
         })
+        //TODO: change isFetching state to False
   }
 }
