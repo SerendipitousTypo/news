@@ -72,7 +72,7 @@ export const fetchArticles = (filter, searchQuery) => {
       createQuery(filter) :
       'search?q=' + searchQuery + '&&' + createQuery(filter, searchQuery).slice(9);
 
-    let url = 'http://localhost:3000/v1/' + searchQuery;
+    let url = 'http://52.41.240.48:3000/v1/' + searchQuery;
     // console.log('url: ', url);
 
     //TODO: change isFetching state to TRUE
